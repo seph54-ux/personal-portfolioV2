@@ -187,7 +187,7 @@ export const blogPosts: Blog[] = [
   {
     slug: '10-design-trends-to-watch-in-2024',
     title: '10 Design Trends to Watch in 2024',
-    author: 'Jane Doe',
+    author: 'Philjoseph Orlina',
     date: '2024-05-15',
     excerpt: 'From AI-generated art to retro-futurism, here are the top 10 design trends you need to know about this year.',
     image: getImage('blog-1'),
@@ -196,7 +196,7 @@ export const blogPosts: Blog[] = [
   {
     slug: 'the-ultimate-guide-to-freelancing-for-designers',
     title: 'The Ultimate Guide to Freelancing for Designers',
-    author: 'John Smith',
+    author: 'Philjoseph Orlina',
     date: '2024-04-22',
     excerpt: 'Thinking of going solo? This guide covers everything from finding clients to managing your finances as a freelance designer.',
     image: getImage('blog-2'),
@@ -205,7 +205,7 @@ export const blogPosts: Blog[] = [
   {
     slug: 'case-study-rebranding-a-local-cafe',
     title: 'Case Study: Rebranding a Local Cafe',
-    author: 'Jane Doe',
+    author: 'Philjoseph Orlina',
     date: '2024-03-10',
     excerpt: 'A deep dive into the process of rebranding "The Daily Grind," a beloved local coffee shop, for a modern audience.',
     image: getImage('blog-3'),

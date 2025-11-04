@@ -30,7 +30,7 @@ export default function AboutPage() {
           <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-card">
             <Image
               src={aboutImage.imageUrl}
-              alt="A portrait of the site owner"
+              alt="A portrait of Philjoseph Orlina"
               fill
               className="object-cover"
               data-ai-hint={aboutImage.imageHint}

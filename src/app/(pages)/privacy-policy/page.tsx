@@ -14,9 +14,6 @@ export default function PrivacyPolicyPage() {
         </p>
 
         <h2>Information We Collect</h2>
-        <p>
-          We may collect information about you in a variety of ways. The information we may collect on the Site includes:
-        </p>
         <h3>Personal Data</h3>
         <p>
           Personally identifiable information, such as your name, email address, and any other content you voluntarily provide to us when you use our contact form. You are under no obligation to provide us with personal information of any kind; however, your refusal to do so may prevent you from using certain features of the Site.
@@ -29,7 +26,6 @@ export default function PrivacyPolicyPage() {
         <ul>
           <li>Respond to your project inquiries and support requests.</li>
           <li>Email you regarding your inquiry.</li>
-          <li>Deliver affiliate-related information and promotions to you.</li>
         </ul>
 
         <h2>Disclosure of Your Information</h2>
@@ -39,7 +35,7 @@ export default function PrivacyPolicyPage() {
         
         <h2>Affiliate Disclaimer</h2>
         <p>
-          Our website features affiliate links. If you click on an affiliate link and make a purchase, we may receive a commission at no extra cost to you. We only recommend products and services we believe will add value to our users.
+          Our website may feature affiliate links. If you click on an affiliate link and make a purchase, we may receive a commission at no extra cost to you. We only recommend products and services we believe will add value to our users.
         </p>
 
         <h2>Security of Your Information</h2>
