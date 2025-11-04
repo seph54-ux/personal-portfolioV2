@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, type ComponentPropsWithoutRef, type ElementRef } from 'react';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
@@ -19,7 +19,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import type { ComponentPropsWithoutRef, ElementRef } from "react";
 
 export function Header() {
   const pathname = usePathname();
@@ -132,7 +131,7 @@ export function Header() {
 
 const ListItem = React.forwardRef<
   ElementRef<"a">,
-  ComponentPropsWithoutRef<"a">
+  ComponentPropsWithoutRef<typeof Link>
 >(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
