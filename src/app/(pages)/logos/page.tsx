@@ -1,7 +1,7 @@
+"use client"
 import { PageHeader } from '@/components/PageHeader';
-import { projects, techStack } from '@/lib/data';
 import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -9,10 +9,68 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
+import { useState } from 'react';
+import { ImageModal } from '@/components/ImageModal';
+import mlMainLogo from '@/app/asset/images/works-logo/ml main logo.webp';
+import ml3dLogo from '@/app/asset/images/works-logo/ml 3d logo.webp';
+import mlMainLogoBlackText from '@/app/asset/images/works-logo/ml main logo black text.webp';
+import mlMainLogoGradientBg from '@/app/asset/images/works-logo/ml main logo gradient bg.webp';
+import mlMainLogoWhiteText from '@/app/asset/images/works-logo/ml main logo white text.webp';
+import rpMainLogoBadge from '@/app/asset/images/works-logo/RP-main-logo-badge.webp';
+import rpMainLogoText from '@/app/asset/images/works-logo/RP-main-logo-text.webp';
+import rpSublogo from '@/app/asset/images/works-logo/RP-sublogo.webp';
+import rpTextLogo from '@/app/asset/images/works-logo/RP-text-logo.webp';
+
+const mlLogoVariants = [
+  { name: 'Main Logo', image: mlMainLogo },
+  { name: '3D Logo', image: ml3dLogo },
+  { name: 'Main Logo Black Text', image: mlMainLogoBlackText },
+  { name: 'Main Logo Gradient BG', image: mlMainLogoGradientBg },
+  { name: 'Main Logo White Text', image: mlMainLogoWhiteText },
+];
+
+const rpLogoVariants = [
+  { name: 'Main Logo Badge', image: rpMainLogoBadge },
+  { name: 'Main Logo Text', image: rpMainLogoText },
+  { name: 'Sublogo', image: rpSublogo },
+  { name: 'Text Logo', image: rpTextLogo },
+];
+
+const logoProjects = [
+  {
+    id: 'proj-logo-ml',
+    title: "ML Esports",
+    description: 'A dynamic and modern logo for Mobile Legends Bang Bang E-Sports event held on Engineering Days 2023 at Tanauan City College.',
+    variants: mlLogoVariants.map(v => ({ name: v.name, images: [{ imageUrl: v.image, imageHint: 'logo' }]})),
+    tech: ['illustrator'],
+  },
+  {
+    id: 'proj-logo-rp',
+    title: "Rising Pro",
+    description: 'A powerful and inspiring logo for a professional gaming organization, designed to be easily recognizable and impactful.',
+    variants: rpLogoVariants.map(v => ({ name: v.name, images: [{ imageUrl: v.image, imageHint: 'logo' }]})),
+    tech: ['illustrator'],
+  },
+];
+
+const techStack = {
+  illustrator: { name: 'Inkscape', category: 'Design Tool'}
+};
 
 export default function LogosPage() {
-  const logoProjects = projects.filter(p => p.category === 'Logos');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<{src: StaticImageData | string, alt: string} | null>(null);
+
+  const openModal = (src: StaticImageData | string, alt: string) => {
+    setSelectedImage({ src, alt });
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
 
   return (
     <>
@@ -33,15 +91,17 @@ export default function LogosPage() {
                           <CardHeader className="p-4">
                             <CardTitle className="text-sm font-medium text-muted-foreground">{variant.name}</CardTitle>
                           </CardHeader>
-                          <CardContent className="p-0 aspect-video flex items-center justify-center">
-                            <Image
-                              src={variant.images[0].imageUrl}
-                              alt={`${project.title} - ${variant.name}`}
-                              width={800}
-                              height={600}
-                              className="object-contain max-h-full max-w-full"
-                              data-ai-hint={variant.images[0].imageHint}
-                            />
+                          <CardContent className="p-0 h-64 flex items-center justify-center">
+                            <button onClick={() => openModal(variant.images[0].imageUrl, `${project.title} - ${variant.name}`)} className="w-full h-full">
+                              <Image
+                                src={variant.images[0].imageUrl}
+                                alt={`${project.title} - ${variant.name}`}
+                                width={800}
+                                height={600}
+                                className="object-contain max-h-full max-w-full"
+                                data-ai-hint={variant.images[0].imageHint}
+                              />
+                            </button>
                           </CardContent>
                         </Card>
                       </div>
@@ -66,6 +126,14 @@ export default function LogosPage() {
           </div>
         ))}
       </div>
+      {selectedImage && (
+        <ImageModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          imageUrl={selectedImage.src}
+          alt={selectedImage.alt}
+        />
+      )}
     </>
   );
 }

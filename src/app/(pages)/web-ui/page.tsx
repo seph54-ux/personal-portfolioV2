@@ -1,9 +1,48 @@
+'use client';
 import { PageHeader } from '@/components/PageHeader';
-import { ProjectCard } from '@/components/ProjectCard';
-import { projects } from '@/lib/data';
+import { useState } from 'react';
+import { ImageModal } from '@/components/ImageModal';
+import Image, { StaticImageData } from 'next/image';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
+import galaxyUi from '@/app/asset/images/works-ui/Galaxy.webp';
+import kuboCuisineUi from '@/app/asset/images/works-ui/KuboCuisine.webp';
+import risingProUi from '@/app/asset/images/works-ui/Rising-Pro.webp';
+
+const webUiProjects = [
+  {
+    id: 'web-ui-1',
+    title: 'Galaxy',
+    description: 'A modern and professional website redesign for Galaxy Cable.',
+    image: galaxyUi,
+  },
+  {
+    id: 'web-ui-2',
+    title: 'KuboCuisine',
+    description: 'A warm and inviting UI design for a modern Filipino restaurant.',
+    image: kuboCuisineUi,
+  },
+  {
+    id: 'web-ui-3',
+    title: 'Rising Pro',
+    description: 'A professional and clean UI design for an esports organization website.',
+    image: risingProUi,
+  },
+];
 
 export default function WebUiPage() {
-  const webUiProjects = projects.filter(p => p.category === 'Web UI Design');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<{src: StaticImageData | string, alt: string} | null>(null);
+
+  const openModal = (src: StaticImageData | string, alt: string) => {
+    setSelectedImage({ src, alt });
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
 
   return (
     <>
@@ -11,16 +50,37 @@ export default function WebUiPage() {
         title="Web UI Design"
         subtitle="Crafting intuitive, beautiful, and user-centric interfaces for web and mobile applications."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {webUiProjects.map((project, index) => (
-          <ProjectCard 
-            key={project.id} 
-            project={project} 
-            className="animate-fade-in"
-            style={{ animationDelay: `${index * 100}ms` }}
-          />
+          <div key={project.id} onClick={() => openModal(project.image, project.title)}>
+            <Card className="overflow-hidden group glassmorphic transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+              <div className="overflow-hidden aspect-video">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl">{project.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">{project.description}</p>
+              </CardContent>
+            </Card>
+          </div>
         ))}
       </div>
+      {selectedImage && (
+        <ImageModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          imageUrl={selectedImage.src}
+          alt={selectedImage.alt}
+        />
+      )}
     </>
   );
 }
