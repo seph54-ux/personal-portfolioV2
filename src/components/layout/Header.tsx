@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/lib/data";
@@ -51,7 +51,7 @@ export function Header() {
                 </NavigationMenuItem>
               ) : (
                 <NavigationMenuItem key={link.name}>
-                  <Link href={link.href} legacyBehavior passHref>
+                  <Link href={link.href} passHref>
                     <NavigationMenuLink
                       className={cn(
                         navigationMenuTriggerStyle(),
@@ -133,8 +133,8 @@ const ListItem = (({
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
-          href={href}
+        <Link
+          href={href!}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
@@ -145,7 +145,7 @@ const ListItem = (({
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );
