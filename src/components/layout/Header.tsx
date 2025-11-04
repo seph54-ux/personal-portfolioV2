@@ -1,12 +1,10 @@
 
-
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
-import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/lib/data";
 import { Logo } from "@/components/Logo";
@@ -55,7 +53,7 @@ export function Header() {
                 </NavigationMenuItem>
               ) : (
                 <NavigationMenuItem key={link.name}>
-                  <Link href={link.href} legacyBehavior passHref>
+                  <Link href={link.href} passHref legacyBehavior>
                     <NavigationMenuLink
                       className={cn(
                         navigationMenuTriggerStyle(),
