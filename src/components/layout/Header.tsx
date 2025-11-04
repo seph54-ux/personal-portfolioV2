@@ -31,10 +31,12 @@ export function Header() {
         <Logo />
 
         {/* Desktop Navigation */}
-        <NavigationMenu className="hidden md:flex">
+        <NavigationMenu className="hidden md:flex items-center">
           <NavigationMenuList>
-            {navLinks.map((link) =>
-              link.sublinks ? (
+            {navLinks.map((link) => {
+              if (link.name === 'Contact') return null;
+              
+              return link.sublinks ? (
                 <NavigationMenuItem key={link.name}>
                   <NavigationMenuTrigger>{link.name}</NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -53,7 +55,7 @@ export function Header() {
                 </NavigationMenuItem>
               ) : (
                 <NavigationMenuItem key={link.name}>
-                  <Link href={link.href} passHref legacyBehavior>
+                  <Link href={link.href} legacyBehavior passHref>
                     <NavigationMenuLink
                       className={cn(
                         navigationMenuTriggerStyle(),
@@ -67,8 +69,11 @@ export function Header() {
                   </Link>
                 </NavigationMenuItem>
               )
-            )}
+            })}
           </NavigationMenuList>
+            <Button asChild className="ml-4">
+              <Link href="/contact">Contact</Link>
+            </Button>
         </NavigationMenu>
 
         {/* Mobile Navigation */}

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -16,7 +17,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
@@ -35,12 +36,13 @@ const formSchema = z.object({
     .refine(
       (files) => !files || files.length === 0 || ACCEPTED_FILE_TYPES.includes(files[0].type),
       "Only .pdf files are accepted."
-    ),
+    ).optional(),
 });
 
 export function ContactForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -57,22 +59,17 @@ export function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     
-    // --- EmailJS Integration ---
-    // Replace with your EmailJS Service ID, Template ID, and Public Key
-    const serviceID = "YOUR_SERVICE_ID";
-    const templateID = "YOUR_TEMPLATE_ID";
-    const publicKey = "YOUR_PUBLIC_KEY";
+    if (!formRef.current) {
+        setIsSubmitting(false);
+        return;
+    }
 
-    const templateParams = {
-        name: values.name,
-        email: values.email,
-        subject: values.subject,
-        message: values.message,
-        budget: values.budget || "Not provided",
-    };
-    
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
     try {
-        await emailjs.send(serviceID, templateID, templateParams, publicKey);
+        await emailjs.sendForm(serviceID, templateID, formRef.current, publicKey);
         
         toast({
             title: "Message Sent!",
@@ -94,7 +91,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form ref={formRef} onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <FormField
             control={form.control}
@@ -173,7 +170,7 @@ export function ContactForm() {
                 <FormItem>
                 <FormLabel>Got a project brief? (optional)</FormLabel>
                 <FormControl>
-                    <Input type="file" accept=".pdf" onChange={(e) => field.onChange(e.target.files)} />
+                    <Input type="file" accept=".pdf" {...form.register('attachment')} />
                 </FormControl>
                 <FormDescription>
                     PDF files only, max 10MB.
