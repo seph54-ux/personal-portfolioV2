@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-4xl mx-auto prose dark:prose-invert text-foreground/90 animate-fade-in" style={{ animationDelay: '0.4s' }}>
         <h2>Introduction</h2>
         <p>
-          Welcome to DesignFlow (&#34;we,&#34; &#34;our,&#34; or &#34;us&#34;). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
+          Welcome to Philjoseph Orlina's portfolio website (&#34;we,&#34; &#34;our,&#34; or &#34;us&#34;). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
         </p>
 
         <h2>Information We Collect</h2>

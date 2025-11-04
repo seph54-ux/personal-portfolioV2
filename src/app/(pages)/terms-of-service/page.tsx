@@ -15,7 +15,7 @@ export default function TermsOfServicePage() {
 
         <h2>2. Intellectual Property</h2>
         <p>
-          The Site and its original content, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by DesignFlow, its licensors, or other providers of such material and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. You are not permitted to use these materials without our prior written consent.
+          The Site and its original content, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by Philjoseph Orlina, its licensors, or other providers of such material and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. You are not permitted to use these materials without our prior written consent.
         </p>
 
         <h2>3. Use of the Site</h2>
@@ -35,7 +35,7 @@ export default function TermsOfServicePage() {
 
         <h2>6. Limitation of Liability</h2>
         <p>
-          In no event shall DesignFlow, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Site.
+          In no event shall Philjoseph Orlina, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Site.
         </p>
 
         <h2>7. Changes to Terms</h2>

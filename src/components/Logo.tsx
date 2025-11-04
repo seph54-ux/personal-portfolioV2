@@ -13,7 +13,7 @@ export function Logo({ className }: LogoProps) {
         <Sparkles className="h-5 w-5" />
       </div>
       <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-foreground/80 to-foreground">
-        DesignFlow
+        Philjoseph Orlina
       </span>
     </Link>
   );

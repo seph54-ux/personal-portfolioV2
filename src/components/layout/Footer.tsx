@@ -72,7 +72,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {year} DesignFlow. All Rights Reserved.</p>
+          <p>&copy; {year} Philjoseph Orlina. All Rights Reserved.</p>
           <div className="flex gap-4">
             <Link href="/terms-of-service" className="hover:text-primary transition-colors">
               Terms of Service

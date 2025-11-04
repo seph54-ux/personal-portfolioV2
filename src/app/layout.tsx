@@ -6,8 +6,8 @@ import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'DesignFlow Portfolio',
-  description: 'A portfolio showcasing design and development projects.',
+  title: 'Philjoseph Orlina | Portfolio',
+  description: 'A portfolio showcasing design and development projects by Philjoseph Orlina.',
 };
 
 export default function RootLayout({
