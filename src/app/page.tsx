@@ -5,6 +5,7 @@ import { blogPosts, projects } from "@/lib/data";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
   const featuredProjects = projects.slice(0, 3);
