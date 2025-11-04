@@ -2,17 +2,12 @@
 import { PageHeader } from '@/components/PageHeader';
 import { useState } from 'react';
 import { VideoModal } from '@/components/VideoModal';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 import thumbnail1 from '@/app/asset/videos/VideoThumbnail1.webp';
 import thumbnail2 from '@/app/asset/videos/VideoThumbnail2.webp';
 import thumbnail3 from '@/app/asset/videos/VideoThumbnail3.webp';
-
-import video1 from '@/app/asset/videos/ML Logo unveil.mp4';
-import video2 from '@/app/asset/videos/PostMatch Results Final MVP.mp4';
-import video3 from '@/app/asset/videos/Teaser Edays2k23.mp4';
-
 
 const videoProjects = [
   {
@@ -20,21 +15,21 @@ const videoProjects = [
     title: 'ML Logo Unveil',
     description: 'An exciting logo reveal for a Mobile Legends tournament.',
     thumbnail: thumbnail1,
-    videoSrc: video1,
+    videoSrc: '/videos/ML Logo unveil.mp4',
   },
   {
     id: 'video-2',
     title: 'Post-Match Results & MVP',
     description: 'A dynamic post-match sequence showcasing the results and the Most Valuable Player.',
     thumbnail: thumbnail2,
-    videoSrc: video2,
+    videoSrc: '/videos/PostMatch Results Final MVP.mp4',
   },
   {
     id: 'video-3',
     title: 'Teaser Edays 2k23',
     description: 'A teaser video for the Edays 2023 event.',
     thumbnail: thumbnail3,
-    videoSrc: video3,
+    videoSrc: '/videos/Teaser Edays2k23.mp4',
   },
 ];
 
