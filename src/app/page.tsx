@@ -96,14 +96,14 @@ export default function Home() {
                     <div className="mx-auto bg-primary/10 text-primary w-16 h-16 rounded-full flex items-center justify-center mb-4">
                         <Star className="w-8 h-8" />
                     </div>
-                    <CardTitle className="font-headline text-3xl">AI-Powered Affiliate Showcase</CardTitle>
+                    <CardTitle className="font-headline text-3xl">My Recommended Tools</CardTitle>
                  </CardHeader>
                  <CardContent>
                     <p className="text-muted-foreground mb-6">
-                        Looking for assets? Describe your project, and my AI assistant will suggest relevant items from affiliate marketplaces to speed up your workflow.
+                        Looking for the best tools for your projects? Here's a list of what I use and recommend. Your support through these affiliate links is much appreciated!
                     </p>
                     <Button asChild>
-                        <Link href="/affiliates">Try it Now</Link>
+                        <Link href="/affiliates">See My Gear</Link>
                     </Button>
                  </CardContent>
              </Card>

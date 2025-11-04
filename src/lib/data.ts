@@ -212,3 +212,53 @@ export const blogPosts: Blog[] = [
     content: '<p>The Daily Grind had been a local favorite for 15 years, but its branding felt dated. The goal was to refresh the visual identity without alienating its loyal customer base.</p><h3>The Process</h3><p>We started with a deep dive into the cafe\'s history and its customers. We conducted surveys and interviews to understand what people loved about The Daily Grind. The key takeaway was the sense of community and comfort...</p>',
   },
 ];
+
+
+export type AffiliateProduct = {
+  id: string;
+  name: string;
+  description: string;
+  marketplace: string;
+  url: string;
+  image: ImagePlaceholder;
+  tags: (keyof typeof techStack)[];
+};
+
+export const affiliateProducts: AffiliateProduct[] = [
+  {
+    id: 'aff-figma',
+    name: 'Figma',
+    description: 'The collaborative interface design tool. I use it for all my UI/UX work, from wireframing to high-fidelity prototypes.',
+    marketplace: 'Figma Partner Program',
+    url: '#',
+    image: getImage('affiliate-figma'),
+    tags: ['figma', 'react', 'nextjs'],
+  },
+  {
+    id: 'aff-photoshop',
+    name: 'Adobe Photoshop',
+    description: 'The industry-standard for photo editing and raster graphics manipulation. Essential for creating stunning visuals and assets.',
+    marketplace: 'Adobe Affiliate Program',
+    url: '#',
+    image: getImage('affiliate-photoshop'),
+    tags: ['photoshop', 'illustrator'],
+  },
+  {
+    id: 'aff-webflow',
+    name: 'Webflow',
+    description: 'A powerful visual web development platform that allows you to build responsive websites without writing code.',
+    marketplace: 'Webflow Affiliate Program',
+    url: '#',
+    image: getImage('affiliate-webflow'),
+    tags: ['nextjs', 'tailwind'],
+  },
+  {
+    id: 'aff-premiere',
+    name: 'Adobe Premiere Pro',
+    description: 'Professional video editing software that I use for all my video projects, from shorts to promotional content.',
+    marketplace: 'Adobe Affiliate Program',
+    url: '#',
+    image: getImage('affiliate-premiere'),
+    tags: ['premiere', 'aftereffects'],
+  },
+];
