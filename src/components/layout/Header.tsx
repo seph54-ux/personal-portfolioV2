@@ -1,5 +1,8 @@
+
+
 "use client";
 
+import React from 'react';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
@@ -18,6 +21,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import type { ComponentPropsWithoutRef, ElementRef } from "react";
 
 export function Header() {
   const pathname = usePathname();
@@ -51,7 +55,7 @@ export function Header() {
                 </NavigationMenuItem>
               ) : (
                 <NavigationMenuItem key={link.name}>
-                  <Link href={link.href} passHref>
+                  <Link href={link.href} passHref asChild>
                     <NavigationMenuLink
                       className={cn(
                         navigationMenuTriggerStyle(),
@@ -123,18 +127,16 @@ export function Header() {
   );
 }
 
-const ListItem = (({
-  className,
-  title,
-  children,
-  href,
-  ...props
-}) => {
+const ListItem = React.forwardRef<
+  ElementRef<"a">,
+  ComponentPropsWithoutRef<"a">
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
         <Link
           href={href!}
+          ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
