@@ -5,9 +5,9 @@ import { ImageModal } from '@/components/ImageModal';
 import Image, { StaticImageData } from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-import galaxyUi from '@/app/asset/images/works-ui/Galaxy.webp';
-import kuboCuisineUi from '@/app/asset/images/works-ui/KuboCuisine.webp';
-import risingProUi from '@/app/asset/images/works-ui/Rising-Pro.webp';
+import galaxyUi from '@/app/asset/images/works-ui/Galaxy.png';
+import kuboCuisineUi from '@/app/asset/images/works-ui/KuboCuisine.png';
+import risingProUi from '@/app/asset/images/works-ui/Rising-Pro.png';
 
 const webUiProjects = [
   {
