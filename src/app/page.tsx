@@ -6,9 +6,28 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import galaxyUi from '@/app/asset/images/works-ui/Galaxy.png';
+import codmPoster from '@/app/asset/images/works-poster/CODM_Poster.webp';
 
 export default function Home() {
-  const featuredProjects = projects.slice(0, 3);
+  const featuredProjects = [
+    {
+        id: 'web-ui-1',
+        title: 'Galaxy',
+        category: 'Web UI',
+        description: 'A modern and professional website redesign for Galaxy Cable.',
+        images: [{ imageUrl: galaxyUi, imageHint: 'web ui' }],
+    },
+    {
+        id: 'poster-3',
+        title: 'CODM Poster',
+        category: 'Posters',
+        description: 'A general promotional poster for Call of Duty: Mobile.',
+        images: [{ imageUrl: codmPoster, imageHint: 'poster' }],
+        tech: ['inkscape'],
+    },
+    ...projects.filter(p => p.category === 'Websites/Webapps').slice(0,1)
+  ];
   const latestPost = blogPosts[0];
 
   return (
