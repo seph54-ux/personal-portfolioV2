@@ -35,16 +35,18 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-    { name: 'GitHub', href: '#', icon: 'Github' },
-    { name: 'Facebook', href: '#', icon: 'Facebook' },
-    { name: 'Instagram', href: '#', icon: 'Instagram' },
-    { name: 'Telegram', href: '#', icon: 'Send' },
-    { name: 'WhatsApp', href: '#', icon: 'MessageSquare' },
+    { name: 'GitHub', href: 'https://github.com/seph54-ux', icon: 'Github' },
+    { name: 'Facebook', href: 'https://www.facebook.com/share/19ZF9GsX6R/', icon: 'Facebook' },
+    { name: 'Instagram', href: 'https://www.instagram.com/seph.547?igsh=YWJiNWhyem1vdzM2', icon: 'Instagram' },
+    { name: 'Telegram', href: 't.me/seph547', icon: 'Send' },
+    { name: 'WhatsApp', href: 'https://wa.me/639941186244?text=Hello%20Philjoseph%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!', icon: 'MessageCircle' },
 ];
 
 export const techStack = {
   photoshop: { name: 'Adobe Photoshop', category: 'Design Tool' },
   illustrator: { name: 'Adobe Illustrator', category: 'Design Tool' },
+  canva: { name: 'Canva', category: 'Design Tool' },
+  inkscape: { name: 'Inkscape', category: 'Design Tool' },
   aftereffects: { name: 'Adobe After Effects', category: 'VA Tool' },
   premiere: { name: 'Adobe Premiere Pro', category: 'VA Tool' },
   figma: { name: 'Figma', category: 'Design Tool' },
@@ -57,17 +59,17 @@ export const techStack = {
   genkit: { name: 'Genkit', category: 'Technology' },
 };
 
-export type ProjectCategory = 'Posters' | 'Logos' | 'OBS Overlays' | 'Web UI Design' | 'Video Projects' | 'Websites/Webapps';
+export type ProjectCategory = 'Posters' | 'Logos' | 'OBS Overlays' | 'Web UI' | 'Video Projects' | 'Websites/Webapps';
 
 export type Project = {
   id: string;
   title: string;
   category: ProjectCategory;
   description: string;
-  images: ImagePlaceholder[];
+  images: { imageUrl: any, imageHint: string }[];
   tech?: (keyof typeof techStack)[];
-  variants?: { name: string; images: ImagePlaceholder[] }[];
-  inActionImage?: ImagePlaceholder;
+  variants?: { name: string; images: {imageUrl: any, imageHint: string}[] }[];
+  inActionImage?: { imageUrl: any, imageHint: string };
 };
 
 export const projects: Project[] = [
@@ -133,7 +135,7 @@ export const projects: Project[] = [
   {
     id: 'proj-web-ui-1',
     title: 'Fintech App Dashboard',
-    category: 'Web UI Design',
+    category: 'Web UI',
     description: 'A user-friendly dashboard design for a financial technology application.',
     images: [getImage('web-ui-1')],
     tech: ['figma'],
@@ -141,7 +143,7 @@ export const projects: Project[] = [
    {
     id: 'proj-web-ui-2',
     title: 'Social Mobile App',
-    category: 'Web UI Design',
+    category: 'Web UI',
     description: 'UI/UX design for a new mobile social networking app.',
     images: [getImage('web-ui-2')],
     tech: ['figma'],

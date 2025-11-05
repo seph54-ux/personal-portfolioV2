@@ -30,19 +30,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  webpack: (config, { isServer }) => {
+  webpack: (config) => {
+    // Add rule for video files
     config.module.rules.push({
-      test: /\.(mp4|webm|ogg|swf|ogv)$/,
-      use: {
-        loader: 'file-loader',
-        options: {
-          publicPath: '/_next/static/videos/',
-          outputPath: 'static/videos/',
-          name: '[name].[hash].[ext]',
-        },
+      test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)$/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'static/media/[name].[hash][ext]',
       },
     });
-
+    
     return config;
   },
 };

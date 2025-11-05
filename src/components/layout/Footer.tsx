@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Facebook, Instagram, Send, MessageSquare } from "lucide-react";
+import { Github, Facebook, Instagram, Send, MessageCircle } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { navLinks, socialLinks } from "@/lib/data";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,7 @@ const iconMap: { [key: string]: React.ElementType } = {
   Facebook,
   Instagram,
   Send,
-  MessageSquare,
+  MessageCircle,
 };
 
 export function Footer() {
