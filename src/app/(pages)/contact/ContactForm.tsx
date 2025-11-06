@@ -21,6 +21,7 @@ import { useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import Script from "next/script";
+import { cn } from "@/lib/utils";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 const ACCEPTED_FILE_TYPES = ["application/pdf"];
@@ -43,9 +44,9 @@ const formSchema = z.object({
   message: z.string().min(10, { message: "Message must be at least 10 characters." }),
   attachment: z
     .any()
-    .refine((files) => !files || files.length === 0 || files[0].size <= MAX_FILE_SIZE, `Max file size is 10MB.`)
+    .refine((files) => !files || files.length === 0 || files?.[0]?.size <= MAX_FILE_SIZE, `Max file size is 10MB.`)
     .refine(
-      (files) => !files || files.length === 0 || ACCEPTED_FILE_TYPES.includes(files[0].type),
+      (files) => !files || files.length === 0 || ACCEPTED_FILE_TYPES.includes(files?.[0]?.type),
       "Only .pdf files are accepted."
     )
     .optional(),
@@ -55,6 +56,8 @@ export function ContactForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isCaptchaReady, setIsCaptchaReady] = useState(false);
+  const [attachmentName, setAttachmentName] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -162,6 +165,11 @@ export function ContactForm() {
       });
 
       form.reset();
+      setAttachmentName(null);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = "";
+      }
+
     } catch (error: any) {
       console.error("Submission error:", error);
       
@@ -275,19 +283,39 @@ export function ContactForm() {
           <FormField
             control={form.control}
             name="attachment"
-            render={({ field: { value, onChange, ...fieldProps } }) => (
+            render={({ field: { onChange, ...fieldProps } }) => (
               <FormItem>
                 <FormLabel>Got a project brief? (optional)</FormLabel>
-                <FormControl>
-                  <Input
-                    type="file"
-                    accept=".pdf"
-                    onChange={(e) => {
-                      onChange(e.target.files);
-                    }}
-                    {...fieldProps}
-                  />
-                </FormControl>
+                <div className="flex items-center gap-4">
+                  <FormControl>
+                    <>
+                      <Input
+                        type="file"
+                        accept=".pdf"
+                        onChange={(e) => {
+                          onChange(e.target.files);
+                          setAttachmentName(e.target.files?.[0]?.name ?? null);
+                        }}
+                        className="hidden"
+                        id="attachment-upload"
+                        ref={fileInputRef}
+                        {...fieldProps}
+                      />
+                      <label 
+                        htmlFor="attachment-upload" 
+                        className={cn(
+                          "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+                          "h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
+                          )}
+                      >
+                        Choose File
+                      </label>
+                    </>
+                  </FormControl>
+                  <span className="text-sm text-muted-foreground">
+                    {attachmentName || "No file chosen"}
+                  </span>
+                </div>
                 <FormDescription>PDF files only, max 10MB.</FormDescription>
                 <FormMessage />
               </FormItem>
@@ -327,3 +355,5 @@ export function ContactForm() {
     </>
   );
 }
+
+    
