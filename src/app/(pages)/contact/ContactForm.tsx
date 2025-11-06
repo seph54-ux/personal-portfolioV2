@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -293,13 +294,13 @@ export function ContactForm() {
             )}
           />
 
-          <div>
-            <Button type="submit" className="w-full md:w-auto" disabled={isSubmitting || !isCaptchaReady}>
+          <div className="flex flex-col items-center">
+            <Button type="submit" className="w-full md:w-auto px-12" disabled={isSubmitting || !isCaptchaReady}>
               {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
-            {!isCaptchaReady && <p className="text-sm text-muted-foreground mt-2">Loading security check...</p>}
-            <p className="text-xs text-muted-foreground mt-4">
+            {!isCaptchaReady && <p className="text-sm text-muted-foreground mt-2 text-center">Loading security check...</p>}
+            <p className="text-xs text-muted-foreground mt-4 text-center">
               This site is protected by reCAPTCHA and the Google{" "}
               <a
                 href="https://policies.google.com/privacy"
