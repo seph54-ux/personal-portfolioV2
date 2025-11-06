@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import { PageHeader } from '@/components/PageHeader';
-import { techStack, getImage } from '@/lib/data';
+import { techStack } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function AboutPage() {
-  const aboutImage = getImage('about-me');
   const designTools = Object.values(techStack).filter(t => t.category === 'Design Tool');
   const vaTools = Object.values(techStack).filter(t => t.category === 'VA Tool' || t.category === 'Tool');
   const frameworks = Object.values(techStack).filter(t => t.category === 'Framework' || t.category === 'Language');
@@ -29,11 +28,10 @@ export default function AboutPage() {
         <div className="md:col-span-1 flex flex-col items-center gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-card">
             <Image
-              src={aboutImage.imageUrl}
+              src={'/src/app/asset/images/profile-image.png'}
               alt="A portrait of Philjoseph Orlina"
               fill
               className="object-cover"
-              data-ai-hint={aboutImage.imageHint}
               priority
             />
           </div>

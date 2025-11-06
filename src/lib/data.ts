@@ -70,6 +70,8 @@ export type Project = {
   tech?: (keyof typeof techStack)[];
   variants?: { name: string; images: {imageUrl: any, imageHint: string}[] }[];
   inActionImage?: { imageUrl: any, imageHint: string };
+  liveDemoUrl?: string;
+  githubUrl?: string;
 };
 
 export const projects: Project[] = [
@@ -163,6 +165,8 @@ export const projects: Project[] = [
     description: 'A full-featured e-commerce website for an independent fashion brand.',
     images: [getImage('website-1')],
     tech: ['react', 'nextjs', 'tailwind', 'firebase'],
+    liveDemoUrl: '#',
+    githubUrl: '#',
   },
   {
     id: 'proj-website-2',
@@ -171,6 +175,8 @@ export const projects: Project[] = [
     description: 'A visually-driven portfolio site for a professional photographer.',
     images: [getImage('website-2')],
     tech: ['nextjs', 'typescript', 'tailwind'],
+    liveDemoUrl: '#',
+    githubUrl: '#',
   },
 ];
 

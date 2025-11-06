@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
-import { blogPosts, projects } from "@/lib/data";
+import { blogPosts } from "@/lib/data";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import galaxyUi from '@/app/asset/images/works-ui/Galaxy.png';
 import codmPoster from '@/app/asset/images/works-poster/CODM_Poster.webp';
+import mlMainPoster1 from '@/app/asset/images/works-poster/ML main poster1.webp';
 
 export default function Home() {
   const featuredProjects = [
@@ -17,6 +18,7 @@ export default function Home() {
         category: 'Web UI',
         description: 'A modern and professional website redesign for Galaxy Cable.',
         images: [{ imageUrl: galaxyUi, imageHint: 'web ui' }],
+        tech: ['figma'],
     },
     {
         id: 'poster-3',
@@ -26,7 +28,14 @@ export default function Home() {
         images: [{ imageUrl: codmPoster, imageHint: 'poster' }],
         tech: ['inkscape'],
     },
-    ...projects.filter(p => p.category === 'Websites/Webapps').slice(0,1)
+    {
+        id: 'poster-4',
+        title: 'ML Main Poster',
+        category: 'Posters',
+        description: 'The main promotional poster for a Mobile Legends: Bang Bang tournament.',
+        images: [{ imageUrl: mlMainPoster1, imageHint: 'poster' }],
+        tech: ['canva'],
+    },
   ];
   const latestPost = blogPosts[0];
 
