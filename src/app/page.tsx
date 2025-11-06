@@ -1,42 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
-import { blogPosts } from "@/lib/data";
+import { blogPosts, projects } from "@/lib/data";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import galaxyUi from '@/app/asset/images/works-ui/Galaxy.png';
-import codmPoster from '@/app/asset/images/works-poster/CODM_Poster.webp';
-import mlMainPoster1 from '@/app/asset/images/works-poster/ML main poster1.webp';
+import { webUiProjects, posterProjects } from "@/lib/websites-data";
+
 
 export default function Home() {
+  // Use the imported project data
   const featuredProjects = [
-    {
-        id: 'web-ui-1',
-        title: 'Galaxy',
-        category: 'Web UI',
-        description: 'A modern and professional website redesign for Galaxy Cable.',
-        images: [{ imageUrl: galaxyUi, imageHint: 'web ui' }],
-        tech: ['figma'],
-    },
-    {
-        id: 'poster-3',
-        title: 'CODM Poster',
-        category: 'Posters',
-        description: 'A general promotional poster for Call of Duty: Mobile.',
-        images: [{ imageUrl: codmPoster, imageHint: 'poster' }],
-        tech: ['inkscape'],
-    },
-    {
-        id: 'poster-4',
-        title: 'ML Main Poster',
-        category: 'Posters',
-        description: 'The main promotional poster for a Mobile Legends: Bang Bang tournament.',
-        images: [{ imageUrl: mlMainPoster1, imageHint: 'poster' }],
-        tech: ['canva'],
-    },
-  ];
+    webUiProjects.find(p => p.id === 'web-ui-1'),
+    posterProjects.find(p => p.id === 'poster-3'),
+    posterProjects.find(p => p.id === 'poster-4'),
+  ].filter(Boolean); // Filter out any undefined results
+  
   const latestPost = blogPosts[0];
 
   return (
@@ -67,7 +47,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredProjects.map((project, index) => (
-            <ProjectCard 
+            project && <ProjectCard 
               key={project.id} 
               project={project} 
               className="animate-fade-in"

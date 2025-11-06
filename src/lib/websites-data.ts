@@ -9,6 +9,122 @@ import hopeangelsWeb from '@/app/asset/images/works-web/hopeangels-web.webp';
 import imgcleanerWeb from '@/app/asset/images/works-web/imgcleaner-web.webp';
 import inoutcleaningWeb from '@/app/asset/images/works-web/inoutcleaning-web.webp';
 import pydocgenWeb from '@/app/asset/images/works-web/pydocgen-web.webp';
+import galaxyUi from '@/app/asset/images/works-ui/Galaxy.png';
+import kuboCuisineUi from '@/app/asset/images/works-ui/KuboCuisine.png';
+import risingProUi from '@/app/asset/images/works-ui/Rising-Pro.png';
+import codmLogoPoster from '@/app/asset/images/works-poster/CODM Logo_Poster.webp';
+import codmMainPoster from '@/app/asset/images/works-poster/CODM Main_Poster.webp';
+import codmPoster from '@/app/asset/images/works-poster/CODM_Poster.webp';
+import mlMainPoster1 from '@/app/asset/images/works-poster/ML main poster1.webp';
+import mlBracket from '@/app/asset/images/works-poster/ML_Bracket.webp';
+import mvpTemplate from '@/app/asset/images/works-poster/MVP TEMPLATE.webp';
+import postmatchResults from '@/app/asset/images/works-poster/Postmatch results.webp';
+import rpBanner from '@/app/asset/images/works-poster/RP banner.webp';
+import xmasXtremePoster from '@/app/asset/images/works-poster/XmasXtreme POSTER.webp';
+
+
+export const posterProjects: Project[] = [
+  {
+    id: 'poster-1',
+    title: 'CODM Logo Poster',
+    category: 'Posters',
+    description: 'A poster featuring the Call of Duty: Mobile logo, designed with a modern and edgy style.',
+    images: [{ imageUrl: codmLogoPoster, imageHint: 'poster' }],
+    tech: ['pixellab','canva'],
+  },
+  {
+    id: 'poster-2',
+    title: 'CODM Main Poster',
+    category: 'Posters',
+    description: 'The main promotional poster for a Call of Duty: Mobile tournament.',
+    images: [{ imageUrl: codmMainPoster, imageHint: 'poster' }],
+    tech: ['pixellab','canva'],
+  },
+  {
+    id: 'poster-3',
+    title: 'CODM Poster',
+    category: 'Posters',
+    description: 'A general promotional poster for Call of Duty: Mobile.',
+    images: [{ imageUrl: codmPoster, imageHint: 'poster' }],
+    tech: ['canva'],
+  },
+  {
+    id: 'poster-4',
+    title: 'ML Main Poster',
+    category: 'Posters',
+    description: 'The main promotional poster for a Mobile Legends: Bang Bang tournament.',
+    images: [{ imageUrl: mlMainPoster1, imageHint: 'poster' }],
+    tech: ['inkscape'],
+  },
+  {
+    id: 'poster-5',
+    title: 'ML Bracket',
+    category: 'Posters',
+    description: 'A tournament bracket for a Mobile Legends: Bang Bang competition.',
+    images: [{ imageUrl: mlBracket, imageHint: 'poster' }],
+    tech: ['inkscape'],
+  },
+  {
+    id: 'poster-6',
+    title: 'MVP Template',
+    category: 'Posters',
+    description: 'A template for showcasing the Most Valuable Player of a match.',
+    images: [{ imageUrl: mvpTemplate, imageHint: 'poster' }],
+    tech: ['canva'],
+  },
+  {
+    id: 'poster-7',
+    title: 'Postmatch Results',
+    category: 'Posters',
+    description: 'A template for displaying post-match results.',
+    images: [{ imageUrl: postmatchResults, imageHint: 'poster' }],
+    tech: ['canva'],
+  },
+  {
+    id: 'poster-8',
+    title: 'RP Banner',
+    category: 'Posters',
+    description: 'A banner for the Rising Pro team.',
+    images: [{ imageUrl: rpBanner, imageHint: 'poster' }],
+    tech: ['inkscape'],
+  },
+  {
+    id: 'poster-9',
+    title: 'XmasXtreme Poster',
+    category: 'Posters',
+    description: 'A Christmas-themed tournament poster.',
+    images: [{ imageUrl: xmasXtremePoster, imageHint: 'poster' }],
+    tech: ['inkscape'],
+  },
+];
+
+
+export const webUiProjects: Project[] = [
+  {
+    id: 'web-ui-1',
+    title: 'Galaxy',
+    category: 'Web UI',
+    description: 'A modern and professional website redesign for Galaxy Cable.',
+    images: [{imageUrl: galaxyUi, imageHint: 'web ui'}],
+    tech: ['canva'],
+  },
+  {
+    id: 'web-ui-2',
+    title: 'KuboCuisine',
+    category: 'Web UI',
+    description: 'A warm and inviting UI design for a modern Filipino restaurant.',
+    images: [{imageUrl: kuboCuisineUi, imageHint: 'web ui'}],
+    tech: ['canva'],
+  },
+  {
+    id: 'web-ui-3',
+    title: 'Rising Pro',
+    category: 'Web UI',
+    description: 'A professional and clean UI design for an esports organization website.',
+    images: [{imageUrl: risingProUi, imageHint: 'web ui'}],
+    tech: ['inkscape'],
+  },
+];
 
 export const websiteProjects: Project[] = [
   {

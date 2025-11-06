@@ -4,34 +4,8 @@ import { useState } from 'react';
 import { ImageModal } from '@/components/ImageModal';
 import Image, { StaticImageData } from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-
-import galaxyUi from '@/app/asset/images/works-ui/Galaxy.png';
-import kuboCuisineUi from '@/app/asset/images/works-ui/KuboCuisine.png';
-import risingProUi from '@/app/asset/images/works-ui/Rising-Pro.png';
-
-const webUiProjects = [
-  {
-    id: 'web-ui-1',
-    title: 'Galaxy',
-    description: 'A modern and professional website redesign for Galaxy Cable.',
-    image: galaxyUi,
-    tech: ['canva'],
-  },
-  {
-    id: 'web-ui-2',
-    title: 'KuboCuisine',
-    description: 'A warm and inviting UI design for a modern Filipino restaurant.',
-    image: kuboCuisineUi,
-    tech: ['canva'],
-  },
-  {
-    id: 'web-ui-3',
-    title: 'Rising Pro',
-    description: 'A professional and clean UI design for an esports organization website.',
-    image: risingProUi,
-    tech: ['inkscape'],
-  },
-];
+import type { Project } from '@/lib/data';
+import { webUiProjects } from '@/lib/websites-data';
 
 export default function WebUiPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -55,11 +29,11 @@ export default function WebUiPage() {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {webUiProjects.map((project, index) => (
-          <div key={project.id} onClick={() => openModal(project.image, project.title)}>
+          <div key={project.id} onClick={() => openModal(project.images[0].imageUrl, project.title)}>
             <Card className="overflow-hidden group glassmorphic transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
               <div className="overflow-hidden aspect-video">
                 <Image
-                  src={project.image}
+                  src={project.images[0].imageUrl}
                   alt={project.title}
                   width={600}
                   height={400}

@@ -1,6 +1,6 @@
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { websiteProjects } from './websites-data';
+import { websiteProjects, webUiProjects, posterProjects as allPosterProjects } from './websites-data';
 
 export const getImage = (id: string): ImagePlaceholder => {
   const img = PlaceHolderImages.find((img) => img.id === id);
@@ -82,7 +82,7 @@ export type Project = {
   githubUrl?: string;
 };
 
-export const projects: Project[] = [
+const placeholderProjects: Project[] = [
   {
     id: 'proj-poster-1',
     title: 'Music Fest 2024',
@@ -166,9 +166,16 @@ export const projects: Project[] = [
     images: [getImage('video-1')],
     tech: ['premiere', 'aftereffects'],
   },
-  ...websiteProjects,
 ];
 
+export const projects: Project[] = [
+  ...placeholderProjects,
+  ...websiteProjects,
+  ...webUiProjects,
+  ...allPosterProjects
+];
+
+export const posterProjects: Project[] = allPosterProjects;
 
 export type Blog = {
   slug: string;
