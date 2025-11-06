@@ -22,7 +22,7 @@ const posterProjects = [
     category: 'Posters',
     description: 'A poster featuring the Call of Duty: Mobile logo, designed with a modern and edgy style.',
     images: [{ imageUrl: codmLogoPoster, imageHint: 'poster' }],
-    tech: ['canva'],
+    tech: ['pixellab','canva'],
   },
   {
     id: 'poster-2',
@@ -30,7 +30,7 @@ const posterProjects = [
     category: 'Posters',
     description: 'The main promotional poster for a Call of Duty: Mobile tournament.',
     images: [{ imageUrl: codmMainPoster, imageHint: 'poster' }],
-    tech: ['canva'],
+    tech: ['pixellab','canva'],
   },
   {
     id: 'poster-3',
@@ -38,7 +38,7 @@ const posterProjects = [
     category: 'Posters',
     description: 'A general promotional poster for Call of Duty: Mobile.',
     images: [{ imageUrl: codmPoster, imageHint: 'poster' }],
-    tech: ['inkscape'],
+    tech: ['canva'],
   },
   {
     id: 'poster-4',
@@ -46,7 +46,7 @@ const posterProjects = [
     category: 'Posters',
     description: 'The main promotional poster for a Mobile Legends: Bang Bang tournament.',
     images: [{ imageUrl: mlMainPoster1, imageHint: 'poster' }],
-    tech: ['canva'],
+    tech: ['inkscape'],
   },
   {
     id: 'poster-5',
@@ -70,7 +70,7 @@ const posterProjects = [
     category: 'Posters',
     description: 'A template for displaying post-match results.',
     images: [{ imageUrl: postmatchResults, imageHint: 'poster' }],
-    tech: ['inkscape'],
+    tech: ['canva'],
   },
   {
     id: 'poster-8',
@@ -78,7 +78,7 @@ const posterProjects = [
     category: 'Posters',
     description: 'A banner for the Rising Pro team.',
     images: [{ imageUrl: rpBanner, imageHint: 'poster' }],
-    tech: ['canva'],
+    tech: ['inkscape'],
   },
   {
     id: 'poster-9',

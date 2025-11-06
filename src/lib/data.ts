@@ -46,6 +46,7 @@ export const techStack = {
   photoshop: { name: 'Adobe Photoshop', category: 'Design Tool' },
   illustrator: { name: 'Adobe Illustrator', category: 'Design Tool' },
   canva: { name: 'Canva', category: 'Design Tool' },
+  pixellab: { name: 'Pixellab', category: 'Design Tool' },
   inkscape: { name: 'Inkscape', category: 'Design Tool' },
   aftereffects: { name: 'Adobe After Effects', category: 'VA Tool' },
   premiere: { name: 'Adobe Premiere Pro', category: 'VA Tool' },
