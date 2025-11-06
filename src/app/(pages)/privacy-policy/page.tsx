@@ -1,6 +1,15 @@
+
+'use client';
 import { PageHeader } from '@/components/PageHeader';
+import { useState, useEffect } from 'react';
 
 export default function PrivacyPolicyPage() {
+  const [date, setDate] = useState('');
+
+  useEffect(() => {
+    setDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }))
+  }, [])
+
   return (
     <>
       <PageHeader
@@ -53,7 +62,7 @@ export default function PrivacyPolicyPage() {
           If you have questions or comments about this Privacy Policy, please contact us using the contact form on our website.
         </p>
 
-        <p><small>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</small></p>
+        {date && <p><small>Last updated: {date}</small></p>}
       </div>
     </>
   );

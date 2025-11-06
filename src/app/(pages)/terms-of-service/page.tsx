@@ -1,6 +1,15 @@
+
+'use client';
 import { PageHeader } from '@/components/PageHeader';
+import { useState, useEffect } from 'react';
 
 export default function TermsOfServicePage() {
+  const [date, setDate] = useState('');
+
+  useEffect(() => {
+    setDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }))
+  }, [])
+
   return (
     <>
       <PageHeader
@@ -48,7 +57,7 @@ export default function TermsOfServicePage() {
           If you have any questions about these Terms, please contact us through the contact form available on the Site.
         </p>
 
-        <p><small>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</small></p>
+        {date && <p><small>Last updated: {date}</small></p>}
       </div>
     </>
   );
