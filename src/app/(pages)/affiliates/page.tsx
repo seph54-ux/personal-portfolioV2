@@ -1,5 +1,5 @@
 import { PageHeader } from "@/components/PageHeader";
-import { affiliateProducts } from "@/lib/data";
+import { affiliateProducts, techStack } from "@/lib/data";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -11,8 +11,8 @@ export default function AffiliatesPage() {
   return (
     <>
       <PageHeader
-        title="Affiliate Showcase"
-        subtitle="A curated list of tools, software, and resources I use and recommend. By using these links, you help support my work."
+        title="My Setup & Gear"
+        subtitle="A curated list of hardware and peripherals I use and recommend for productivity, design, and gaming."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {affiliateProducts.map((product, index) => (
@@ -32,7 +32,7 @@ export default function AffiliatesPage() {
                 {product.name}
               </CardTitle>
               <CardDescription className="text-sm !mt-1">
-                From <span className="font-semibold">{product.marketplace}</span>
+                Via <span className="font-semibold">{product.marketplace}</span>
               </CardDescription>
             </CardHeader>
             <CardContent className="flex-grow">
@@ -40,13 +40,14 @@ export default function AffiliatesPage() {
             </CardContent>
             <CardFooter className="flex justify-between items-center">
               <div className="flex flex-wrap gap-2">
-                {product.tags.map(tag => (
-                   <Badge key={tag} variant="secondary">{tag}</Badge>
-                ))}
+                {product.tags.map(tagKey => {
+                    const tag = techStack[tagKey];
+                    return tag ? <Badge key={tagKey} variant="secondary">{tag.name}</Badge> : null;
+                })}
               </div>
               <Button variant="ghost" size="sm" asChild>
                 <Link href={product.url} target="_blank" rel="noopener noreferrer">
-                  Get It <ArrowUpRight className="ml-1 h-4 w-4" />
+                  Find It <ArrowUpRight className="ml-1 h-4 w-4" />
                 </Link>
               </Button>
             </CardFooter>
@@ -59,3 +60,5 @@ export default function AffiliatesPage() {
     </>
   );
 }
+
+    

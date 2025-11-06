@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
-import { blogPosts, projects } from "@/lib/data";
+import { blogPosts, techStack } from "@/lib/data";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
@@ -10,13 +10,12 @@ import { webUiProjects, posterProjects } from "@/lib/websites-data";
 
 
 export default function Home() {
-  // Use the imported project data
   const featuredProjects = [
     webUiProjects.find(p => p.id === 'web-ui-1'),
     posterProjects.find(p => p.id === 'poster-3'),
     posterProjects.find(p => p.id === 'poster-4'),
-  ].filter(Boolean); // Filter out any undefined results
-  
+  ].filter(p => p !== undefined) as (typeof webUiProjects[number] | typeof posterProjects[number])[];
+
   const latestPost = blogPosts[0];
 
   return (
@@ -104,11 +103,11 @@ export default function Home() {
                     <div className="mx-auto bg-primary/10 text-primary w-16 h-16 rounded-full flex items-center justify-center mb-4">
                         <Star className="w-8 h-8" />
                     </div>
-                    <CardTitle className="font-headline text-3xl">My Recommended Tools</CardTitle>
+                    <CardTitle className="font-headline text-3xl">My Recommended Gear</CardTitle>
                  </CardHeader>
                  <CardContent>
                     <p className="text-muted-foreground mb-6">
-                        Looking for the best tools for your projects? Here's a list of what I use and recommend. Your support through these affiliate links is much appreciated!
+                        Looking for the best peripherals for your setup? Here's a list of what I use and recommend. Your support through these affiliate links is much appreciated!
                     </p>
                     <Button asChild>
                         <Link href="/affiliates">See My Gear</Link>
@@ -131,3 +130,5 @@ export default function Home() {
     </div>
   );
 }
+
+    

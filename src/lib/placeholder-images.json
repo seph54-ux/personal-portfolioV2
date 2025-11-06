@@ -67,34 +67,10 @@
       "imageHint": "clean stream"
     },
     {
-      "id": "web-ui-1",
-      "description": "Dashboard UI for a finance app",
-      "imageUrl": "https://images.unsplash.com/photo-1622816188655-9e99d5197616?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3NjIxNTExNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dashboard ui"
-    },
-    {
-      "id": "web-ui-2",
-      "description": "Mobile app UI for a social network",
-      "imageUrl": "https://images.unsplash.com/photo-1542641728-6ca359b085f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzYyMTU3Mzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mobile app"
-    },
-    {
       "id": "video-1",
       "description": "Promotional video for a tech startup",
       "imageUrl": "https://images.unsplash.com/photo-1696041760912-a06e1f747850?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9tbyUyMHZpZGVvfGVufDB8fHx8MTc2MjIyMzgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "promo video"
-    },
-    {
-      "id": "website-1",
-      "description": "E-commerce website for a fashion brand",
-      "imageUrl": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDB8fHx8MTc2MjE1MjcwOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ecommerce website"
-    },
-    {
-      "id": "website-2",
-      "description": "Portfolio website for a photographer",
-      "imageUrl": "https://images.unsplash.com/photo-1641444473031-75aa19c003a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9ydGZvbGlvJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NjIxNTQ3MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "portfolio website"
     },
     {
       "id": "blog-1",
@@ -127,28 +103,28 @@
       "imageHint": "portrait person"
     },
     {
-      "id": "affiliate-figma",
-      "description": "Figma logo",
-      "imageUrl": "https://images.unsplash.com/photo-1659509342258-36b5d7797237?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxGaWdtYSUyMGxvZ298ZW58MHx8fHwxNzYyMjI3MDgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Figma logo"
+      "id": "affiliate-keyboard",
+      "description": "A mechanical keyboard on a desk",
+      "imageUrl": "https://images.unsplash.com/photo-1618384887924-2c84b162c69c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWNoYW5pY2FsJTIwa2V5Ym9hcmR8ZW58MHx8fHwxNzYyMzkzMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mechanical keyboard"
     },
     {
-      "id": "affiliate-photoshop",
-      "description": "Adobe Photoshop logo",
-      "imageUrl": "https://images.unsplash.com/photo-1740174459699-487aec1f7bc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxQaG90b3Nob3AlMjBsb2dvfGVufDB8fHx8MTc2MjIyNzA4MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Photoshop logo"
+      "id": "affiliate-mouse",
+      "description": "A sleek gaming mouse",
+      "imageUrl": "https://images.unsplash.com/photo-1615663249852-a56d993d0774?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBtb3VzZXxlbnwwfHx8fDE3NjIzOTMyNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gaming mouse"
     },
     {
-      "id": "affiliate-webflow",
-      "description": "Webflow logo",
-      "imageUrl": "https://images.unsplash.com/photo-1692976000145-f3e19074781e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxXZWJmbG93JTIwbG9nb3xlbnwwfHx8fDE3NjIyMjcwODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Webflow logo"
+      "id": "affiliate-monitor",
+      "description": "A high-resolution computer monitor",
+      "imageUrl": "https://images.unsplash.com/photo-1587376025385-3746c879339e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMG1vbml0b3J8ZW58MHx8fHwxNzYyMzkzMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "computer monitor"
     },
     {
-      "id": "affiliate-premiere",
-      "description": "Adobe Premiere Pro logo",
-      "imageUrl": "https://images.unsplash.com/photo-1669217541686-b492ea32c548?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxQcmVtaWVyZSUyMGxvZ298ZW58MHx8fHwxNzYyMjI3MDgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Premiere logo"
+      "id": "affiliate-mic",
+      "description": "A professional streaming microphone",
+      "imageUrl": "https://images.unsplash.com/photo-1590602848950-2f26c713390d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHJlYW1pbmclMjBtaWNyb3Bob25lfGVufDB8fHx8MTc2MjM5MzI2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "streaming microphone"
     }
   ]
 }
