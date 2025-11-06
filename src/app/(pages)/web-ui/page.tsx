@@ -15,18 +15,21 @@ const webUiProjects = [
     title: 'Galaxy',
     description: 'A modern and professional website redesign for Galaxy Cable.',
     image: galaxyUi,
+    tech: ['canva'],
   },
   {
     id: 'web-ui-2',
     title: 'KuboCuisine',
     description: 'A warm and inviting UI design for a modern Filipino restaurant.',
     image: kuboCuisineUi,
+    tech: ['canva'],
   },
   {
     id: 'web-ui-3',
     title: 'Rising Pro',
     description: 'A professional and clean UI design for an esports organization website.',
     image: risingProUi,
+    tech: ['inkscape'],
   },
 ];
 

@@ -1,5 +1,6 @@
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { websiteProjects } from './websites-data';
 
 export const getImage = (id: string): ImagePlaceholder => {
   const img = PlaceHolderImages.find((img) => img.id === id);
@@ -58,6 +59,12 @@ export const techStack = {
   typescript: { name: 'TypeScript', category: 'Language' },
   firebase: { name: 'Firebase', category: 'Technology' },
   genkit: { name: 'Genkit', category: 'Technology' },
+  python: { name: 'Python', category: 'Language' },
+  flask: { name: 'Flask', category: 'Framework'},
+  vite: { name: 'Vite', category: 'Framework' },
+  html: {name: 'HTML', category: 'Language'},
+  css: {name: 'CSS', category: 'Language'},
+  javascript: {name: 'JavaScript', category: 'Language'},
 };
 
 export type ProjectCategory = 'Posters' | 'Logos' | 'OBS Overlays' | 'Web UI' | 'Video Projects' | 'Websites/Webapps';
@@ -159,26 +166,7 @@ export const projects: Project[] = [
     images: [getImage('video-1')],
     tech: ['premiere', 'aftereffects'],
   },
-  {
-    id: 'proj-website-1',
-    title: 'Fashion E-commerce Site',
-    category: 'Websites/Webapps',
-    description: 'A full-featured e-commerce website for an independent fashion brand.',
-    images: [getImage('website-1')],
-    tech: ['react', 'nextjs', 'tailwind', 'firebase'],
-    liveDemoUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: 'proj-website-2',
-    title: 'Photographer Portfolio',
-    category: 'Websites/Webapps',
-    description: 'A visually-driven portfolio site for a professional photographer.',
-    images: [getImage('website-2')],
-    tech: ['nextjs', 'typescript', 'tailwind'],
-    liveDemoUrl: '#',
-    githubUrl: '#',
-  },
+  ...websiteProjects,
 ];
 
 

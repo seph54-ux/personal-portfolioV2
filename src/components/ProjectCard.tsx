@@ -19,15 +19,27 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
   return (
     <Card className={cn("overflow-hidden group glassmorphic transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col", className)}>
         {image && (
-          <div className="overflow-hidden aspect-video">
+          <div className="overflow-hidden aspect-video relative">
             <Image
               src={image.imageUrl}
               alt={project.title}
               width={600}
               height={400}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 filter blur-lg"
               data-ai-hint={image.imageHint}
             />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Image
+                src={image.imageUrl}
+                alt={project.title}
+                width={400}
+                height={250}
+                className="w-3/4 h-3/4 object-contain transition-transform duration-500 group-hover:scale-105 shadow-2xl"
+                style={{
+                  boxShadow: '0 0 20px 5px hsl(var(--primary))',
+                }}
+              />
+            </div>
           </div>
         )}
       <CardHeader>

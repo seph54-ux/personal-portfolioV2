@@ -13,9 +13,9 @@ interface VideoModalProps {
 export function VideoModal({ isOpen, onClose, videoSrc, title }: VideoModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="relative max-w-4xl w-full h-5/6 p-6 bg-background rounded-lg shadow-lg flex items-center justify-center">
-        <div className="relative w-full h-full">
-          <video src={videoSrc} title={title} controls className="w-full h-full rounded-lg" />
+      <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-0">
+        <div className="aspect-video">
+          <video src={videoSrc} title={title} controls autoPlay className="w-full h-full rounded-lg" />
         </div>
       </DialogContent>
     </Dialog>
