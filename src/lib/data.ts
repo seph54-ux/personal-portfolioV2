@@ -1,4 +1,3 @@
-
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { websiteProjects, webUiProjects, posterProjects as allPosterProjects } from './websites-data';
@@ -51,8 +50,6 @@ export const techStack = {
   inkscape: { name: 'Inkscape', category: 'Design Tool' },
   davinci: { name: 'DaVinci Resolve', category: 'VA Tool' },
   kinemaster: { name: 'KineMaster', category: 'VA Tool' },
-  capcut: { name: 'Capcut', category: 'VA Tool' },
-  powerdirector: { name: 'PowerDirector', category: 'VA Tool' },
   figma: { name: 'Figma', category: 'Design Tool' },
   obs: { name: 'OBS Studio', category: 'Tool' },
   react: { name: 'React', category: 'Framework' },
@@ -67,6 +64,8 @@ export const techStack = {
   html: {name: 'HTML', category: 'Language'},
   css: {name: 'CSS', category: 'Language'},
   javascript: {name: 'JavaScript', category: 'Language'},
+  gaming: { name: 'Gaming', category: 'Hobby'},
+  streaming: { name: 'Streaming', category: 'Hobby'},
 };
 
 export type ProjectCategory = 'Posters' | 'Logos' | 'OBS Overlays' | 'Web UI' | 'Video Projects' | 'Websites/Webapps';
@@ -91,7 +90,7 @@ const placeholderProjects: Project[] = [
     category: 'Posters',
     description: 'A vibrant and energetic poster designed for a summer music festival.',
     images: [getImage('poster-1')],
-    tech: ['photoshop'],
+    tech: ['photoshop', ],
   },
   {
     id: 'proj-poster-2',
@@ -99,7 +98,7 @@ const placeholderProjects: Project[] = [
     category: 'Posters',
     description: 'A poster with a vintage aesthetic for a classic movie screening event.',
     images: [getImage('poster-2')],
-    tech: ['inkscape'],
+    tech: [],
   },
   {
     id: 'proj-logo-1',
@@ -112,7 +111,7 @@ const placeholderProjects: Project[] = [
       { name: 'Monochrome', images: [getImage('logo-1-variant-1')] },
       { name: 'Icon Only', images: [getImage('logo-1-variant-2')] },
     ],
-    tech: ['inkscape', 'figma'],
+    tech: ['figma'],
   },
   {
     id: 'proj-logo-2',
@@ -124,7 +123,7 @@ const placeholderProjects: Project[] = [
       { name: 'Primary Logo', images: [getImage('logo-2-main')] },
       { name: 'Stamp Version', images: [getImage('logo-2-variant-1')] },
     ],
-    tech: ['inkscape'],
+    tech: [],
   },
   {
     id: 'proj-obs-1',
@@ -139,7 +138,7 @@ const placeholderProjects: Project[] = [
     id: 'proj-obs-2',
     title: 'Clean Minimalist Pack',
     category: 'OBS Overlays',
-    description: 'A clean and minimalist overlay pack for a professional streaming setup.',
+    description: 'A clean and minimalist overlay pack for a professional str.',
     images: [getImage('obs-2-asset')],
     inActionImage: getImage('obs-2-in-action'),
     tech: ['figma', 'obs'],
@@ -202,9 +201,6 @@ export const blogPosts: Blog[] = [
     content: '<p>The Daily Grind had been a local favorite for 15 years, but its branding felt dated. The goal was to refresh the visual identity without alienating its loyal customer base.</p><h3>The Process</h3><p>We started with a deep dive into the cafe\'s history and its customers. We conducted surveys and interviews to understand what people loved about The Daily Grind. The key takeaway was the sense of community and comfort...</p>',
   },
 ];
-
-export type AffiliateProductTag = 'gaming' | 'productivity' | 'office-setup' | 'streaming' | 'design';
-
 export type AffiliateProduct = {
   id: string;
   name: string;
@@ -219,11 +215,11 @@ export const affiliateProducts: AffiliateProduct[] = [
   {
     id: 'aff-keyboard',
     name: 'Mechanical Keyboard',
-    description: 'A tactile and responsive keyboard that improves typing speed and gaming performance. A must-have for any serious desk setup.',
+    description: 'A tactile and responsive keyboard that improves typing speed and gaming performance. A must-have for any seriou.',
     marketplace: 'Amazon Associates',
     url: '#',
     image: getImage('affiliate-keyboard'),
-    tags: ['react', 'nextjs'],
+    tags: ['gaming'],
   },
   {
     id: 'aff-mouse',
@@ -232,7 +228,7 @@ export const affiliateProducts: AffiliateProduct[] = [
     marketplace: 'Lazada Affiliates',
     url: '#',
     image: getImage('affiliate-mouse'),
-    tags: ['react'],
+    tags: ['gaming', 'streaming'],
   },
   {
     id: 'aff-monitor',
@@ -241,7 +237,7 @@ export const affiliateProducts: AffiliateProduct[] = [
     marketplace: 'Shopee Affiliate Program',
     url: '#',
     image: getImage('affiliate-monitor'),
-    tags: ['figma', 'photoshop'],
+    tags: ['gaming', 'streaming'],
   },
   {
     id: 'aff-mic',
@@ -250,6 +246,8 @@ export const affiliateProducts: AffiliateProduct[] = [
     marketplace: 'Amazon Associates',
     url: '#',
     image: getImage('affiliate-mic'),
-    tags: ['obs'],
+    tags: ['streaming'],
   },
 ];
+
+    
