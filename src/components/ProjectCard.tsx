@@ -31,8 +31,7 @@ export function ProjectCard({ project, className, style }: ProjectCardProps) {
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               data-ai-hint={image.imageHint}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/60 transition-colors"></div>
-             <div className="absolute bottom-0 left-0 p-4">
+             <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/60 to-transparent w-full">
                 <h3 className="font-headline text-lg font-bold text-white shadow-lg">{project.title}</h3>
             </div>
           </div>
