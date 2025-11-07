@@ -21,23 +21,24 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 w-full h-full z-[-1]">
+      <div className="relative">
+        <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden">
           <iframe
               src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
               width="100%"
               height="100%"
               style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              border: 0,
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100vh',
+                border: 0,
               }}
               allow="fullscreen"
           ></iframe>
         </div>
+
         <div className="container mx-auto px-4 relative z-10">
           {/* Hero Section */}
           <section className="text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
@@ -86,7 +87,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 bg-background">
         {/* VA and Blog Section */}
         <section className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in" style={{animationDelay: '0.4s'}}>
