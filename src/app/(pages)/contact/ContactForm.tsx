@@ -287,30 +287,28 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Got a project brief? (optional)</FormLabel>
                 <div className="flex items-center gap-4">
+                  <label 
+                    htmlFor="attachment-upload" 
+                    className={cn(
+                      "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+                      "h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
+                      )}
+                  >
+                    Choose File
+                  </label>
                   <FormControl>
-                    <>
-                      <Input
-                        type="file"
-                        accept=".pdf"
-                        onChange={(e) => {
-                          onChange(e.target.files);
-                          setAttachmentName(e.target.files?.[0]?.name ?? null);
-                        }}
-                        className="hidden"
-                        id="attachment-upload"
-                        ref={fileInputRef}
-                        {...fieldProps}
-                      />
-                      <label 
-                        htmlFor="attachment-upload" 
-                        className={cn(
-                          "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
-                          "h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
-                          )}
-                      >
-                        Choose File
-                      </label>
-                    </>
+                    <Input
+                      type="file"
+                      id="attachment-upload"
+                      accept=".pdf"
+                      onChange={(e) => {
+                        onChange(e.target.files);
+                        setAttachmentName(e.target.files?.[0]?.name ?? null);
+                      }}
+                      className="hidden"
+                      ref={fileInputRef}
+                      {...fieldProps}
+                    />
                   </FormControl>
                   <span className="text-sm text-muted-foreground">
                     {attachmentName || "No file chosen"}
@@ -355,5 +353,3 @@ export function ContactForm() {
     </>
   );
 }
-
-    
