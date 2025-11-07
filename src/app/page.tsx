@@ -21,66 +21,70 @@ export default function Home() {
 
   return (
     <>
-      <div className="fixed inset-0 w-full h-full z-[-1]">
-        <iframe
-            src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
-            width="100%"
-            height="100%"
-            style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            border: 0,
-            }}
-            allow="fullscreen"
-        ></iframe>
-      </div>
-      <div className="container mx-auto px-4 relative z-10">
-        {/* Hero Section */}
-        <section className="text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
-          <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
-            Transforming Ideas into Digital Reality
-          </h1>
-          <p className="mt-6 max-w-3xl mx-auto text-muted-foreground text-lg md:text-xl">
-            A multidisciplinary designer and developer crafting beautiful, functional, and user-centric digital experiences. From brand identity to full-stack web applications.
-          </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <Button asChild size="lg">
-              <Link href="/contact">Start a Project <ArrowRight className="ml-2 h-5 w-5" /></Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="/posters">View My Work</Link>
-            </Button>
-          </div>
-        </section>
-
-        {/* Featured Projects Section */}
-        <section className="py-16" id="projects">
-          <div className="text-center mb-12 animate-fade-in" style={{animationDelay: '0.2s'}}>
-              <h2 className="font-headline text-4xl font-bold tracking-tight">Featured Projects</h2>
-              <p className="mt-2 text-muted-foreground">A glimpse into my problem-solving approach through design.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProjects.map((project, index) => (
-              project && <ProjectCard 
-                key={project.id} 
-                project={project} 
-                className="animate-fade-in"
-                style={{ animationDelay: `${200 + index * 100}ms` }}
-              />
-            ))}
-          </div>
-          <div className="text-center mt-12">
-              <Button asChild variant="ghost">
-                  <Link href="/posters">
-                      Explore All Projects <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+      <div className="relative overflow-hidden">
+        <div className="fixed inset-0 w-full h-full z-[-1]">
+          <iframe
+              src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
+              width="100%"
+              height="100%"
+              style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              border: 0,
+              }}
+              allow="fullscreen"
+          ></iframe>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Hero Section */}
+          <section className="text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
+            <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
+              Transforming Ideas into Digital Reality
+            </h1>
+            <p className="mt-6 max-w-3xl mx-auto text-muted-foreground text-lg md:text-xl">
+              A multidisciplinary designer and developer crafting beautiful, functional, and user-centric digital experiences. From brand identity to full-stack web applications.
+            </p>
+            <div className="mt-8 flex justify-center gap-4">
+              <Button asChild size="lg">
+                <Link href="/contact">Start a Project <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
-          </div>
-        </section>
+              <Button asChild size="lg" variant="outline">
+                <Link href="/posters">View My Work</Link>
+              </Button>
+            </div>
+          </section>
 
+          {/* Featured Projects Section */}
+          <section className="py-16" id="projects">
+            <div className="text-center mb-12 animate-fade-in" style={{animationDelay: '0.2s'}}>
+                <h2 className="font-headline text-4xl font-bold tracking-tight">Featured Projects</h2>
+                <p className="mt-2 text-muted-foreground">A glimpse into my problem-solving approach through design.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuredProjects.map((project, index) => (
+                project && <ProjectCard 
+                  key={project.id} 
+                  project={project} 
+                  className="animate-fade-in"
+                  style={{ animationDelay: `${200 + index * 100}ms` }}
+                />
+              ))}
+            </div>
+            <div className="text-center mt-12">
+                <Button asChild variant="ghost">
+                    <Link href="/posters">
+                        Explore All Projects <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                </Button>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* VA and Blog Section */}
         <section className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in" style={{animationDelay: '0.4s'}}>
