@@ -11,41 +11,33 @@ import { Button } from '@/components/ui/button';
 type ProjectCardProps = {
   project: Project;
   className?: string;
+  style?: React.CSSProperties;
 };
 
-export function ProjectCard({ project, className }: ProjectCardProps) {
+export function ProjectCard({ project, className, style }: ProjectCardProps) {
   const image = project.images[0] || project.variants?.[0]?.images[0];
 
   return (
-    <Card className={cn("overflow-hidden group glassmorphic transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col", className)}>
+    <Card 
+        className={cn("overflow-hidden group glassmorphic transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col", className)}
+        style={style}
+    >
         {image && (
           <div className="overflow-hidden aspect-video relative">
             <Image
               src={image.imageUrl}
               alt={project.title}
-              width={600}
-              height={400}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 filter blur-lg"
+              fill
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               data-ai-hint={image.imageHint}
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Image
-                src={image.imageUrl}
-                alt={project.title}
-                width={400}
-                height={250}
-                className="w-3/4 h-3/4 object-contain transition-transform duration-500 group-hover:scale-105 shadow-2xl"
-                style={{
-                  boxShadow: '0 0 20px 5px hsl(var(--primary))',
-                }}
-              />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/60 transition-colors"></div>
+             <div className="absolute bottom-0 left-0 p-4">
+                <h3 className="font-headline text-lg font-bold text-white shadow-lg">{project.title}</h3>
             </div>
           </div>
         )}
-      <CardHeader>
-        <CardTitle className="font-headline text-2xl">{project.title}</CardTitle>
-      </CardHeader>
-      <CardContent className="flex-grow">
+      <CardContent className="flex-grow pt-6">
         <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2">
           {project.tech?.map((techKey) => {
@@ -54,24 +46,26 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           })}
         </div>
       </CardContent>
-      <CardFooter className="flex justify-end items-center gap-4 mt-auto pt-4">
-        {project.liveDemoUrl && (
-          <Button asChild variant="outline">
-            <Link href={project.liveDemoUrl} target="_blank">
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Live Demo
-            </Link>
-          </Button>
-        )}
-        {project.githubUrl && (
-          <Button asChild>
-            <Link href={project.githubUrl} target="_blank">
-              <Github className="mr-2 h-4 w-4" />
-              GitHub
-            </Link>
-          </Button>
-        )}
-      </CardFooter>
+      {(project.liveDemoUrl || project.githubUrl) && (
+        <CardFooter className="flex justify-end items-center gap-2 mt-auto pt-4">
+          {project.githubUrl && (
+            <Button asChild variant="ghost" size="sm">
+              <Link href={project.githubUrl} target="_blank">
+                <Github className="mr-2 h-4 w-4" />
+                Source
+              </Link>
+            </Button>
+          )}
+          {project.liveDemoUrl && (
+            <Button asChild size="sm">
+              <Link href={project.liveDemoUrl} target="_blank">
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Live Demo
+              </Link>
+            </Button>
+          )}
+        </CardFooter>
+      )}
     </Card>
   );
 }
