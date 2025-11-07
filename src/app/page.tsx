@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <div className="relative overflow-hidden">
-        <div className="fixed inset-0 w-full h-full z-[-1]">
+        <div className="absolute inset-0 w-full h-full z-[-1]">
           <iframe
               src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
               width="100%"
@@ -65,12 +65,14 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredProjects.map((project, index) => (
-                project && <ProjectCard 
-                  key={project.id} 
-                  project={project} 
-                  className="animate-fade-in"
-                  style={{ animationDelay: `${200 + index * 100}ms` }}
-                />
+                project && <div key={project.id} className="relative group overflow-hidden rounded-lg shadow-lg">
+                  <ProjectCard 
+                    project={project} 
+                    className="animate-fade-in w-full h-full"
+                    style={{ animationDelay: `${200 + index * 100}ms` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-50 group-hover:opacity-30 transition-opacity duration-300"></div>
+                </div>
               ))}
             </div>
             <div className="text-center mt-12">
