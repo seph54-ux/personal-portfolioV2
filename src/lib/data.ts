@@ -45,9 +45,6 @@ export const socialLinks = [
 
 export const techStack = {
   photoshop: { name: 'Adobe Photoshop', category: 'Design Tool' },
-  illustrator: { name: 'Adobe Illustrator', category: 'Design Tool' },
-  aftereffects: { name: 'Adobe After Effects', category: 'VA Tool' },
-  premiere: { name: 'Adobe Premiere Pro', category: 'VA Tool' },
   canva: { name: 'Canva', category: 'Design Tool' },
   pixellab: { name: 'Pixellab', category: 'Design Tool' },
   inkscape: { name: 'Inkscape', category: 'Design Tool' },
@@ -91,7 +88,7 @@ const placeholderProjects: Project[] = [
     category: 'Posters',
     description: 'A vibrant and energetic poster designed for a summer music festival.',
     images: [getImage('poster-1')],
-    tech: ['photoshop', 'illustrator'],
+    tech: ['photoshop'],
   },
   {
     id: 'proj-poster-2',
@@ -99,7 +96,7 @@ const placeholderProjects: Project[] = [
     category: 'Posters',
     description: 'A poster with a vintage aesthetic for a classic movie screening event.',
     images: [getImage('poster-2')],
-    tech: ['illustrator'],
+    tech: ['inkscape'],
   },
   {
     id: 'proj-logo-1',
@@ -112,7 +109,7 @@ const placeholderProjects: Project[] = [
       { name: 'Monochrome', images: [getImage('logo-1-variant-1')] },
       { name: 'Icon Only', images: [getImage('logo-1-variant-2')] },
     ],
-    tech: ['illustrator', 'figma'],
+    tech: ['inkscape', 'figma'],
   },
   {
     id: 'proj-logo-2',
@@ -124,7 +121,7 @@ const placeholderProjects: Project[] = [
       { name: 'Primary Logo', images: [getImage('logo-2-main')] },
       { name: 'Stamp Version', images: [getImage('logo-2-variant-1')] },
     ],
-    tech: ['illustrator'],
+    tech: ['inkscape'],
   },
   {
     id: 'proj-obs-1',
@@ -133,7 +130,7 @@ const placeholderProjects: Project[] = [
     description: 'A futuristic, cyberpunk-themed overlay pack for streamers.',
     images: [getImage('obs-1-asset')],
     inActionImage: getImage('obs-1-in-action'),
-    tech: ['photoshop', 'aftereffects', 'obs'],
+    tech: ['photoshop', 'obs'],
   },
   {
     id: 'proj-obs-2',
@@ -150,7 +147,7 @@ const placeholderProjects: Project[] = [
     category: 'Video Projects',
     description: 'An exciting promotional video to attract investors for a new tech startup.',
     images: [getImage('video-1')],
-    tech: ['premiere', 'aftereffects'],
+    tech: ['davinci'],
   },
 ];
 
@@ -231,7 +228,7 @@ export const affiliateProducts: AffiliateProduct[] = [
     description: 'An ergonomic mouse with customizable buttons and high DPI for pixel-perfect accuracy in creative work and competitive gaming.',
     marketplace: 'Lazada Affiliates',
     url: '#',
-    image: getImage('affiliate-mouse'),
+image: getImage('affiliate-mouse'),
     tags: ['gaming', 'streaming'],
   },
   {
@@ -253,3 +250,5 @@ export const affiliateProducts: AffiliateProduct[] = [
     tags: ['streaming', 'productivity'],
   },
 ];
+
+    

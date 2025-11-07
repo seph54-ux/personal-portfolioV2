@@ -43,19 +43,19 @@ const logoProjects = [
     title: "ML Esports",
     description: 'A dynamic and modern logo for Mobile Legends Bang Bang E-Sports event held on Engineering Days 2023 at Tanauan City College.',
     variants: mlLogoVariants.map(v => ({ name: v.name, images: [{ imageUrl: v.image, imageHint: 'logo' }]})),
-    tech: ['illustrator'],
+    tech: ['inkscape'],
   },
   {
     id: 'proj-logo-rp',
     title: "Rising Pro",
     description: 'A powerful and inspiring logo for a professional gaming organization, designed to be easily recognizable and impactful.',
     variants: rpLogoVariants.map(v => ({ name: v.name, images: [{ imageUrl: v.image, imageHint: 'logo' }]})),
-    tech: ['illustrator'],
+    tech: ['inkscape'],
   },
 ];
 
 const techStack = {
-  illustrator: { name: 'Inkscape', category: 'Design Tool'}
+  inkscape: { name: 'Inkscape', category: 'Design Tool'}
 };
 
 export default function LogosPage() {
@@ -137,3 +137,5 @@ export default function LogosPage() {
     </>
   );
 }
+
+    
