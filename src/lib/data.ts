@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { websiteProjects, webUiProjects, posterProjects as allPosterProjects } from './websites-data';
@@ -50,6 +51,8 @@ export const techStack = {
   inkscape: { name: 'Inkscape', category: 'Design Tool' },
   davinci: { name: 'DaVinci Resolve', category: 'VA Tool' },
   kinemaster: { name: 'KineMaster', category: 'VA Tool' },
+  capcut: { name: 'Capcut', category: 'VA Tool' },
+  powerdirector: { name: 'PowerDirector', category: 'VA Tool' },
   figma: { name: 'Figma', category: 'Design Tool' },
   obs: { name: 'OBS Studio', category: 'Tool' },
   react: { name: 'React', category: 'Framework' },
@@ -209,7 +212,7 @@ export type AffiliateProduct = {
   marketplace: string;
   url: string;
   image: ImagePlaceholder;
-  tags: AffiliateProductTag[];
+  tags: (keyof typeof techStack)[];
 };
 
 export const affiliateProducts: AffiliateProduct[] = [
@@ -220,7 +223,7 @@ export const affiliateProducts: AffiliateProduct[] = [
     marketplace: 'Amazon Associates',
     url: '#',
     image: getImage('affiliate-keyboard'),
-    tags: ['gaming', 'productivity', 'office-setup'],
+    tags: ['react', 'nextjs'],
   },
   {
     id: 'aff-mouse',
@@ -228,8 +231,8 @@ export const affiliateProducts: AffiliateProduct[] = [
     description: 'An ergonomic mouse with customizable buttons and high DPI for pixel-perfect accuracy in creative work and competitive gaming.',
     marketplace: 'Lazada Affiliates',
     url: '#',
-image: getImage('affiliate-mouse'),
-    tags: ['gaming', 'streaming'],
+    image: getImage('affiliate-mouse'),
+    tags: ['react'],
   },
   {
     id: 'aff-monitor',
@@ -238,7 +241,7 @@ image: getImage('affiliate-mouse'),
     marketplace: 'Shopee Affiliate Program',
     url: '#',
     image: getImage('affiliate-monitor'),
-    tags: ['office-setup', 'productivity', 'design'],
+    tags: ['figma', 'photoshop'],
   },
   {
     id: 'aff-mic',
@@ -247,8 +250,6 @@ image: getImage('affiliate-mouse'),
     marketplace: 'Amazon Associates',
     url: '#',
     image: getImage('affiliate-mic'),
-    tags: ['streaming', 'productivity'],
+    tags: ['obs'],
   },
 ];
-
-    
