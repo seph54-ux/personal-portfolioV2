@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <iframe
-        src="https://skybox.blockadelabs.com/e/23e7cbb86b71f2b967d8ce570eeddc7b"
+        src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
         width="100%"
         height="100%"
         style={{
