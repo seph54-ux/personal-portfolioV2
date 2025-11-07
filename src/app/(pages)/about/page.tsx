@@ -45,7 +45,7 @@ export default function AboutPage() {
         </div>
         <div className="md:col-span-2 space-y-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="glassmorphic p-8 rounded-lg">
-            <h2 className="font-headline text-3xl font-bold mb-4">My Philosophy</h2>
+            <h2 className="font-headline text-3xl font-bold mb-4">💡 My Life Philosophy: “Build. Learn. Evolve.” ⚙️🌱</h2>
             <div className="prose dark:prose-invert max-w-none text-foreground/90">
                 <p>
                 I believe life is all about creating something meaningful from curiosity — whether it’s a working circuit, a line of code, or a new skill learned through trial and error. Every challenge I face is like a prototype — something I can test, refine, and improve until it works. For me, progress will always matter more than perfection.
