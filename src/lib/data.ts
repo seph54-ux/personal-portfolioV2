@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { websiteProjects, webUiProjects, posterProjects as allPosterProjects } from './websites-data';
@@ -41,6 +42,7 @@ export const socialLinks = [
     { name: 'Instagram', href: 'https://www.instagram.com/seph.547?igsh=YWJiNWhyem1vdzM2', icon: 'Instagram' },
     { name: 'Telegram', href: 't.me/seph547', icon: 'Send' },
     { name: 'WhatsApp', href: 'https://wa.me/639941186244?text=Hello%20Philjoseph%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!', icon: 'MessageCircle' },
+    { name: 'Email', href: 'mailto:philjoseph547@gmail.com', icon: 'Mail' },
 ];
 
 export const techStack = {
