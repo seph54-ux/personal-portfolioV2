@@ -46,11 +46,13 @@ export const socialLinks = [
 export const techStack = {
   photoshop: { name: 'Adobe Photoshop', category: 'Design Tool' },
   illustrator: { name: 'Adobe Illustrator', category: 'Design Tool' },
+  aftereffects: { name: 'Adobe After Effects', category: 'VA Tool' },
+  premiere: { name: 'Adobe Premiere Pro', category: 'VA Tool' },
   canva: { name: 'Canva', category: 'Design Tool' },
   pixellab: { name: 'Pixellab', category: 'Design Tool' },
   inkscape: { name: 'Inkscape', category: 'Design Tool' },
   davinci: { name: 'DaVinci Resolve', category: 'VA Tool' },
-  premiere: { name: 'Cap', category: 'VA Tool' },
+  kinemaster: { name: 'KineMaster', category: 'VA Tool' },
   figma: { name: 'Figma', category: 'Design Tool' },
   obs: { name: 'OBS Studio', category: 'Tool' },
   react: { name: 'React', category: 'Framework' },
@@ -65,10 +67,6 @@ export const techStack = {
   html: {name: 'HTML', category: 'Language'},
   css: {name: 'CSS', category: 'Language'},
   javascript: {name: 'JavaScript', category: 'Language'},
-  gaming: { name: 'Gaming', category: 'Hobby'},
-  streaming: { name: 'Streaming', category: 'Hobby'},
-  "office-setup": { name: 'Office Setup', category: 'Category'},
-  productivity: { name: 'Productivity', category: 'Category'},
 };
 
 export type ProjectCategory = 'Posters' | 'Logos' | 'OBS Overlays' | 'Web UI' | 'Video Projects' | 'Websites/Webapps';
@@ -205,6 +203,7 @@ export const blogPosts: Blog[] = [
   },
 ];
 
+export type AffiliateProductTag = 'gaming' | 'productivity' | 'office-setup' | 'streaming' | 'design';
 
 export type AffiliateProduct = {
   id: string;
@@ -213,7 +212,7 @@ export type AffiliateProduct = {
   marketplace: string;
   url: string;
   image: ImagePlaceholder;
-  tags: (keyof typeof techStack)[];
+  tags: AffiliateProductTag[];
 };
 
 export const affiliateProducts: AffiliateProduct[] = [
@@ -254,5 +253,3 @@ export const affiliateProducts: AffiliateProduct[] = [
     tags: ['streaming', 'productivity'],
   },
 ];
-
-    
