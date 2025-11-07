@@ -9,6 +9,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { webUiProjects, posterProjects } from "@/lib/websites-data";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 
 export default function Home() {
@@ -19,6 +25,25 @@ export default function Home() {
   ].filter(p => p !== undefined) as (typeof webUiProjects[number] | typeof posterProjects[number])[];
 
   const latestPost = blogPosts[0];
+  
+  const faqs = [
+    {
+      question: "What kind of services do you offer?",
+      answer: "I offer a range of creative and technical services, including graphic design (posters, logos), web UI/UX design, full-stack web development (websites and webapps), and virtual assistance services like video editing and motion graphics."
+    },
+    {
+      question: "What's your design process like?",
+      answer: "My design process is collaborative and user-centric. It typically starts with a discovery phase to understand your goals, followed by wireframing and prototyping, visual design, and then rounds of feedback and refinement to ensure the final product is perfect."
+    },
+    {
+      question: "Which technologies do you use for web development?",
+      answer: "I specialize in modern web technologies. My primary stack includes Next.js, React, and TypeScript for the frontend, with Tailwind CSS for styling. For backend and database needs, I often use Firebase."
+    },
+    {
+      question: "Are you available for freelance projects?",
+      answer: "Yes, I am currently available for freelance work! If you have a project in mind or just want to discuss an idea, please feel free to get in touch through my contact page."
+    },
+  ];
 
   return (
     <>
@@ -74,7 +99,9 @@ export default function Home() {
                     className="animate-fade-in w-full h-full"
                     style={{ animationDelay: `${200 + index * 100}ms` }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-50 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/60 to-transparent w-full">
+                      <h3 className="font-headline text-lg font-bold text-white shadow-lg">{project.title}</h3>
+                  </div>
                 </div>
               ))}
             </div>
@@ -137,6 +164,26 @@ export default function Home() {
                       </Button>
                    </CardContent>
                </Card>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16">
+          <div className="text-center mb-12">
+            <h2 className="font-headline text-4xl font-bold tracking-tight">Frequently Asked Questions</h2>
+            <p className="mt-2 text-muted-foreground">Quick answers to common questions about my services.</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem value={`item-${index}`} key={index}>
+                  <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </section>
 
