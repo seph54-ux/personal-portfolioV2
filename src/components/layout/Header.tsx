@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { ThemeToggle } from '../theme-toggle';
 
 export function Header() {
   const pathname = usePathname();
@@ -66,13 +67,17 @@ export function Header() {
               )
             })}
           </NavigationMenuList>
-            <Button asChild className="ml-4">
-              <Link href="/contact">Contact</Link>
-            </Button>
+            <div className="flex items-center gap-2 ml-4">
+              <ThemeToggle />
+              <Button asChild>
+                <Link href="/contact">Contact</Link>
+              </Button>
+            </div>
         </NavigationMenu>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
           <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
