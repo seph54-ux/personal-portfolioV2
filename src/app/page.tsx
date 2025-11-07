@@ -47,9 +47,10 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative">
+      {/* Hero Section */}
+      <section className="relative text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
         <div 
-          className="absolute top-0 left-0 w-full h-screen z-[-1] overflow-hidden" 
+          className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden" 
           style={{marginTop: '-88px'}}
         >
           <iframe
@@ -64,25 +65,22 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          {/* Hero Section */}
-          <section className="text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
-            <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
-              Transforming Ideas into Digital Reality
-            </h1>
-            <p className="mt-6 max-w-3xl mx-auto text-muted-foreground text-lg md:text-xl">
-              A multidisciplinary designer and developer crafting beautiful, functional, and user-centric digital experiences. From brand identity to full-stack web applications.
-            </p>
-            <div className="mt-8 flex justify-center gap-4">
-              <Button asChild size="lg">
-                <Link href="/contact">Start a Project <ArrowRight className="ml-2 h-5 w-5" /></Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/posters">View My Work</Link>
-              </Button>
-            </div>
-          </section>
+          <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
+            Transforming Ideas into Digital Reality
+          </h1>
+          <p className="mt-6 max-w-3xl mx-auto text-muted-foreground text-lg md:text-xl">
+            A multidisciplinary designer and developer crafting beautiful, functional, and user-centric digital experiences. From brand identity to full-stack web applications.
+          </p>
+          <div className="mt-8 flex justify-center gap-4">
+            <Button asChild size="lg">
+              <Link href="/contact">Start a Project <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/posters">View My Work</Link>
+            </Button>
+          </div>
         </div>
-      </div>
+      </section>
       
       <div className="container mx-auto px-4 relative z-10 bg-background">
          {/* Featured Projects Section */}
@@ -93,16 +91,14 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredProjects.map((project, index) => (
-                project && <div key={project.id} className="relative group overflow-hidden rounded-lg shadow-lg">
+                project && (
                   <ProjectCard 
+                    key={project.id}
                     project={project} 
                     className="animate-fade-in w-full h-full"
                     style={{ animationDelay: `${200 + index * 100}ms` }}
                   />
-                  <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/60 to-transparent w-full">
-                      <h3 className="font-headline text-lg font-bold text-white shadow-lg">{project.title}</h3>
-                  </div>
-                </div>
+                )
               ))}
             </div>
             <div className="text-center mt-12">
