@@ -30,22 +30,6 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-          <div className="fixed top-0 left-0 w-full h-full z-[-1] overflow-hidden">
-            <iframe
-                src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
-                width="100%"
-                height="100%"
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100vh',
-                  border: 0,
-                }}
-                allow="fullscreen"
-            ></iframe>
-          </div>
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
