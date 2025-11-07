@@ -198,7 +198,7 @@ export const websiteProjects: Project[] = [
     id: 'proj-website-8',
     title: 'In Out Cleaning Experts',
     category: 'Websites/Webapps',
-    description: 'This is the official website for "In & Out Cleaning Experts," your trusted partner for a spotless home or workspace. This project is a responsive, single-page application designed to showcase the company services and provide an easy way for customers to get in touch.',
+    description: 'This is the official website for "In & Out Cleaning Experts," an Australian-based cleaning services, your partner for a spotless home or workspace. This project is a responsive, single-page application designed to showcase the company services and provide an easy way for customers to get in touch.',
     images: [{ imageUrl: inoutcleaningWeb, imageHint: 'website' }],
     tech: ['nextjs', 'typescript', 'tailwind'],
     liveDemoUrl: 'https://inout-clean.vercel.app',

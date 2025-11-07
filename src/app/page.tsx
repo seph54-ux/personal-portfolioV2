@@ -61,6 +61,7 @@ export default function Home() {
                 border: 0,
               }}
               allow="fullscreen"
+              className="pointer-events-none"
           ></iframe>
         </div>
         
