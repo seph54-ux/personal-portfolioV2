@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import profileImage from '@/app/asset/images/profile-image.png';
 
 export default function AboutPage() {
   const designTools = Object.values(techStack).filter(t => t.category === 'Design Tool');
@@ -28,7 +29,7 @@ export default function AboutPage() {
         <div className="md:col-span-1 flex flex-col items-center gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-card">
             <Image
-              src={'/src/app/asset/images/profile-image.png'}
+              src={profileImage}
               alt="A portrait of Philjoseph Orlina"
               fill
               className="object-cover"
@@ -47,10 +48,13 @@ export default function AboutPage() {
             <h2 className="font-headline text-3xl font-bold mb-4">My Philosophy</h2>
             <div className="prose dark:prose-invert max-w-none text-foreground/90">
                 <p>
-                I believe that great design is born from a deep understanding of people. It's not just about aesthetics; it's about creating a seamless bridge between a user's needs and a brand's goals. My approach is a blend of creative intuition and strategic thinking, ensuring every project I undertake is both visually compelling and purpose-driven.
+                I believe life is all about creating something meaningful from curiosity — whether it’s a working circuit, a line of code, or a new skill learned through trial and error. Every challenge I face is like a prototype — something I can test, refine, and improve until it works. For me, progress will always matter more than perfection.
                 </p>
                 <p>
-                From a simple logo to a complex web application, I pour my passion for clean code, elegant design, and user-centric philosophy into every detail. I'm constantly learning and adapting to new technologies to bring cutting-edge solutions to the table.
+                Fueled by creativity and logic, I see technology not just as a tool, but as a way to make life smarter, simpler, and more connected. I’m constantly learning, evolving, and building — because that’s how I grow.
+                </p>
+                <p className="font-bold italic">
+                I don’t wait for things to work — I build until they do.
                 </p>
             </div>
           </div>
