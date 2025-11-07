@@ -21,21 +21,22 @@ export default function Home() {
 
   return (
     <>
-      <iframe
-        src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
-        width="100%"
-        height="100%"
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100vw',
-          height: '150vh',
-          border: 0,
-          zIndex: -1,
-        }}
-        allow="fullscreen"
-      ></iframe>
+      <div className="fixed inset-0 w-full h-full z-[-1]">
+        <iframe
+            src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
+            width="100%"
+            height="100%"
+            style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '150%',
+            border: 0,
+            }}
+            allow="fullscreen"
+        ></iframe>
+      </div>
       <div className="container mx-auto px-4 relative z-10">
         {/* Hero Section */}
         <section className="text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
