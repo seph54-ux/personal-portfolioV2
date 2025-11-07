@@ -244,7 +244,7 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Your Estimated Budget (optional)</FormLabel>
                 <FormControl>
-                  <Input placeholder="Helps me understand the project scope, e.g. $400" {...field} />
+                  <Input placeholder="Helps me understand the project scope, e.g. $400" {...field} value={field.value ?? ''} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -283,7 +283,7 @@ export function ContactForm() {
           <FormField
             control={form.control}
             name="attachment"
-            render={({ field: { onChange, ...fieldProps } }) => (
+            render={({ field: { onChange, value, ...fieldProps } }) => (
               <FormItem>
                 <FormLabel>Got a project brief? (optional)</FormLabel>
                 <div className="flex items-center gap-4">
