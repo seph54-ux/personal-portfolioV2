@@ -30,7 +30,7 @@ export default function Home() {
           top: 0,
           left: 0,
           width: '100vw',
-          height: '100vh',
+          height: '150vh',
           border: 0,
           zIndex: -1,
         }}
@@ -38,7 +38,7 @@ export default function Home() {
       ></iframe>
       <div className="container mx-auto px-4 relative z-10">
         {/* Hero Section */}
-        <section className="text-center py-20 md:py-32 animate-fade-in">
+        <section className="text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
           <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
             Transforming Ideas into Digital Reality
           </h1>
