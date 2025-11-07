@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
@@ -22,23 +23,20 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-        <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden">
-            <iframe
-                src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
-                width="100%"
-                height="100vh"
-                style={{
-                  position: 'absolute',
-                  top: '-88px', // Adjust to pull it up behind the header
-                  left: 0,
-                  width: '100%',
-                  height: 'calc(100% + 88px)',
-                  border: 0,
-                  zIndex: -1,
-                }}
-                allow="fullscreen"
-            ></iframe>
-          </div>
+        <div 
+          className="absolute top-0 left-0 w-full h-screen z-[-1] overflow-hidden" 
+          style={{marginTop: '-88px'}}
+        >
+          <iframe
+              src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
+              width="100%"
+              height="100%"
+              style={{
+                border: 0,
+              }}
+              allow="fullscreen"
+          ></iframe>
+        </div>
         
         <div className="container mx-auto px-4 relative z-10">
           {/* Hero Section */}
@@ -58,9 +56,12 @@ export default function Home() {
               </Button>
             </div>
           </section>
-
-          {/* Featured Projects Section */}
-          <section className="py-16" id="projects">
+        </div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10 bg-background">
+         {/* Featured Projects Section */}
+        <section className="py-16" id="projects">
             <div className="text-center mb-12 animate-fade-in" style={{animationDelay: '0.2s'}}>
                 <h2 className="font-headline text-4xl font-bold tracking-tight">Featured Projects</h2>
                 <p className="mt-2 text-muted-foreground">A glimpse into my problem-solving approach through design.</p>
@@ -85,10 +86,6 @@ export default function Home() {
                 </Button>
             </div>
           </section>
-        </div>
-      </div>
-      
-      <div className="container mx-auto px-4 relative z-10 bg-background">
         {/* VA and Blog Section */}
         <section className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in" style={{animationDelay: '0.4s'}}>
