@@ -29,6 +29,7 @@ export const navLinks = [
       { name: 'Web UI', href: '/web-ui', description: 'Modern and intuitive user interfaces.' },
       { name: 'Video Projects', href: '/video', description: 'Engaging video productions.' },
       { name: 'Websites/Webapps', href: '/websites', description: 'Functional and beautiful websites.' },
+      { name: 'Virtual Assistance', href: '/virtual-assistance', description: 'Creative and administrative support.' },
     ]
   },
   { name: 'Blog', href: '/blog' },
