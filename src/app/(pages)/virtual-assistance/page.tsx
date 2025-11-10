@@ -135,7 +135,7 @@ export default function VirtualAssistancePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {painPoints.map((point, index) => (
-                    <Card key={index} className="glassmorphic text-center p-6 animate-fade-in" style={{ animationDelay: `${index * 100}ms`}}>
+                    <Card key={index} className="glassmorphic text-center p-6 animate-fade-in shimmer-effect transition-all duration-300 hover:shadow-2xl hover:-translate-y-1" style={{ animationDelay: `${index * 100}ms`}}>
                         <div className="mx-auto bg-primary/10 text-primary w-12 h-12 rounded-full flex items-center justify-center mb-4">
                             <point.icon className="w-6 h-6" />
                         </div>
@@ -156,7 +156,7 @@ export default function VirtualAssistancePage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {services.map((service, index) => (
-                    <Card key={service.title} className="glassmorphic flex flex-col p-6 animate-fade-in" style={{ animationDelay: `${index * 100}ms`}}>
+                    <Card key={service.title} className="glassmorphic flex flex-col p-6 animate-fade-in shimmer-effect transition-all duration-300 hover:shadow-2xl hover:-translate-y-1" style={{ animationDelay: `${index * 100}ms`}}>
                         <div className="flex items-center gap-4 mb-4">
                             <div className="bg-primary/10 text-primary p-3 rounded-full">
                                <service.icon className="w-6 h-6" />
@@ -219,4 +219,3 @@ export default function VirtualAssistancePage() {
     </>
   );
 }
-
