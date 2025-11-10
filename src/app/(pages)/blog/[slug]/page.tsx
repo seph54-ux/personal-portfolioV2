@@ -1,13 +1,31 @@
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { blogPosts } from '@/lib/data';
 import { Badge } from '@/components/ui/badge';
+import type { Metadata } from 'next';
 
 type BlogPageProps = {
   params: {
     slug: string;
   };
 };
+
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+  const post = blogPosts.find((p) => p.slug === params.slug);
+
+  if (!post) {
+    return {
+      title: 'Post Not Found',
+    };
+  }
+
+  return {
+    title: `${post.title} | Philjoseph Orlina`,
+    description: post.seo?.metaDescription || post.excerpt,
+    keywords: post.seo?.keywords,
+  };
+}
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({

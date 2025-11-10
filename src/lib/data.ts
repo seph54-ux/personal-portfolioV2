@@ -171,18 +171,32 @@ export type Blog = {
   author: string;
   date: string;
   excerpt: string;
-  image: ImagePlaceholder;
+  image: {
+    id: string;
+    description: string;
+    imageUrl: string;
+    imageHint: string;
+  };
   content: string;
+  seo?: {
+    metaDescription: string;
+    keywords: string;
+  };
 };
 
 export const blogPosts: Blog[] = [
   {
-    slug: 'passion-projects-to-portfolio',
+    slug: 'passion-projects-to-professional-portfolio',
     title: 'From Passion Projects to Professional Portfolio',
     author: 'Philjoseph Orlina',
     date: '2024-07-29',
     excerpt: 'How I Turned My Free-Time Designs Into Career Assets.',
-    image: getImage('blog-passion-project'),
+    image: {
+      id: 'blog-passion-project-thumbnail',
+      description: 'Esports tournament setup',
+      imageUrl: '/asset/images/blog/design-journey/esports.webp',
+      imageHint: 'esports design',
+    },
     content: `
       <p>In a world saturated with templates and AI-generated content, one thing still stands out: <strong>authentic passion</strong>. For me, what began as hobby-level graphic design during esports tournaments and late-night concept sketches quickly evolved into a professional portfolio that now speaks for my skills better than any résumé can. Whether you're a student, freelancer, or aspiring creative professional, I'll share how I transformed my free-time projects into powerful tools that opened career doors—and how you can do the same.</p>
       
@@ -194,7 +208,11 @@ export const blogPosts: Blog[] = [
       <h4>Document Everything: Behind the Scenes Matters</h4>
       <p>Instead of only showing finished designs, I documented my process. From <strong>wireframes and thumbnails</strong> to <strong>toolkits</strong> and <strong>revisions</strong>, I showcased how I think, not just what I make. This gave potential employers insight into how I solve problems—something no static portfolio image can fully explain.</p>
       
-      <img src="${getImage('blog-design-journey').imageUrl}" alt="E-Days 2k23 Featured Image" class="rounded-lg my-6" />
+      <div class="flex flex-col md:flex-row gap-4 my-6">
+        <img src="/asset/images/blog/design-journey/esports.webp" alt="E-Sports event setup" class="rounded-lg w-full md:w-1/3 object-cover" />
+        <img src="/asset/images/blog/design-journey/foundation-day1.webp" alt="Foundation Day event poster" class="rounded-lg w-full md:w-1/3 object-cover" />
+        <img src="/asset/images/blog/design-journey/foundation-day2.webp" alt="Foundation Day event poster part 2" class="rounded-lg w-full md:w-1/3 object-cover" />
+      </div>
 
       <blockquote class="border-l-4 border-primary pl-4 italic my-6">
         Don't hide your side projects—they might be the reason someone hires you.
@@ -226,6 +244,10 @@ export const blogPosts: Blog[] = [
         </a>
       </div>
     `,
+    seo: {
+        metaDescription: "Learn how passion projects in graphic design for esports and fun can be transformed into a professional portfolio that opens career doors. A personal journey of creative growth.",
+        keywords: "passion projects, design portfolio, career growth, graphic design, esports, freelancing, creative professional"
+    }
   },
   {
     slug: 'the-ultimate-guide-to-freelancing-for-designers',
