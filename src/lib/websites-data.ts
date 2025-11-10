@@ -1,26 +1,6 @@
 import { Project } from './data';
 
-import fourcoreWeb from '@/app/asset/images/works-web/4core-web.webp';
-import aquavendWeb from '@/app/asset/images/works-web/aquavend-web.webp';
-import browzioWeb from '@/app/asset/images/works-web/browzio-web.webp';
-import budgetwiseWeb from '@/app/asset/images/works-web/budgetwise-web.webp';
-import cloudcallWeb from '@/app/asset/images/works-web/cloudcall-web.webp';
-import hopeangelsWeb from '@/app/asset/images/works-web/hopeangels-web.webp';
-import imgcleanerWeb from '@/app/asset/images/works-web/imgcleaner-web.webp';
-import inoutcleaningWeb from '@/app/asset/images/works-web/inoutcleaning-web.webp';
-import pydocgenWeb from '@/app/asset/images/works-web/pydocgen-web.webp';
-import galaxyUi from '@/app/asset/images/works-ui/Galaxy.png';
-import kuboCuisineUi from '@/app/asset/images/works-ui/KuboCuisine.png';
-import risingProUi from '@/app/asset/images/works-ui/Rising-Pro.png';
-import codmLogoPoster from '@/app/asset/images/works-poster/CODM Logo_Poster.webp';
-import codmMainPoster from '@/app/asset/images/works-poster/CODM Main_Poster.webp';
-import codmPoster from '@/app/asset/images/works-poster/CODM_Poster.webp';
-import mlMainPoster1 from '@/app/asset/images/works-poster/ML main poster1.webp';
-import mlBracket from '@/app/asset/images/works-poster/ML_Bracket.webp';
-import mvpTemplate from '@/app/asset/images/works-poster/MVP TEMPLATE.webp';
-import postmatchResults from '@/app/asset/images/works-poster/Postmatch results.webp';
-import rpBanner from '@/app/asset/images/works-poster/RP banner.webp';
-import xmasXtremePoster from '@/app/asset/images/works-poster/XmasXtreme POSTER.webp';
+
 
 
 export const posterProjects: Project[] = [
@@ -29,7 +9,7 @@ export const posterProjects: Project[] = [
     title: 'CODM Logo Poster',
     category: 'Posters',
     description: 'A poster featuring the Call of Duty: Mobile logo, designed with a modern and edgy style.',
-    images: [{ imageUrl: codmLogoPoster, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/CODM Logo_Poster.webp', imageHint: 'poster' }],
     tech: ['pixellab','canva'],
   },
   {
@@ -37,7 +17,7 @@ export const posterProjects: Project[] = [
     title: 'CODM Main Poster',
     category: 'Posters',
     description: 'The main promotional poster for a Call of Duty: Mobile tournament.',
-    images: [{ imageUrl: codmMainPoster, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/CODM Main_Poster.webp', imageHint: 'poster' }],
     tech: ['pixellab','canva'],
   },
   {
@@ -45,7 +25,7 @@ export const posterProjects: Project[] = [
     title: 'CODM Poster',
     category: 'Posters',
     description: 'A general promotional poster for Call of Duty: Mobile.',
-    images: [{ imageUrl: codmPoster, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/CODM_Poster.webp', imageHint: 'poster' }],
     tech: ['canva'],
   },
   {
@@ -53,7 +33,7 @@ export const posterProjects: Project[] = [
     title: 'ML Main Poster',
     category: 'Posters',
     description: 'The main promotional poster for a Mobile Legends: Bang Bang tournament.',
-    images: [{ imageUrl: mlMainPoster1, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/ML main poster1.webp', imageHint: 'poster' }],
     tech: ['inkscape'],
   },
   {
@@ -61,7 +41,7 @@ export const posterProjects: Project[] = [
     title: 'ML Bracket',
     category: 'Posters',
     description: 'A tournament bracket for a Mobile Legends: Bang Bang competition.',
-    images: [{ imageUrl: mlBracket, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/ML_Bracket.webp', imageHint: 'poster' }],
     tech: ['inkscape'],
   },
   {
@@ -69,7 +49,7 @@ export const posterProjects: Project[] = [
     title: 'MVP Template',
     category: 'Posters',
     description: 'A template for showcasing the Most Valuable Player of a match.',
-    images: [{ imageUrl: mvpTemplate, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/MVP TEMPLATE.webp', imageHint: 'poster' }],
     tech: ['canva'],
   },
   {
@@ -77,7 +57,7 @@ export const posterProjects: Project[] = [
     title: 'Postmatch Results',
     category: 'Posters',
     description: 'A template for displaying post-match results.',
-    images: [{ imageUrl: postmatchResults, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/Postmatch results.webp', imageHint: 'poster' }],
     tech: ['canva'],
   },
   {
@@ -85,7 +65,7 @@ export const posterProjects: Project[] = [
     title: 'RP Banner',
     category: 'Posters',
     description: 'A banner for the Rising Pro team.',
-    images: [{ imageUrl: rpBanner, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/RP banner.webp', imageHint: 'poster' }],
     tech: ['inkscape'],
   },
   {
@@ -93,7 +73,7 @@ export const posterProjects: Project[] = [
     title: 'XmasXtreme Poster',
     category: 'Posters',
     description: 'A Christmas-themed tournament poster.',
-    images: [{ imageUrl: xmasXtremePoster, imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/XmasXtreme POSTER.webp', imageHint: 'poster' }],
     tech: ['inkscape'],
   },
 ];
@@ -105,7 +85,7 @@ export const webUiProjects: Project[] = [
     title: 'Galaxy',
     category: 'Web UI',
     description: 'A modern and professional website redesign for Galaxy Cable.',
-    images: [{imageUrl: galaxyUi, imageHint: 'web ui'}],
+    images: [{imageUrl: '/asset/images/works-ui/Galaxy.png', imageHint: 'web ui'}],
     tech: ['canva'],
   },
   {
@@ -113,7 +93,7 @@ export const webUiProjects: Project[] = [
     title: 'KuboCuisine',
     category: 'Web UI',
     description: 'A warm and inviting UI design for a modern Filipino restaurant.',
-    images: [{imageUrl: kuboCuisineUi, imageHint: 'web ui'}],
+    images: [{imageUrl: '/asset/images/works-ui/KuboCuisine.png', imageHint: 'web ui'}],
     tech: ['canva'],
   },
   {
@@ -121,7 +101,7 @@ export const webUiProjects: Project[] = [
     title: 'Rising Pro',
     category: 'Web UI',
     description: 'A professional and clean UI design for an esports organization website.',
-    images: [{imageUrl: risingProUi, imageHint: 'web ui'}],
+    images: [{imageUrl: '/asset/images/works-ui/Rising-Pro.png', imageHint: 'web ui'}],
     tech: ['inkscape'],
   },
 ];
@@ -132,7 +112,7 @@ export const websiteProjects: Project[] = [
     title: '4core',
     category: 'Websites/Webapps',
     description: '4CORE is a responsive single-page agency site built with Next.js and Tailwind CSS. It showcases VA, dev, and creative services with smooth animations, a tech stack section, testimonials, and a contact form via EmailJS. Clean TypeScript architecture makes it easy to deploy and scale.',
-    images: [{ imageUrl: fourcoreWeb, imageHint: 'website' }],
+    images: [{ imageUrl: '/asset/images/works-web/4core-web.webp', imageHint: 'website' }],
     tech: ['nextjs', 'typescript', 'tailwind'],
     liveDemoUrl: 'https://4core.vercel.app/',
   },
@@ -141,7 +121,7 @@ export const websiteProjects: Project[] = [
     title: 'AquaVend',
     category: 'Websites/Webapps',
     description: 'AquaVend is a React + Vite mobile-first web app built for the capstone project of students from Batangas State University – Malvar Campus. It enables admins to remotely monitor IoT water dispenser machines via a Firebase-powered dashboard, offering real-time data once devices are registered to an account.',
-    images: [{ imageUrl: aquavendWeb, imageHint: 'website' }],
+    images: [{ imageUrl: '/asset/images/works-web/aquavend-web.webp', imageHint: 'website' }],
     tech: ['react', 'vite', 'firebase', 'tailwind'],
     liveDemoUrl: 'https://aquavend-e3d60.web.app/',
   },
@@ -150,8 +130,8 @@ export const websiteProjects: Project[] = [
     title: 'Browzio',
     category: 'Websites/Webapps',
     description: 'Browzio is your curated gateway to the internet’s most useful websites — all in one place. Whether you’re a designer, developer, content creator, or just a curious explorer, Browzio helps you discover the tools you need without the endless scrolling and guesswork.',
-    images: [{ imageUrl: browzioWeb, imageHint: 'website' }],
-    tech: ['nextjs', 'typescript', 'tailwind'],
+    images: [{ imageUrl: '/asset/images/works-web/browzio-web.webp', imageHint: 'website' }],
+    tech: ['html', 'css', 'javascript'],
     liveDemoUrl: 'https://browzio.vercel.app',
     githubUrl: 'https://github.com/seph54-ux/browzio',
   },
@@ -160,7 +140,7 @@ export const websiteProjects: Project[] = [
     title: 'BudgetWise',
     category: 'Websites/Webapps',
     description: 'BudgetWise is a modern and intuitive web application designed to help you take control of your finances. Track your income and expenses, set budgets, manage savings goals, and get smart, AI-powered suggestions to optimize your spending.',
-    images: [{ imageUrl: budgetwiseWeb, imageHint: 'website' }],
+    images: [{ imageUrl: '/asset/images/works-web/budgetwise-web.webp', imageHint: 'website' }],
     tech: ['nextjs', 'typescript', 'tailwind'],
     liveDemoUrl: 'https://budgetwise-ph.vercel.app/',
     githubUrl: 'https://github.com/seph54-ux/budgetwise',
@@ -170,7 +150,7 @@ export const websiteProjects: Project[] = [
     title: 'CloudCall',
     category: 'Websites/Webapps',
     description: 'CloudCall is a modern and user-friendly weather application that provides real-time weather information for any location worldwide. It is built with HTML, CSS, and vanilla JavaScript, leveraging modern web APIs to deliver a seamless and interactive experience.',
-    images: [{ imageUrl: cloudcallWeb, imageHint: 'website' }],
+    images: [{ imageUrl: '/asset/images/works-web/cloudcall-web.webp', imageHint: 'website' }],
     tech: ['html', 'css', 'javascript'],
     liveDemoUrl: 'https://cloudcall.vercel.app',
     githubUrl: 'https://github.com/seph54-ux/cloudcall',
@@ -180,7 +160,7 @@ export const websiteProjects: Project[] = [
     title: 'Hope Angels Homecare Agency',
     category: 'Websites/Webapps',
     description: 'This is the official website of Hope Angels Home Care Agency LLC. The website is designed to be a modern, responsive, and user-friendly platform that provides information about the agency services, mission, and values.',
-    images: [{ imageUrl: hopeangelsWeb, imageHint: 'website' }],
+    images: [{ imageUrl: '/asset/images/works-web/hopeangels-web.webp', imageHint: 'website' }],
     tech: ['nextjs', 'typescript', 'tailwind'],
     liveDemoUrl: 'https://hopeangels.vercel.app',
   },
@@ -189,7 +169,7 @@ export const websiteProjects: Project[] = [
     title: 'Background Remover',
     category: 'Websites/Webapps',
     description: 'The Background Remover is a sleek, Streamlit-powered web app that automates background removal from images using the rembg library. Designed for both single and batch processing, it supports JPG, PNG, WebP, and more, delivering clean, transparent PNG outputs. With optional preprocessing features like resizing, cropping, and alpha matting, it offers users enhanced control over image quality. The app’s tab-based interface and session-aware state management make it intuitive and efficient—perfect for quick edits or bulk tasks without the need for complex tools or manual masking.',
-    images: [{ imageUrl: imgcleanerWeb, imageHint: 'website' }],
+    images: [{ imageUrl: '/asset/images/works-web/imgcleaner-web.webp', imageHint: 'website' }],
     tech: ['python'],
     liveDemoUrl: 'https://image-cleaner.streamlit.app/',
     githubUrl: 'https://github.com/seph54-ux/background-remover',
@@ -199,7 +179,7 @@ export const websiteProjects: Project[] = [
     title: 'In Out Cleaning Experts',
     category: 'Websites/Webapps',
     description: 'This is the official website for "In & Out Cleaning Experts," an Australian-based cleaning services, your partner for a spotless home or workspace. This project is a responsive, single-page application designed to showcase the company services and provide an easy way for customers to get in touch.',
-    images: [{ imageUrl: inoutcleaningWeb, imageHint: 'website' }],
+    images: [{ imageUrl: '/asset/images/works-web/inoutcleaning-web.webp', imageHint: 'website' }],
     tech: ['nextjs', 'typescript', 'tailwind'],
     liveDemoUrl: 'https://inout-clean.vercel.app',
   },
@@ -208,7 +188,7 @@ export const websiteProjects: Project[] = [
     title: 'Pydocgen',
     category: 'Websites/Webapps',
     description: 'A beautiful Flask-based web application that allows you to create custom Microsoft Word documents by executing your own Python scripts. This personal document generator features a modern neumorphism design with an uplifting animated gradient background, providing an elegant interface for programmatic document creation using the python-docx library.',
-    images: [{ imageUrl: pydocgenWeb, imageHint: 'website' }],
+    images: [{ imageUrl: '/asset/images/works-web/pydocgen-web.webp', imageHint: 'website' }],
     tech: ['python', 'flask', 'html'],
     liveDemoUrl: 'https://pydocgen.up.railway.app',
     githubUrl: 'https://github.com/seph54-ux/pydocgen',

@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import profileImage from '@/app/asset/images/profile-image.png';
+
 import { ArrowRight } from 'lucide-react';
 
 export default function AboutPage() {
@@ -30,7 +30,7 @@ export default function AboutPage() {
         <div className="md:col-span-1 flex flex-col items-center gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-card">
             <Image
-              src={profileImage}
+              src="/asset/images/profile-image.png"
               alt="A portrait of Philjoseph Orlina"
               fill
               className="object-cover"

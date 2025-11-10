@@ -7,61 +7,39 @@ import { useState } from 'react';
 import { ImageModal } from '@/components/ImageModal';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
-// Importing overlay assets
-import draftingOverlay from '@/app/asset/images/works-obs-overlay/drafting.webp';
-import endingOverlay from '@/app/asset/images/works-obs-overlay/ending overlay.webp';
-import finalPregame from '@/app/asset/images/works-obs-overlay/final pregame.webp';
-import finalsIngameOverlay from '@/app/asset/images/works-obs-overlay/finals ingame overlay.webp';
-import inGameOverlay1 from '@/app/asset/images/works-obs-overlay/in-game overlay1.webp';
-import inGameOverlay2 from '@/app/asset/images/works-obs-overlay/in-game overlay2.webp';
-import inGameOverlay3 from '@/app/asset/images/works-obs-overlay/in-game overlay3.webp';
-import liveOverlay from '@/app/asset/images/works-obs-overlay/live overlay.webp';
-import mapOverlay from '@/app/asset/images/works-obs-overlay/map overlay.webp';
-import pathBottom from '@/app/asset/images/works-obs-overlay/path-bottom.webp';
-import preGameStream1 from '@/app/asset/images/works-obs-overlay/pre-game stream1.webp';
-import preGameStream2 from '@/app/asset/images/works-obs-overlay/pre-game stream2.webp';
 
-// Importing overlays in action
-import commbreak from '@/app/asset/images/works-obs-action/commbreak.webp';
-import draftingAction from '@/app/asset/images/works-obs-action/drafting.webp';
-import drafting1Action from '@/app/asset/images/works-obs-action/drafting1.webp';
-import ingameMatch from '@/app/asset/images/works-obs-action/ingame match.webp';
-import ingameMatch2 from '@/app/asset/images/works-obs-action/ingame match2.webp';
-import ingameMatch3 from '@/app/asset/images/works-obs-action/ingame match3.webp';
-import pregame from '@/app/asset/images/works-obs-action/pregame.webp';
-import pregame2 from '@/app/asset/images/works-obs-action/pregame2.webp';
 
 const overlayAssets = [
-  { name: 'Drafting Overlay', image: draftingOverlay },
-  { name: 'Ending Overlay', image: endingOverlay },
-  { name: 'Final Pregame', image: finalPregame },
-  { name: 'Finals Ingame Overlay', image: finalsIngameOverlay },
-  { name: 'In-game Overlay 1', image: inGameOverlay1 },
-  { name: 'In-game Overlay 2', image: inGameOverlay2 },
-  { name: 'In-game Overlay 3', image: inGameOverlay3 },
-  { name: 'Live Overlay', image: liveOverlay },
-  { name: 'Map Overlay', image: mapOverlay },
-  { name: 'Path Bottom', image: pathBottom },
-  { name: 'Pre-game Stream 1', image: preGameStream1 },
-  { name: 'Pre-game Stream 2', image: preGameStream2 },
+  { name: 'Drafting Overlay', image: '/asset/images/works-obs-overlay/drafting.webp' },
+  { name: 'Ending Overlay', image: '/asset/images/works-obs-overlay/ending overlay.webp' },
+  { name: 'Final Pregame', image: '/asset/images/works-obs-overlay/final pregame.webp' },
+  { name: 'Finals Ingame Overlay', image: '/asset/images/works-obs-overlay/finals ingame overlay.webp' },
+  { name: 'In-game Overlay 1', image: '/asset/images/works-obs-overlay/in-game overlay1.webp' },
+  { name: 'In-game Overlay 2', image: '/asset/images/works-obs-overlay/in-game overlay2.webp' },
+  { name: 'In-game Overlay 3', image: '/asset/images/works-obs-overlay/in-game overlay3.webp' },
+  { name: 'Live Overlay', image: '/asset/images/works-obs-overlay/live overlay.webp' },
+  { name: 'Map Overlay', image: '/asset/images/works-obs-overlay/map overlay.webp' },
+  { name: 'Path Bottom', image: '/asset/images/works-obs-overlay/path-bottom.webp' },
+  { name: 'Pre-game Stream 1', image: '/asset/images/works-obs-overlay/pre-game stream1.webp' },
+  { name: 'Pre-game Stream 2', image: '/asset/images/works-obs-overlay/pre-game stream2.webp' },
 ];
 
 const overlaysInAction = [
-  { name: 'Commbreak', image: commbreak },
-  { name: 'Drafting in Action', image: draftingAction },
-  { name: 'Drafting 1 in Action', image: drafting1Action },
-  { name: 'Ingame Match', image: ingameMatch },
-  { name: 'Ingame Match 2', image: ingameMatch2 },
-  { name: 'Ingame Match 3', image: ingameMatch3 },
-  { name: 'Pregame', image: pregame },
-  { name: 'Pregame 2', image: pregame2 },
+  { name: 'Commbreak', image: '/asset/images/works-obs-action/commbreak.webp' },
+  { name: 'Drafting in Action', image: '/asset/images/works-obs-action/drafting.webp' },
+  { name: 'Drafting 1 in Action', image: '/asset/images/works-obs-action/drafting1.webp' },
+  { name: 'Ingame Match', image: '/asset/images/works-obs-action/ingame match.webp' },
+  { name: 'Ingame Match 2', image: '/asset/images/works-obs-action/ingame match2.webp' },
+  { name: 'Ingame Match 3', image: '/asset/images/works-obs-action/ingame match3.webp' },
+  { name: 'Pregame', image: '/asset/images/works-obs-action/pregame.webp' },
+  { name: 'Pregame 2', image: '/asset/images/works-obs-action/pregame2.webp' },
 ];
 
 export default function ObsOverlaysPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<{src: StaticImageData | string, alt: string} | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
 
-  const openModal = (src: StaticImageData | string, alt: string) => {
+  const openModal = (src: string, alt: string) => {
     setSelectedImage({ src, alt });
     setIsModalOpen(true);
   };

@@ -12,29 +12,21 @@ import {
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
 import { ImageModal } from '@/components/ImageModal';
-import mlMainLogo from '@/app/asset/images/works-logo/ml main logo.webp';
-import ml3dLogo from '@/app/asset/images/works-logo/ml 3d logo.webp';
-import mlMainLogoBlackText from '@/app/asset/images/works-logo/ml main logo black text.webp';
-import mlMainLogoGradientBg from '@/app/asset/images/works-logo/ml main logo gradient bg.webp';
-import mlMainLogoWhiteText from '@/app/asset/images/works-logo/ml main logo white text.webp';
-import rpMainLogoBadge from '@/app/asset/images/works-logo/RP-main-logo-badge.webp';
-import rpMainLogoText from '@/app/asset/images/works-logo/RP-main-logo-text.webp';
-import rpSublogo from '@/app/asset/images/works-logo/RP-sublogo.webp';
-import rpTextLogo from '@/app/asset/images/works-logo/RP-text-logo.webp';
+
 
 const mlLogoVariants = [
-  { name: 'Main Logo', image: mlMainLogo },
-  { name: '3D Logo', image: ml3dLogo },
-  { name: 'Main Logo Black Text', image: mlMainLogoBlackText },
-  { name: 'Main Logo Gradient BG', image: mlMainLogoGradientBg },
-  { name: 'Main Logo White Text', image: mlMainLogoWhiteText },
+  { name: 'Main Logo', image: '/asset/images/works-logo/ml main logo.webp' },
+  { name: '3D Logo', image: '/asset/images/works-logo/ml 3d logo.webp' },
+  { name: 'Main Logo Black Text', image: '/asset/images/works-logo/ml main logo black text.webp' },
+  { name: 'Main Logo Gradient BG', image: '/asset/images/works-logo/ml main logo gradient bg.webp' },
+  { name: 'Main Logo White Text', image: '/asset/images/works-logo/ml main logo white text.webp' },
 ];
 
 const rpLogoVariants = [
-  { name: 'Main Logo Badge', image: rpMainLogoBadge },
-  { name: 'Main Logo Text', image: rpMainLogoText },
-  { name: 'Sublogo', image: rpSublogo },
-  { name: 'Text Logo', image: rpTextLogo },
+  { name: 'Main Logo Badge', image: '/asset/images/works-logo/RP-main-logo-badge.webp' },
+  { name: 'Main Logo Text', image: '/asset/images/works-logo/RP-main-logo-text.webp' },
+  { name: 'Sublogo', image: '/asset/images/works-logo/RP-sublogo.webp' },
+  { name: 'Text Logo', image: '/asset/images/works-logo/RP-text-logo.webp' },
 ];
 
 const logoProjects = [
@@ -60,9 +52,9 @@ const techStack = {
 
 export default function LogosPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<{src: StaticImageData | string, alt: string} | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
 
-  const openModal = (src: StaticImageData | string, alt: string) => {
+  const openModal = (src: string, alt: string) => {
     setSelectedImage({ src, alt });
     setIsModalOpen(true);
   };

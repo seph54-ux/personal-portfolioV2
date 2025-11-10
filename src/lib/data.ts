@@ -205,21 +205,19 @@ export const blogPosts: Blog[] = [
       <h4>The Power of Starting With What You Love</h4>
       <p>My first designs weren't for clients. They were for friends, gaming teams, and for fun. I created <strong>OBS overlays</strong>, <strong>YouTube thumbnails</strong>, and <strong>fan posters</strong> simply because I loved it. These early works weren't polished, but they reflected one key thing: <strong>drive</strong>. When employers and collaborators saw my raw projects, they saw <strong>initiative and creativity</strong>—two traits that are always in demand.</p>
       
+      <img src="/asset/images/blog/design-journey/foundation-day1.webp" alt="Foundation Day event poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+
       <h4>Document Everything: Behind the Scenes Matters</h4>
       <p>Instead of only showing finished designs, I documented my process. From <strong>wireframes and thumbnails</strong> to <strong>toolkits</strong> and <strong>revisions</strong>, I showcased how I think, not just what I make. This gave potential employers insight into how I solve problems—something no static portfolio image can fully explain.</p>
       
-      <div class="flex flex-col md:flex-row gap-4 my-6">
-        <img src="/asset/images/blog/design-journey/esports.webp" alt="E-Sports event setup" class="rounded-lg w-full md:w-1/3 object-cover" />
-        <img src="/asset/images/blog/design-journey/foundation-day1.webp" alt="Foundation Day event poster" class="rounded-lg w-full md:w-1/3 object-cover" />
-        <img src="/asset/images/blog/design-journey/foundation-day2.webp" alt="Foundation Day event poster part 2" class="rounded-lg w-full md:w-1/3 object-cover" />
-      </div>
-
       <blockquote class="border-l-4 border-primary pl-4 italic my-6">
         Don't hide your side projects—they might be the reason someone hires you.
       </blockquote>
 
       <h4>Tell a Story, Not Just a Skillset</h4>
       <p>Each section of my portfolio became more than just visuals. I added short captions about <strong>why I made it</strong>, <strong>what challenge it solved</strong>, and <strong>what I learned</strong>. This storytelling approach made my work relatable—even to those outside the design world.</p>
+      
+      <img src="/asset/images/blog/design-journey/foundation-day2.webp" alt="Foundation Day event poster part 2" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
       
       <h4>SEO Meets Personal Branding</h4>
       <p>I embedded blog posts (like this one) in my portfolio site with well-researched keywords, natural language, and internal links. For example, my OBS work links to a blog about the rise of live-streaming aesthetics. This keeps users browsing and boosts search engine rankings.</p>
@@ -257,6 +255,10 @@ export const blogPosts: Blog[] = [
     excerpt: 'Thinking of going solo? This guide covers everything from finding clients to managing your finances as a freelance designer.',
     image: getImage('blog-2'),
     content: '<p>Freelancing can be a rewarding career path, offering flexibility and control over your work. However, it also comes with its own set of challenges...</p><h3>Finding Your First Client</h3><p>Leverage your network. Let friends, family, and former colleagues know you\'re available for freelance work. Online platforms like Upwork and Fiverr can also be a good starting point, but be prepared for stiff competition.</p>',
+    seo: {
+        metaDescription: "A comprehensive guide for designers looking to start a freelance career. Covers finding clients, pricing, and managing finances.",
+        keywords: "freelancing, design, freelance guide, finding clients, graphic design business"
+    }
   },
   {
     slug: 'case-study-rebranding-a-local-cafe',
@@ -266,6 +268,10 @@ export const blogPosts: Blog[] = [
     excerpt: 'A deep dive into the process of rebranding "The Daily Grind," a beloved local coffee shop, for a modern audience.',
     image: getImage('blog-3'),
     content: '<p>The Daily Grind had been a local favorite for 15 years, but its branding felt dated. The goal was to refresh the visual identity without alienating its loyal customer base.</p><h3>The Process</h3><p>We started with a deep dive into the cafe\'s history and its customers. We conducted surveys and interviews to understand what people loved about The Daily Grind. The key takeaway was the sense of community and comfort...</p>',
+    seo: {
+        metaDescription: "A case study on the rebranding process for a local coffee shop, from research and strategy to final visual identity.",
+        keywords: "rebranding, case study, brand identity, logo design, local business, cafe branding"
+    }
   },
 ];
 export type AffiliateProduct = {
