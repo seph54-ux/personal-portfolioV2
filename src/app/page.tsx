@@ -28,20 +28,28 @@ export default function Home() {
   
   const faqs = [
     {
-      question: "What kind of services do you offer?",
-      answer: "I offer a range of creative and technical services, including graphic design (posters, logos), web UI/UX design, full-stack web development (websites and webapps), and virtual assistance services like video editing and motion graphics."
+      question: "What exactly does a Tech Virtual Assistant do?",
+      answer: "A Tech VA like me handles all the administrative, creative, and technical tasks you don't have time for. This includes everything from managing your inbox and automating workflows to building your website and designing graphics. The goal is to free up your time so you can focus on your core business."
     },
     {
-      question: "What's your design process like?",
-      answer: "My design process is collaborative and user-centric. It typically starts with a discovery phase to understand your goals, followed by wireframing and prototyping, visual design, and then rounds of feedback and refinement to ensure the final product is perfect."
+      question: "How can automation save my business time and money?",
+      answer: "By identifying repetitive, manual tasks in your daily operations and using smart tools like Zapier, n8n, or custom scripts to automate them. This reduces manual error, ensures tasks are done consistently, and frees up countless hours for you and your team, directly translating into cost savings and increased productivity."
     },
     {
-      question: "Which technologies do you use for web development?",
-      answer: "I specialize in modern web technologies. My primary stack includes Next.js, React, and TypeScript for the frontend, with Tailwind CSS for styling. For backend and database needs, I often use Firebase."
+      question: "What's the process for building a new website?",
+      answer: "We start with a discovery call to understand your goals and brand. From there, I move to design and prototyping. Once you approve the design, I develop the site using modern technologies like Next.js for high performance. We'll have regular check-ins to ensure it's perfect before launching."
     },
     {
-      question: "Are you available for freelance projects?",
-      answer: "Yes, I am currently available for freelance work! If you have a project in mind or just want to discuss an idea, please feel free to get in touch through my contact page."
+      question: "Can I see your design portfolio?",
+      answer: "Absolutely! You can view my portfolio of web and graphic design work to see the quality and style I bring to my projects. You can explore my work using the navigation or start by checking out my poster designs."
+    },
+    {
+      question: "What are your preferred communication channels?",
+      answer: "I'm flexible and can adapt to your team's preferred tools. We can stay connected through Viber, WhatsApp, Telegram, Facebook Messenger, or good old-fashioned email. I am based in the Philippines and work flexibly to accommodate clients in different time zones."
+    },
+    {
+      question: "I'm not tech-savvy. Can you still help me?",
+      answer: "Definitely! My services are designed for busy entrepreneurs and business owners, regardless of their technical expertise. I explain everything in simple terms and manage all the technical details, so you can enjoy the benefits without the headache."
     },
   ];
 
@@ -176,7 +184,16 @@ export default function Home() {
                 <AccordionItem value={`item-${index}`} key={index}>
                   <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    {faq.answer}
+                    {faq.answer === "Absolutely! You can view my portfolio of web and graphic design work to see the quality and style I bring to my projects. You can explore my work using the navigation or start by checking out my poster designs." ? 
+                    (
+                      <>
+                        {faq.answer}{' '}
+                        <Button variant="link" asChild className="p-0 h-auto">
+                           <Link href="/posters">Check out my posters.</Link>
+                        </Button>
+                      </>
+                    )
+                    : faq.answer}
                   </AccordionContent>
                 </AccordionItem>
               ))}
