@@ -200,7 +200,7 @@ export const blogPosts: Blog[] = [
     content: `
       <p>In a world saturated with templates and AI-generated content, one thing still stands out: <strong>authentic passion</strong>. For me, what began as hobby-level graphic design during esports tournaments and late-night concept sketches quickly evolved into a professional portfolio that now speaks for my skills better than any résumé can. Whether you&#39;re a student, freelancer, or aspiring creative professional, I&#39;ll share how I transformed my free-time projects into powerful tools that opened career doors—and how you can do the same.</p>
       
-      <div class="my-6 border-b"></div>
+      <hr />
 
       <h4>The Power of Starting With What You Love</h4>
       <p>My first designs weren&#39;t for clients. They were for friends, gaming teams, and for fun. I created <strong>OBS overlays</strong>, <strong>YouTube thumbnails</strong>, and <strong>fan posters</strong> simply because I loved it. These early works weren&#39;t polished, but they reflected one key thing: <strong>drive</strong>. When employers and collaborators saw my raw projects, they saw <strong>initiative and creativity</strong>—two traits that are always in demand.</p>
@@ -208,16 +208,14 @@ export const blogPosts: Blog[] = [
       <h4>Document Everything: Behind the Scenes Matters</h4>
       <p>Instead of only showing finished designs, I documented my process. From <strong>wireframes and thumbnails</strong> to <strong>toolkits</strong> and <strong>revisions</strong>, I showcased how I think, not just what I make. This gave potential employers insight into how I solve problems—something no static portfolio image can fully explain.</p>
       
-      <img src="/asset/images/blog/design-journey/foundation-day1.webp" alt="Foundation Day event poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/design-journey/foundation-day1.webp" alt="Foundation Day event poster" />
 
-      <blockquote class="border-l-4 border-primary pl-4 italic my-6">
-        Don&#39;t hide your side projects—they might be the reason someone hires you.
-      </blockquote>
+      <blockquote>Don&#39;t hide your side projects—they might be the reason someone hires you.</blockquote>
 
       <h4>Tell a Story, Not Just a Skillset</h4>
       <p>Each section of my portfolio became more than just visuals. I added short captions about <strong>why I made it</strong>, <strong>what challenge it solved</strong>, and <strong>what I learned</strong>. This storytelling approach made my work relatable—even to those outside the design world.</p>
       
-      <img src="/asset/images/blog/design-journey/foundation-day2.webp" alt="Foundation Day event poster part 2" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/design-journey/foundation-day2.webp" alt="Foundation Day event poster part 2" />
       
       <h4>SEO Meets Personal Branding</h4>
       <p>I embedded blog posts (like this one) in my portfolio site with well-researched keywords, natural language, and internal links. For example, my OBS work links to a blog about the rise of live-streaming aesthetics. This keeps users browsing and boosts search engine rankings.</p>
@@ -225,20 +223,18 @@ export const blogPosts: Blog[] = [
       <h4>Final Result: A Living, Breathing Portfolio</h4>
       <p>Now, my site isn&#39;t just a gallery. It&#39;s a <strong>living blog</strong>, an <strong>archive of design evolution</strong>, and a <strong>journal of creative growth</strong>. It turns clicks into conversations—and those into opportunities.</p>
       
-      <div class="my-6 border-b"></div>
+      <hr />
 
       <h4>Closing Thoughts</h4>
-      <p>If you&#39;re reading this, you&#39;re already halfway there. Passion, persistence, and storytelling are your biggest assets. Don&#39;t hide your side projects—they might be the reason someone hires you.</p>
+      <p>If you&#39re reading this, you&#39;re already halfway there. Passion, persistence, and storytelling are your biggest assets. Don&#39;t hide your side projects—they might be the reason someone hires you.</p>
 
-      <blockquote class="border-l-4 border-primary pl-4 italic my-6">
-        “Design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs
-      </blockquote>
+      <blockquote>“Design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs</blockquote>
 
-      <div class="bg-card/50 p-6 rounded-lg my-6">
-        <h5 class="font-bold mb-3">Ready to explore my design work?</h5>
-        <p class="text-muted-foreground">Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school&#39;s esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank" class="text-primary hover:underline">ACCESs - Tanauan City College</a>.</p>
-        <a href="/posters" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
-          Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      <div>
+        <h5>Ready to explore my design work?</h5>
+        <p>Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school&#39;s esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank">ACCESs - Tanauan City College</a>.</p>
+        <a href="/posters">
+          Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
     `,
@@ -268,51 +264,51 @@ export const blogPosts: Blog[] = [
       <h5>The Unexpected Beginning</h5>
       <p>It was 2022—my first year in college. Just like most freshies, I had no clear path yet, no big plans. I was simply navigating college life, one assignment at a time. Then out of nowhere on our second semester, our section chairperson casually asked me:</p>
       
-      <blockquote class="border-l-4 border-primary pl-4 italic my-6">Do you know how to edit photos?</blockquote>
+      <blockquote>Do you know how to edit photos?</blockquote>
       
       <p>I said yes. That one answer unknowingly lit the first spark of what would later become a blazing passion for <strong>esports</strong>.</p>
       
-      <div class="my-6 border-b"></div>
+      <hr />
 
       <h4>Chapter 1: Pressures, Posters, and Professor Visaya</h4>
       <p>That simple editing request led me into the inner workings of our school&#39;s esports organization. Suddenly, I was part of something bigger—<strong>creating graphics</strong>, <strong>supporting tournaments</strong>, <strong>designing livestream overlays</strong>. I became one of the "go-to" graphics guys.</p>
       <p>But it wasn&#39;t always fun and games.</p>
       <p>Under the intense guidance of our esports adviser, <strong>Mr. Ralph Visaya</strong>, we were pushed hard—<strong>tight deadlines, last-minute edits, nonstop revisions</strong>. I remember how often I&#39;d feel frustrated, overwhelmed, even angry.</p>
       
-      <img src="/asset/images/blog/esports-journey/esports3.webp" alt="Designing an esports poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/esports-journey/esports3.webp" alt="Designing an esports poster" />
 
-      <blockquote class="border-l-4 border-primary pl-4 italic my-6">Growth begins where comfort ends.</blockquote>
+      <blockquote>Growth begins where comfort ends.</blockquote>
       
       <p>At the time, I didn&#39;t see the value of the pressure. I only saw the clock ticking and a demanding professor expecting me to deliver. But despite the frustration, I still found a way to <strong>get things done—on time, every time</strong>.</p>
       <p>And looking back now, I realize: <strong>I wouldn&#39;t have it any other way</strong>.</p>
 
-      <div class="my-6 border-b"></div>
+      <hr />
       
       <h4>Chapter 2: Passion Beyond Posters</h4>
       <p>What started with simple posters quickly evolved into something far greater. Thanks to Mr. Visaya and our tech-savvy mentor, Mr. Daniel Bermodez, I was introduced to the technical side of esports:</p>
-      <ul class="list-disc list-inside my-4 space-y-2">
+      <ul>
         <li>Setting up <strong>OBS for livestreams</strong></li>
         <li>Handling <strong>virtual event layouts</strong></li>
         <li>Laying down <strong>Cat6 fiber optic cables</strong> for our gym&#39;s esports events</li>
       </ul>
       <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn&#39;t just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
 
-      <img src="/asset/images/blog/esports-journey/LED-truck.webp" alt="Setting up an LED truck for an event" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/esports-journey/LED-truck.webp" alt="Setting up an LED truck for an event" />
 
       [[CAROUSEL]]
 
-      <div class="my-6 border-b"></div>
+      <hr />
 
       <h4>Chapter 3: The Flame Ignites</h4>
       <p>The stress, the pressure, the unexpected responsibilities—they didn&#39;t break me. They built me. Somewhere in the middle of all that tension, I discovered something I never expected:</p>
       
-      <blockquote class="border-l-4 border-primary pl-4 italic my-6">Sometimes, the fire that burns you is the same fire that forges you.</blockquote>
+      <blockquote>Sometimes, the fire that burns you is the same fire that forges you.</blockquote>
       
       <p>I was no longer just a student assigned to make posters. I was now a creative lead, a production tech, a broadcast organizer—someone who could imagine, design, and execute an entire <strong>esports event</strong> from scratch.</p>
 
-      <img src="/asset/images/blog/esports-journey/esports4.webp" alt="Behind the scenes at an esports tournament" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/esports-journey/esports4.webp" alt="Behind the scenes at an esports tournament" />
 
-      <div class="my-6 border-b"></div>
+      <hr />
 
       <h4>Gratitude in Hindsight</h4>
       <p>Yes, I once got mad at Mr. Visaya. Yes, I was stressed beyond belief. But if I met him again today, I would thank him.</p>
@@ -321,11 +317,11 @@ export const blogPosts: Blog[] = [
       <p>Because of him and Mr. Bermodez, I now hold a burning passion not just for playing games—but for <strong>building the very stages where they&#39;re played.</strong></p>
       <p>This is more than just a story about esports. It&#39;s the story of how I found my path—one deadline, one design, one livestream at a time.</p>
 
-      <div class="bg-card/50 p-6 rounded-lg my-6">
-        <h5 class="font-bold mb-3">Ready to see my esports work in action?</h5>
-        <p class="text-muted-foreground">Explore my portfolio to see how these college experiences shaped my design philosophy and technical skills in the gaming industry.</p>
-        <a href="/obs-overlays" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
-          View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      <div>
+        <h5>Ready to see my esports work in action?</h5>
+        <p>Explore my portfolio to see how these college experiences shaped my design philosophy and technical skills in the gaming industry.</p>
+        <a href="/obs-overlays">
+          View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
     `,
@@ -409,3 +405,4 @@ image: getImage('affiliate-mouse'),
     tags: ['streaming'],
   },
 ];
+
