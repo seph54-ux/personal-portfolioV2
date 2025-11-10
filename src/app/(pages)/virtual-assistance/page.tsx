@@ -92,12 +92,12 @@ const stats = [
 ]
 
 const techStack = [
-    { icon: BarChart, category: "Project Management", tools: "Monday, Notion, Slack" },
-    { icon: Code, category: "Development", tools: "React, Firebase, Node.js" },
-    { icon: Brush, category: "Design", tools: "Figma, Canva, Inkscape" },
-    { icon: Cpu, category: "AI Tools", tools: "ChatGPT, Claude, Gemini" },
-    { icon: Zap, category: "Automation", tools: "n8n, Zapier, Make.com" },
-    { icon: Cloud, category: "Cloud Services", tools: "Google Workspace, Firebase" }
+    { icon: BarChart, category: "Project Management", tools: "Monday, Notion, Slack, Trello, GoHighLevel" },
+    { icon: Code, category: "Development", tools: "React, Next.js, Firebase, Node.js" },
+    { icon: Brush, category: "Design", tools: "Figma, Canva, Inkscape, Photoshop" },
+    { icon: Cpu, category: "AI Tools", tools: "ChatGPT, Claude, Gemini, Perplexity" },
+    { icon: Zap, category: "Automation", tools: "n8n, Zapier, Make.com, GoHighLevel" },
+    { icon: Cloud, category: "Cloud Services", tools: "Google Workspace, Firebase, Supabase" }
 ];
 
 
