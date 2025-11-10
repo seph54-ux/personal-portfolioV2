@@ -266,7 +266,7 @@ export const blogPosts: Blog[] = [
     },
     carouselImages: [
       { title: 'Behind the Scenes - Production Setup', url: '/asset/images/blog/esport-journey/esports2.webp' },
-      { title: 'Live Event - In Action', url: '/asset/images/blog/esports-journey/esports5.webp' },
+      { title: 'Live Event - In Action', url: '/asset/images/blog/esport-journey/esports5.webp' },
       { title: 'Finals Night - On Stage', url: '/asset/images/blog/esport-journey/esports6.webp' },
       { title: 'Team working on the event', url: '/asset/images/blog/esport-journey/esports7.webp' },
       { title: 'Championship Match', url: '/asset/images/blog/esport-journey/esports8.webp' }
