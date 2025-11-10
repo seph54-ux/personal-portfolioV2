@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import profileImage from '@/app/asset/images/profile-image.png';
+import { ArrowRight } from 'lucide-react';
 
 export default function AboutPage() {
   const designTools = Object.values(techStack).filter(t => t.category === 'Design Tool');
@@ -44,6 +45,26 @@ export default function AboutPage() {
           </Button>
         </div>
         <div className="md:col-span-2 space-y-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="glassmorphic p-8 rounded-lg">
+            <h2 className="font-headline text-3xl font-bold mb-4">Who is Philjoseph Orlina?</h2>
+            <div className="prose dark:prose-invert max-w-none text-foreground/90">
+                <p>
+                I'm a passionate engineering graduate who unexpectedly found a strong love for web development. My creativity and logical thinking merged perfectly in this field. But that’s not all — I’m deeply involved in the world of esports, especially in organizing competitive events and designing visuals around them. Outside of all that, I’m just a casual gamer who enjoys playing for fun, appreciating both the art and mechanics of games.
+                </p>
+                <p>
+                I'm also proud to say I was formerly a part of our school's esports organization, where I led various projects and events. Currently, I’m building my very own esports group to continue promoting competitive and creative gaming in my community.
+                </p>
+                <p>
+                Wanna read more about me? I've got some blogs about myself. Check it out.
+                </p>
+                 <Button asChild variant="link" className="p-0 h-auto">
+                    <Link href="/blog">
+                        Explore my blogs <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                </Button>
+            </div>
+          </div>
+          
           <div className="glassmorphic p-8 rounded-lg">
             <h2 className="font-headline text-3xl font-bold mb-4">💡 My Life Philosophy: “Build. Learn. Evolve.” ⚙️🌱</h2>
             <div className="prose dark:prose-invert max-w-none text-foreground/90">
