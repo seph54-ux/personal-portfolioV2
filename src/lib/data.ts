@@ -173,8 +173,6 @@ export type Blog = {
   date: string;
   excerpt: string;
   image: {
-    id: string;
-    description: string;
     imageUrl: string;
     imageHint: string;
   };
@@ -197,8 +195,6 @@ export const blogPosts: Blog[] = [
     date: '2024-07-29',
     excerpt: 'How I Turned My Free-Time Designs Into Career Assets.',
     image: {
-      id: 'blog-passion-project-thumbnail',
-      description: 'Esports tournament setup',
       imageUrl: '/asset/images/blog/design-journey/esports.webp',
       imageHint: 'esports design',
     },
@@ -259,8 +255,6 @@ export const blogPosts: Blog[] = [
     date: '2024-07-20',
     excerpt: 'How a simple college request to edit photos sparked a lifelong passion for esports production, design, and community building.',
     image: {
-      id: 'blog-esports-journey-thumbnail',
-      description: 'Esports event in action',
       imageUrl: '/asset/images/blog/esport-journey/esports1.webp',
       imageHint: 'esports event'
     },
@@ -332,7 +326,7 @@ export const blogPosts: Blog[] = [
         <h5 class="font-bold mb-3">Ready to see my esports work in action?</h5>
         <p class="text-muted-foreground">Explore my portfolio to see how these college experiences shaped my design philosophy and technical skills in the gaming industry.</p>
         <a href="/obs-overlays" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors">
-          View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
     `,
