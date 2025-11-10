@@ -177,13 +177,55 @@ export type Blog = {
 
 export const blogPosts: Blog[] = [
   {
-    slug: '10-design-trends-to-watch-in-2024',
-    title: '10 Design Trends to Watch in 2024',
+    slug: 'passion-projects-to-portfolio',
+    title: 'From Passion Projects to Professional Portfolio',
     author: 'Philjoseph Orlina',
-    date: '2024-05-15',
-    excerpt: 'From AI-generated art to retro-futurism, here are the top 10 design trends you need to know about this year.',
-    image: getImage('blog-1'),
-    content: '<p>The design world is constantly evolving. In 2024, we\'re seeing a fascinating mix of high-tech innovation and nostalgic callbacks. Here are ten trends that are shaping the visual landscape...</p><p>1. <strong>AI-Generated Imagery:</strong> Tools like Midjourney and DALL-E are no longer novelties but are becoming integral parts of the creative process.</p><p>2. <strong>Retro-Futurism:</strong> Think 80s sci-fi meets modern design. Grainy textures, neon colors, and chrome are all making a comeback.</p><p>Read more to discover all 10 trends!</p>',
+    date: '2024-07-29',
+    excerpt: 'How I Turned My Free-Time Designs Into Career Assets.',
+    image: getImage('blog-passion-project'),
+    content: `
+      <p>In a world saturated with templates and AI-generated content, one thing still stands out: <strong>authentic passion</strong>. For me, what began as hobby-level graphic design during esports tournaments and late-night concept sketches quickly evolved into a professional portfolio that now speaks for my skills better than any résumé can. Whether you're a student, freelancer, or aspiring creative professional, I'll share how I transformed my free-time projects into powerful tools that opened career doors—and how you can do the same.</p>
+      
+      <div class="my-6 border-b"></div>
+
+      <h4>The Power of Starting With What You Love</h4>
+      <p>My first designs weren't for clients. They were for friends, gaming teams, and for fun. I created <strong>OBS overlays</strong>, <strong>YouTube thumbnails</strong>, and <strong>fan posters</strong> simply because I loved it. These early works weren't polished, but they reflected one key thing: <strong>drive</strong>. When employers and collaborators saw my raw projects, they saw <strong>initiative and creativity</strong>—two traits that are always in demand.</p>
+      
+      <h4>Document Everything: Behind the Scenes Matters</h4>
+      <p>Instead of only showing finished designs, I documented my process. From <strong>wireframes and thumbnails</strong> to <strong>toolkits</strong> and <strong>revisions</strong>, I showcased how I think, not just what I make. This gave potential employers insight into how I solve problems—something no static portfolio image can fully explain.</p>
+      
+      <img src="${getImage('blog-design-journey').imageUrl}" alt="E-Days 2k23 Featured Image" class="rounded-lg my-6" />
+
+      <blockquote class="border-l-4 border-primary pl-4 italic my-6">
+        Don't hide your side projects—they might be the reason someone hires you.
+      </blockquote>
+
+      <h4>Tell a Story, Not Just a Skillset</h4>
+      <p>Each section of my portfolio became more than just visuals. I added short captions about <strong>why I made it</strong>, <strong>what challenge it solved</strong>, and <strong>what I learned</strong>. This storytelling approach made my work relatable—even to those outside the design world.</p>
+      
+      <h4>SEO Meets Personal Branding</h4>
+      <p>I embedded blog posts (like this one) in my portfolio site with well-researched keywords, natural language, and internal links. For example, my OBS work links to a blog about the rise of live-streaming aesthetics. This keeps users browsing and boosts search engine rankings.</p>
+      
+      <h4>Final Result: A Living, Breathing Portfolio</h4>
+      <p>Now, my site isn't just a gallery. It's a <strong>living blog</strong>, an <strong>archive of design evolution</strong>, and a <strong>journal of creative growth</strong>. It turns clicks into conversations—and those into opportunities.</p>
+      
+      <div class="my-6 border-b"></div>
+
+      <h4>Closing Thoughts</h4>
+      <p>If you're reading this, you're already halfway there. Passion, persistence, and storytelling are your biggest assets. Don't hide your side projects—they might be the reason someone hires you.</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 italic my-6">
+        “Design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs
+      </blockquote>
+
+      <div class="bg-card/50 p-6 rounded-lg my-6">
+        <h5 class="font-bold mb-3">Ready to explore my design work?</h5>
+        <p class="text-muted-foreground">Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school's esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank" class="text-primary hover:underline">ACCESs - Tanauan City College</a>.</p>
+        <a href="/posters" class="inline-block mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors">
+          Explore My Portfolio
+        </a>
+      </div>
+    `,
   },
   {
     slug: 'the-ultimate-guide-to-freelancing-for-designers',
