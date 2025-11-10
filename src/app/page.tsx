@@ -58,7 +58,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
         <div 
-          className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden" 
+          className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden pointer-events-none" 
           style={{marginTop: '-88px'}}
         >
           <iframe
@@ -69,7 +69,6 @@ export default function Home() {
                 border: 0,
               }}
               allow="fullscreen"
-              className="pointer-events-none"
           ></iframe>
         </div>
         
@@ -184,10 +183,10 @@ export default function Home() {
                 <AccordionItem value={`item-${index}`} key={index}>
                   <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    {faq.answer === "Absolutely! You can view my portfolio of web and graphic design work to see the quality and style I bring to my projects. You can explore my work using the navigation or start by checking out my poster designs." ? 
+                    {faq.question === "Can I see your design portfolio?" ? 
                     (
                       <>
-                        {faq.answer}{' '}
+                        Absolutely! You can view my portfolio of web and graphic design work to see the quality and style I bring to my projects. You can explore my work using the navigation or start by checking out my poster designs.{' '}
                         <Button variant="link" asChild className="p-0 h-auto">
                            <Link href="/posters">Check out my posters.</Link>
                         </Button>
