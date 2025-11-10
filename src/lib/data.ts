@@ -254,15 +254,15 @@ export const blogPosts: Blog[] = [
     date: '2024-07-20',
     excerpt: 'How a simple college request to edit photos sparked a lifelong passion for esports production, design, and community building.',
     image: {
-      imageUrl: '/asset/images/blog/esport-journey/esports1.webp',
+      imageUrl: '/asset/images/blog/esports-journey/esports1.webp',
       imageHint: 'esports event'
     },
     carouselImages: [
-      { title: 'Behind the Scenes - Production Setup', url: '/asset/images/blog/esport-journey/esports2.webp' },
-      { title: 'Live Event - In Action', url: '/asset/images/blog/esport-journey/esports5.webp' },
-      { title: 'Finals Night - On Stage', url: '/asset/images/blog/esport-journey/esports6.webp' },
-      { title: 'Team working on the event', url: '/asset/images/blog/esport-journey/esports7.webp' },
-      { title: 'Championship Match', url: '/asset/images/blog/esport-journey/esports8.webp' }
+      { title: 'Behind the Scenes - Production Setup', url: '/asset/images/blog/esports-journey/esports2.webp' },
+      { title: 'E-Sports Organization Group Picture - After 2023 Finals Tournament 1', url: '/asset/images/blog/esports-journey/Edays-2k22-1.webp' },
+      { title: 'E-Sports Organization Group Picture - After 2023 Finals Tournament 2', url: '/asset/images/blog/esports-journey/Edays-2k22.webp' },
+      { title: 'E-Sports Organization Group Picture - After 2024 Championship Match Group Picture 1', url: '/asset/images/blog/esports-journey/group-esports1.webp' },
+      { title: 'E-Sports Organization Group Picture - After 2024 Championship Match Group Picture 2', url: '/asset/images/blog/esports-journey/group-esports2.webp' }
     ],
     content: `
       <h5>The Unexpected Beginning</h5>
@@ -279,7 +279,7 @@ export const blogPosts: Blog[] = [
       <p>But it wasn&#39;t always fun and games.</p>
       <p>Under the intense guidance of our esports adviser, <strong>Mr. Ralph Visaya</strong>, we were pushed hard—<strong>tight deadlines, last-minute edits, nonstop revisions</strong>. I remember how often I&#39;d feel frustrated, overwhelmed, even angry.</p>
       
-      <img src="/asset/images/blog/esport-journey/esports3.webp" alt="Designing an esports poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/esports-journey/esports3.webp" alt="Designing an esports poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
 
       <blockquote class="border-l-4 border-primary pl-4 italic my-6">Growth begins where comfort ends.</blockquote>
       
@@ -297,7 +297,7 @@ export const blogPosts: Blog[] = [
       </ul>
       <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn&#39;t just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
 
-      <img src="/asset/images/blog/esport-journey/LED-truck.webp" alt="Setting up an LED truck for an event" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/esports-journey/LED-truck.webp" alt="Setting up an LED truck for an event" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
 
       [[CAROUSEL]]
 
@@ -310,7 +310,7 @@ export const blogPosts: Blog[] = [
       
       <p>I was no longer just a student assigned to make posters. I was now a creative lead, a production tech, a broadcast organizer—someone who could imagine, design, and execute an entire <strong>esports event</strong> from scratch.</p>
 
-      <img src="/asset/images/blog/esport-journey/esports4.webp" alt="Behind the scenes at an esports tournament" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/esports-journey/esports4.webp" alt="Behind the scenes at an esports tournament" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
 
       <div class="my-6 border-b"></div>
 
@@ -324,7 +324,7 @@ export const blogPosts: Blog[] = [
       <div class="bg-card/50 p-6 rounded-lg my-6">
         <h5 class="font-bold mb-3">Ready to see my esports work in action?</h5>
         <p class="text-muted-foreground">Explore my portfolio to see how these college experiences shaped my design philosophy and technical skills in the gaming industry.</p>
-        <a href="/obs-overlays" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors">
+        <a href="/obs-overlays" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
           View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
@@ -409,5 +409,3 @@ image: getImage('affiliate-mouse'),
     tags: ['streaming'],
   },
 ];
-
-    
