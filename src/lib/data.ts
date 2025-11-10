@@ -1,4 +1,5 @@
 
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { websiteProjects, webUiProjects, posterProjects as allPosterProjects } from './websites-data';
@@ -237,7 +238,7 @@ export const blogPosts: Blog[] = [
       <div class="bg-card/50 p-6 rounded-lg my-6">
         <h5 class="font-bold mb-3">Ready to explore my design work?</h5>
         <p class="text-muted-foreground">Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school's esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank" class="text-primary hover:underline">ACCESs - Tanauan City College</a>.</p>
-        <a href="/posters" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
+        <a href="/posters" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors">
           Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
@@ -245,6 +246,86 @@ export const blogPosts: Blog[] = [
     seo: {
         metaDescription: "Learn how passion projects in graphic design for esports and fun can be transformed into a professional portfolio that opens career doors. A personal journey of creative growth.",
         keywords: "passion projects, design portfolio, career growth, graphic design, esports, freelancing, creative professional"
+    }
+  },
+  {
+    slug: 'esports-journey-from-photo-editor-to-visionary',
+    title: 'From a Simple Photo Editor to an Esports Visionary',
+    author: 'Philjoseph Orlina',
+    date: '2024-07-20',
+    excerpt: 'How a simple college request to edit photos sparked a lifelong passion for esports production, design, and community building.',
+    image: {
+      id: 'blog-esports-journey-thumbnail',
+      description: 'Esports event in action',
+      imageUrl: '/asset/images/blog/esport-journey/fday2.webp',
+      imageHint: 'esports event'
+    },
+    content: `
+      <h5>The Unexpected Beginning</h5>
+      <p>It was 2022—my first year in college. Just like most freshies, I had no clear path yet, no big plans. I was simply navigating college life, one assignment at a time. Then out of nowhere on our second semester, our section chairperson casually asked me:</p>
+      
+      <blockquote class="border-l-4 border-primary pl-4 italic my-6">Do you know how to edit photos?</blockquote>
+      
+      <p>I said yes. That one answer unknowingly lit the first spark of what would later become a blazing passion for <strong>esports</strong>.</p>
+      
+      <div class="my-6 border-b"></div>
+
+      <h4>Chapter 1: Pressures, Posters, and Professor Visaya</h4>
+      <p>That simple editing request led me into the inner workings of our school's esports organization. Suddenly, I was part of something bigger—<strong>creating graphics</strong>, <strong>supporting tournaments</strong>, <strong>designing livestream overlays</strong>. I became one of the "go-to" graphics guys.</p>
+      <p>But it wasn't always fun and games.</p>
+      <p>Under the intense guidance of our esports adviser, <strong>Mr. Ralph Visaya</strong>, we were pushed hard—<strong>tight deadlines, last-minute edits, nonstop revisions</strong>. I remember how often I'd feel frustrated, overwhelmed, even angry.</p>
+      
+      <img src="/asset/images/blog/esport-journey/esports3.webp" alt="Designing an esports poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+
+      <blockquote class="border-l-4 border-primary pl-4 italic my-6">Growth begins where comfort ends.</blockquote>
+      
+      <p>At the time, I didn't see the value of the pressure. I only saw the clock ticking and a demanding professor expecting me to deliver. But despite the frustration, I still found a way to <strong>get things done—on time, every time</strong>.</p>
+      <p>And looking back now, I realize: <strong>I wouldn't have it any other way</strong>.</p>
+
+      <div class="my-6 border-b"></div>
+      
+      <h4>Chapter 2: Passion Beyond Posters</h4>
+      <p>What started with simple posters quickly evolved into something far greater. Thanks to Mr. Visaya and our tech-savvy mentor, Mr. Daniel Bermodez, I was introduced to the technical side of esports:</p>
+      <ul class="list-disc list-inside my-4 space-y-2">
+        <li>Setting up <strong>OBS for livestreams</strong></li>
+        <li>Handling <strong>virtual event layouts</strong></li>
+        <li>Laying down <strong>Cat6 fiber optic cables</strong> for our gym's esports events</li>
+      </ul>
+      <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn't just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
+
+      <img src="/asset/images/blog/esport-journey/LEDtruck.webp" alt="Setting up an LED truck for an event" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+
+      <div class="my-6 border-b"></div>
+
+      <h4>Chapter 3: The Flame Ignites</h4>
+      <p>The stress, the pressure, the unexpected responsibilities—they didn't break me. They built me. Somewhere in the middle of all that tension, I discovered something I never expected:</p>
+      
+      <blockquote class="border-l-4 border-primary pl-4 italic my-6">Sometimes, the fire that burns you is the same fire that forges you.</blockquote>
+      
+      <p>I was no longer just a student assigned to make posters. I was now a creative lead, a production tech, a broadcast organizer—someone who could imagine, design, and execute an entire <strong>esports event</strong> from scratch.</p>
+
+      <img src="/asset/images/blog/esport-journey/esports4.webp" alt="Behind the scenes at an esports tournament" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+
+      <div class="my-6 border-b"></div>
+
+      <h4>Gratitude in Hindsight</h4>
+      <p>Yes, I once got mad at Mr. Visaya. Yes, I was stressed beyond belief. But if I met him again today, I would thank him.</p>
+      <p>Because <strong>he saw a spark in me that I didn't yet recognize myself.</strong></p>
+      <p>Because he pressured me, challenged me, and pushed me to grow.</p>
+      <p>Because of him and Mr. Bermodez, I now hold a burning passion not just for playing games—but for <strong>building the very stages where they're played.</strong></p>
+      <p>This is more than just a story about esports. It's the story of how I found my path—one deadline, one design, one livestream at a time.</p>
+
+      <div class="bg-card/50 p-6 rounded-lg my-6">
+        <h5 class="font-bold mb-3">Ready to see my esports work in action?</h5>
+        <p class="text-muted-foreground">Explore my portfolio to see how these college experiences shaped my design philosophy and technical skills in the gaming industry.</p>
+        <a href="/obs-overlays" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors">
+          View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    `,
+    seo: {
+        metaDescription: "Follow my journey from a casual photo editor in college to an esports visionary, handling everything from graphic design to live event production. A story of passion, pressure, and growth.",
+        keywords: "esports journey, graphic design, event production, student passion, OBS, livestream, career development, gaming community"
     }
   },
   {
