@@ -293,8 +293,6 @@ export const blogPosts: Blog[] = [
       <p>At the time, I didn't see the value of the pressure. I only saw the clock ticking and a demanding professor expecting me to deliver. But despite the frustration, I still found a way to <strong>get things done—on time, every time</strong>.</p>
       <p>And looking back now, I realize: <strong>I wouldn't have it any other way</strong>.</p>
 
-      [[CAROUSEL]]
-
       <div class="my-6 border-b"></div>
       
       <h4>Chapter 2: Passion Beyond Posters</h4>
@@ -307,6 +305,8 @@ export const blogPosts: Blog[] = [
       <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn't just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
 
       <img src="/asset/images/blog/esport-journey/LED-truck.webp" alt="Setting up an LED truck for an event" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+
+      [[CAROUSEL]]
 
       <div class="my-6 border-b"></div>
 
