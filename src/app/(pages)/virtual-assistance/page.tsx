@@ -87,7 +87,7 @@ const services = [
 const stats = [
     { value: "50+", label: "Tools & Technologies Mastered" },
     { value: "100%", label: "Remote Work Ready" },
-    { value: "24/7", label: "Communication Available" },
+    { value: "Always On", label: "Responsive Communication" },
     { value: "Fresh", label: "Computer Engineering Graduate 2025" }
 ]
 
