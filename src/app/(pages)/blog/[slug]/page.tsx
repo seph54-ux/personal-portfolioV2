@@ -1,4 +1,5 @@
 
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { blogPosts } from '@/lib/data';
@@ -6,6 +7,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { BlogImageCarousel } from '@/components/BlogImageCarousel';
 
 type BlogPageProps = {
   params: {
@@ -42,6 +44,8 @@ export default function BlogPage({ params }: BlogPageProps) {
     notFound();
   }
 
+  const contentParts = post.content.split('[[CAROUSEL]]');
+
   return (
     <div className="max-w-4xl mx-auto py-8 md:py-16">
         <Button asChild variant="ghost" className="mb-8">
@@ -68,12 +72,19 @@ export default function BlogPage({ params }: BlogPageProps) {
             data-ai-hint={post.image.imageHint}
           />
         </div>
+        
+        <div className="prose dark:prose-invert max-w-none text-foreground/90 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div dangerouslySetInnerHTML={{ __html: contentParts[0] }} />
 
-        <div 
-          className="prose dark:prose-invert max-w-none text-foreground/90 animate-fade-in" 
-          style={{ animationDelay: '0.4s' }}
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+          {post.carouselImages && contentParts.length > 1 && (
+            <div className="not-prose my-12">
+              <BlogImageCarousel images={post.carouselImages} />
+            </div>
+          )}
+
+          {contentParts[1] && <div dangerouslySetInnerHTML={{ __html: contentParts[1] }} />}
+        </div>
+        
       </article>
     </div>
   );

@@ -183,6 +183,10 @@ export type Blog = {
     metaDescription: string;
     keywords: string;
   };
+  carouselImages?: {
+    title: string;
+    url: string;
+  }[];
 };
 
 export const blogPosts: Blog[] = [
@@ -206,11 +210,11 @@ export const blogPosts: Blog[] = [
       <h4>The Power of Starting With What You Love</h4>
       <p>My first designs weren't for clients. They were for friends, gaming teams, and for fun. I created <strong>OBS overlays</strong>, <strong>YouTube thumbnails</strong>, and <strong>fan posters</strong> simply because I loved it. These early works weren't polished, but they reflected one key thing: <strong>drive</strong>. When employers and collaborators saw my raw projects, they saw <strong>initiative and creativity</strong>—two traits that are always in demand.</p>
       
-      <img src="/asset/images/blog/design-journey/foundation-day1.webp" alt="Foundation Day event poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
-
       <h4>Document Everything: Behind the Scenes Matters</h4>
       <p>Instead of only showing finished designs, I documented my process. From <strong>wireframes and thumbnails</strong> to <strong>toolkits</strong> and <strong>revisions</strong>, I showcased how I think, not just what I make. This gave potential employers insight into how I solve problems—something no static portfolio image can fully explain.</p>
       
+      <img src="/asset/images/blog/design-journey/foundation-day1.webp" alt="Foundation Day event poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+
       <blockquote class="border-l-4 border-primary pl-4 italic my-6">
         Don't hide your side projects—they might be the reason someone hires you.
       </blockquote>
@@ -257,9 +261,16 @@ export const blogPosts: Blog[] = [
     image: {
       id: 'blog-esports-journey-thumbnail',
       description: 'Esports event in action',
-      imageUrl: '/asset/images/blog/esport-journey/fday2.webp',
+      imageUrl: '/asset/images/blog/esport-journey/esports1.webp',
       imageHint: 'esports event'
     },
+    carouselImages: [
+      { title: 'Behind the Scenes - Production Setup', url: '/asset/images/blog/esport-journey/esports2.webp' },
+      { title: 'Live Event - In Action', url: '/asset/images/blog/esports-journey/esports5.webp' },
+      { title: 'Finals Night - On Stage', url: '/asset/images/blog/esport-journey/esports6.webp' },
+      { title: 'Team working on the event', url: '/asset/images/blog/esport-journey/esports7.webp' },
+      { title: 'Championship Match', url: '/asset/images/blog/esport-journey/esports8.webp' }
+    ],
     content: `
       <h5>The Unexpected Beginning</h5>
       <p>It was 2022—my first year in college. Just like most freshies, I had no clear path yet, no big plans. I was simply navigating college life, one assignment at a time. Then out of nowhere on our second semester, our section chairperson casually asked me:</p>
@@ -282,6 +293,8 @@ export const blogPosts: Blog[] = [
       <p>At the time, I didn't see the value of the pressure. I only saw the clock ticking and a demanding professor expecting me to deliver. But despite the frustration, I still found a way to <strong>get things done—on time, every time</strong>.</p>
       <p>And looking back now, I realize: <strong>I wouldn't have it any other way</strong>.</p>
 
+      [[CAROUSEL]]
+
       <div class="my-6 border-b"></div>
       
       <h4>Chapter 2: Passion Beyond Posters</h4>
@@ -293,7 +306,7 @@ export const blogPosts: Blog[] = [
       </ul>
       <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn't just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
 
-      <img src="/asset/images/blog/esport-journey/LEDtruck.webp" alt="Setting up an LED truck for an event" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
+      <img src="/asset/images/blog/esport-journey/LED-truck.webp" alt="Setting up an LED truck for an event" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
 
       <div class="my-6 border-b"></div>
 
@@ -381,7 +394,7 @@ export const affiliateProducts: AffiliateProduct[] = [
     description: 'An ergonomic mouse with customizable buttons and high DPI for pixel-perfect accuracy in creative work and competitive gaming.',
     marketplace: 'Lazada Affiliates',
     url: '#',
-    image: getImage('affiliate-mouse'),
+image: getImage('affiliate-mouse'),
     tags: ['gaming', 'streaming'],
   },
   {
