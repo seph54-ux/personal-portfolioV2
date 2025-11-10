@@ -1,5 +1,4 @@
 
-
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { websiteProjects, webUiProjects, posterProjects as allPosterProjects } from './websites-data';
@@ -199,12 +198,12 @@ export const blogPosts: Blog[] = [
       imageHint: 'esports design',
     },
     content: `
-      <p>In a world saturated with templates and AI-generated content, one thing still stands out: <strong>authentic passion</strong>. For me, what began as hobby-level graphic design during esports tournaments and late-night concept sketches quickly evolved into a professional portfolio that now speaks for my skills better than any résumé can. Whether you're a student, freelancer, or aspiring creative professional, I'll share how I transformed my free-time projects into powerful tools that opened career doors—and how you can do the same.</p>
+      <p>In a world saturated with templates and AI-generated content, one thing still stands out: <strong>authentic passion</strong>. For me, what began as hobby-level graphic design during esports tournaments and late-night concept sketches quickly evolved into a professional portfolio that now speaks for my skills better than any résumé can. Whether you&#39;re a student, freelancer, or aspiring creative professional, I&#39;ll share how I transformed my free-time projects into powerful tools that opened career doors—and how you can do the same.</p>
       
       <div class="my-6 border-b"></div>
 
       <h4>The Power of Starting With What You Love</h4>
-      <p>My first designs weren't for clients. They were for friends, gaming teams, and for fun. I created <strong>OBS overlays</strong>, <strong>YouTube thumbnails</strong>, and <strong>fan posters</strong> simply because I loved it. These early works weren't polished, but they reflected one key thing: <strong>drive</strong>. When employers and collaborators saw my raw projects, they saw <strong>initiative and creativity</strong>—two traits that are always in demand.</p>
+      <p>My first designs weren&#39;t for clients. They were for friends, gaming teams, and for fun. I created <strong>OBS overlays</strong>, <strong>YouTube thumbnails</strong>, and <strong>fan posters</strong> simply because I loved it. These early works weren&#39;t polished, but they reflected one key thing: <strong>drive</strong>. When employers and collaborators saw my raw projects, they saw <strong>initiative and creativity</strong>—two traits that are always in demand.</p>
       
       <h4>Document Everything: Behind the Scenes Matters</h4>
       <p>Instead of only showing finished designs, I documented my process. From <strong>wireframes and thumbnails</strong> to <strong>toolkits</strong> and <strong>revisions</strong>, I showcased how I think, not just what I make. This gave potential employers insight into how I solve problems—something no static portfolio image can fully explain.</p>
@@ -212,7 +211,7 @@ export const blogPosts: Blog[] = [
       <img src="/asset/images/blog/design-journey/foundation-day1.webp" alt="Foundation Day event poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
 
       <blockquote class="border-l-4 border-primary pl-4 italic my-6">
-        Don't hide your side projects—they might be the reason someone hires you.
+        Don&#39;t hide your side projects—they might be the reason someone hires you.
       </blockquote>
 
       <h4>Tell a Story, Not Just a Skillset</h4>
@@ -224,12 +223,12 @@ export const blogPosts: Blog[] = [
       <p>I embedded blog posts (like this one) in my portfolio site with well-researched keywords, natural language, and internal links. For example, my OBS work links to a blog about the rise of live-streaming aesthetics. This keeps users browsing and boosts search engine rankings.</p>
       
       <h4>Final Result: A Living, Breathing Portfolio</h4>
-      <p>Now, my site isn't just a gallery. It's a <strong>living blog</strong>, an <strong>archive of design evolution</strong>, and a <strong>journal of creative growth</strong>. It turns clicks into conversations—and those into opportunities.</p>
+      <p>Now, my site isn&#39;t just a gallery. It&#39;s a <strong>living blog</strong>, an <strong>archive of design evolution</strong>, and a <strong>journal of creative growth</strong>. It turns clicks into conversations—and those into opportunities.</p>
       
       <div class="my-6 border-b"></div>
 
       <h4>Closing Thoughts</h4>
-      <p>If you're reading this, you're already halfway there. Passion, persistence, and storytelling are your biggest assets. Don't hide your side projects—they might be the reason someone hires you.</p>
+      <p>If you&#39;re reading this, you&#39;re already halfway there. Passion, persistence, and storytelling are your biggest assets. Don&#39;t hide your side projects—they might be the reason someone hires you.</p>
 
       <blockquote class="border-l-4 border-primary pl-4 italic my-6">
         “Design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs
@@ -237,8 +236,8 @@ export const blogPosts: Blog[] = [
 
       <div class="bg-card/50 p-6 rounded-lg my-6">
         <h5 class="font-bold mb-3">Ready to explore my design work?</h5>
-        <p class="text-muted-foreground">Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school's esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank" class="text-primary hover:underline">ACCESs - Tanauan City College</a>.</p>
-        <a href="/posters" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors">
+        <p class="text-muted-foreground">Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school&#39;s esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank" class="text-primary hover:underline">ACCESs - Tanauan City College</a>.</p>
+        <a href="/posters" class="inline-flex items-center mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
           Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
@@ -255,7 +254,7 @@ export const blogPosts: Blog[] = [
     date: '2024-07-20',
     excerpt: 'How a simple college request to edit photos sparked a lifelong passion for esports production, design, and community building.',
     image: {
-      imageUrl: '/asset/images/blog/esports-journey/esports1.webp',
+      imageUrl: '/asset/images/blog/esport-journey/esports1.webp',
       imageHint: 'esports event'
     },
     carouselImages: [
@@ -276,16 +275,16 @@ export const blogPosts: Blog[] = [
       <div class="my-6 border-b"></div>
 
       <h4>Chapter 1: Pressures, Posters, and Professor Visaya</h4>
-      <p>That simple editing request led me into the inner workings of our school's esports organization. Suddenly, I was part of something bigger—<strong>creating graphics</strong>, <strong>supporting tournaments</strong>, <strong>designing livestream overlays</strong>. I became one of the "go-to" graphics guys.</p>
-      <p>But it wasn't always fun and games.</p>
-      <p>Under the intense guidance of our esports adviser, <strong>Mr. Ralph Visaya</strong>, we were pushed hard—<strong>tight deadlines, last-minute edits, nonstop revisions</strong>. I remember how often I'd feel frustrated, overwhelmed, even angry.</p>
+      <p>That simple editing request led me into the inner workings of our school&#39;s esports organization. Suddenly, I was part of something bigger—<strong>creating graphics</strong>, <strong>supporting tournaments</strong>, <strong>designing livestream overlays</strong>. I became one of the "go-to" graphics guys.</p>
+      <p>But it wasn&#39;t always fun and games.</p>
+      <p>Under the intense guidance of our esports adviser, <strong>Mr. Ralph Visaya</strong>, we were pushed hard—<strong>tight deadlines, last-minute edits, nonstop revisions</strong>. I remember how often I&#39;d feel frustrated, overwhelmed, even angry.</p>
       
       <img src="/asset/images/blog/esport-journey/esports3.webp" alt="Designing an esports poster" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
 
       <blockquote class="border-l-4 border-primary pl-4 italic my-6">Growth begins where comfort ends.</blockquote>
       
-      <p>At the time, I didn't see the value of the pressure. I only saw the clock ticking and a demanding professor expecting me to deliver. But despite the frustration, I still found a way to <strong>get things done—on time, every time</strong>.</p>
-      <p>And looking back now, I realize: <strong>I wouldn't have it any other way</strong>.</p>
+      <p>At the time, I didn&#39;t see the value of the pressure. I only saw the clock ticking and a demanding professor expecting me to deliver. But despite the frustration, I still found a way to <strong>get things done—on time, every time</strong>.</p>
+      <p>And looking back now, I realize: <strong>I wouldn&#39;t have it any other way</strong>.</p>
 
       <div class="my-6 border-b"></div>
       
@@ -294,9 +293,9 @@ export const blogPosts: Blog[] = [
       <ul class="list-disc list-inside my-4 space-y-2">
         <li>Setting up <strong>OBS for livestreams</strong></li>
         <li>Handling <strong>virtual event layouts</strong></li>
-        <li>Laying down <strong>Cat6 fiber optic cables</strong> for our gym's esports events</li>
+        <li>Laying down <strong>Cat6 fiber optic cables</strong> for our gym&#39;s esports events</li>
       </ul>
-      <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn't just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
+      <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn&#39;t just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
 
       <img src="/asset/images/blog/esport-journey/LED-truck.webp" alt="Setting up an LED truck for an event" class="rounded-lg my-8 w-full md:w-2/3 mx-auto" />
 
@@ -305,7 +304,7 @@ export const blogPosts: Blog[] = [
       <div class="my-6 border-b"></div>
 
       <h4>Chapter 3: The Flame Ignites</h4>
-      <p>The stress, the pressure, the unexpected responsibilities—they didn't break me. They built me. Somewhere in the middle of all that tension, I discovered something I never expected:</p>
+      <p>The stress, the pressure, the unexpected responsibilities—they didn&#39;t break me. They built me. Somewhere in the middle of all that tension, I discovered something I never expected:</p>
       
       <blockquote class="border-l-4 border-primary pl-4 italic my-6">Sometimes, the fire that burns you is the same fire that forges you.</blockquote>
       
@@ -317,10 +316,10 @@ export const blogPosts: Blog[] = [
 
       <h4>Gratitude in Hindsight</h4>
       <p>Yes, I once got mad at Mr. Visaya. Yes, I was stressed beyond belief. But if I met him again today, I would thank him.</p>
-      <p>Because <strong>he saw a spark in me that I didn't yet recognize myself.</strong></p>
+      <p>Because <strong>he saw a spark in me that I didn&#39;t yet recognize myself.</strong></p>
       <p>Because he pressured me, challenged me, and pushed me to grow.</p>
-      <p>Because of him and Mr. Bermodez, I now hold a burning passion not just for playing games—but for <strong>building the very stages where they're played.</strong></p>
-      <p>This is more than just a story about esports. It's the story of how I found my path—one deadline, one design, one livestream at a time.</p>
+      <p>Because of him and Mr. Bermodez, I now hold a burning passion not just for playing games—but for <strong>building the very stages where they&#39;re played.</strong></p>
+      <p>This is more than just a story about esports. It&#39;s the story of how I found my path—one deadline, one design, one livestream at a time.</p>
 
       <div class="bg-card/50 p-6 rounded-lg my-6">
         <h5 class="font-bold mb-3">Ready to see my esports work in action?</h5>
@@ -342,7 +341,7 @@ export const blogPosts: Blog[] = [
     date: '2024-04-22',
     excerpt: 'Thinking of going solo? This guide covers everything from finding clients to managing your finances as a freelance designer.',
     image: getImage('blog-2'),
-    content: '<p>Freelancing can be a rewarding career path, offering flexibility and control over your work. However, it also comes with its own set of challenges...</p><h3>Finding Your First Client</h3><p>Leverage your network. Let friends, family, and former colleagues know you\'re available for freelance work. Online platforms like Upwork and Fiverr can also be a good starting point, but be prepared for stiff competition.</p>',
+    content: `<p>Freelancing can be a rewarding career path, offering flexibility and control over your work. However, it also comes with its own set of challenges...</p><h3>Finding Your First Client</h3><p>Leverage your network. Let friends, family, and former colleagues know you&#39;re available for freelance work. Online platforms like Upwork and Fiverr can also be a good starting point, but be prepared for stiff competition.</p>`,
     seo: {
         metaDescription: "A comprehensive guide for designers looking to start a freelance career. Covers finding clients, pricing, and managing finances.",
         keywords: "freelancing, design, freelance guide, finding clients, graphic design business"
@@ -355,7 +354,7 @@ export const blogPosts: Blog[] = [
     date: '2024-03-10',
     excerpt: 'A deep dive into the process of rebranding "The Daily Grind," a beloved local coffee shop, for a modern audience.',
     image: getImage('blog-3'),
-    content: '<p>The Daily Grind had been a local favorite for 15 years, but its branding felt dated. The goal was to refresh the visual identity without alienating its loyal customer base.</p><h3>The Process</h3><p>We started with a deep dive into the cafe\'s history and its customers. We conducted surveys and interviews to understand what people loved about The Daily Grind. The key takeaway was the sense of community and comfort...</p>',
+    content: `<p>The Daily Grind had been a local favorite for 15 years, but its branding felt dated. The goal was to refresh the visual identity without alienating its loyal customer base.</p><h3>The Process</h3><p>We started with a deep dive into the cafe&#39;s history and its customers. We conducted surveys and interviews to understand what people loved about The Daily Grind. The key takeaway was the sense of community and comfort...</p>`,
     seo: {
         metaDescription: "A case study on the rebranding process for a local coffee shop, from research and strategy to final visual identity.",
         keywords: "rebranding, case study, brand identity, logo design, local business, cafe branding"
