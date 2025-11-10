@@ -255,7 +255,7 @@ export const blogPosts: Blog[] = [
     date: '2024-07-20',
     excerpt: 'How a simple college request to edit photos sparked a lifelong passion for esports production, design, and community building.',
     image: {
-      imageUrl: '/asset/images/blog/esport-journey/esports1.webp',
+      imageUrl: '/asset/images/blog/esports-journey/esports1.webp',
       imageHint: 'esports event'
     },
     carouselImages: [
