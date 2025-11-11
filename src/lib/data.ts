@@ -199,54 +199,54 @@ export const blogPosts: Blog[] = [
       imageHint: 'A boy playing a video game',
     },
     content: `
-      <p>Games—they&#39;re not just apps on my phone or a way to pass the time. They&#39;re experiences. They&#39;re stories. They&#39;re the <strong>memories</strong> that come with every victory, every defeat, and every late-night laugh shared with friends.</p>
-      <p>I play not just to win, but to bond—to relive moments, to escape reality, and sometimes, to heal. Below are the games that shaped different chapters of my life. Each has its own story—and if you&#39;re curious, feel free to dive into each one.</p>
+      <p>Games—they're not just apps on my phone or a way to pass the time. They're experiences. They're stories. They're the <strong>memories</strong> that come with every victory, every defeat, and every late-night laugh shared with friends.</p>
+      <p>I play not just to win, but to bond—to relive moments, to escape reality, and sometimes, to heal. Below are the games that shaped different chapters of my life. Each has its own story—and if you're curious, feel free to dive into each one.</p>
 
       <hr />
 
-      <h2 style="text-align: center;">🕹️ Games I Play and Why They Matter to Me</h2>
+      <h2>🕹️ Games I Play and Why They Matter to Me</h2>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; text-align: center;">
-        <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+      <div>
+        <div>
+          <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon">
           <h3>Call of Duty: Mobile</h3>
-          <a href="#codm-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
+          <a href="#codm-story">Read My Story</a>
         </div>
-        <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+        <div>
+          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon">
           <h3>Mobile Legends: Bang Bang</h3>
-          <a href="#mlbb-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
+          <a href="#mlbb-story">Read My Story</a>
         </div>
-        <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+        <div>
+          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon">
           <h3>Bloodstrike</h3>
-          <a href="#bloodstrike-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
+          <a href="#bloodstrike-story">Read My Story</a>
         </div>
-        <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+        <div>
+          <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon">
           <h3>Honor of Kings</h3>
-          <a href="#hok-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
+          <a href="#hok-story">Read My Story</a>
         </div>
-        <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+        <div>
+          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon">
           <h3>Minecraft</h3>
-          <a href="#minecraft-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
+          <a href="#minecraft-story">Read My Story</a>
         </div>
-        <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+        <div>
+          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon">
           <h3>Rusted Warfare</h3>
-          <a href="#rusted-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
+          <a href="#rusted-story">Read My Story</a>
         </div>
-        <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+        <div>
+          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon">
           <h3>Cooking Fever</h3>
-          <a href="#cooking-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
+          <a href="#cooking-story">Read My Story</a>
         </div>
       </div>
 
-      <section id="codm-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon" style="width: 40px; height: 40px;">
+      <section id="codm-story">
+        <div>
+          <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon">
           <h2 class="story-title">Call of Duty: Mobile — "Where It All Began"</h2>
         </div>
         <div>
@@ -259,9 +259,9 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="mlbb-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon" style="width: 40px; height: 40px;">
+      <section id="mlbb-story">
+        <div>
+          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon">
           <h2 class="story-title">Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
         </div>
         <div>
@@ -271,9 +271,9 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="bloodstrike-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon" style="width: 40px; height: 40px;">
+      <section id="bloodstrike-story">
+        <div>
+          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon">
           <h2 class="story-title">Bloodstrike — "The FPS Flame Rekindled"</h2>
         </div>
         <div>
@@ -283,9 +283,9 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="hok-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon" style="width: 40px; height: 40px;">
+      <section id="hok-story">
+        <div>
+          <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon">
           <h2 class="story-title">Honor of Kings — "The Persistent Invitation"</h2>
         </div>
         <div>
@@ -296,9 +296,9 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="minecraft-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon" style="width: 40px; height: 40px;">
+      <section id="minecraft-story">
+        <div>
+          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon">
           <h2 class="story-title">Minecraft — "Creativity and Connection"</h2>
         </div>
         <div>
@@ -311,9 +311,9 @@ export const blogPosts: Blog[] = [
 
       <blockquote><p>The time you spend playing with someone might be the memory they cherish most tomorrow.</p></blockquote>
 
-      <section id="rusted-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon" style="width: 40px; height: 40px;">
+      <section id="rusted-story">
+        <div>
+          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon">
           <h2 class="story-title">Rusted Warfare — "Nostalgia in Pixels"</h2>
         </div>
         <div>
@@ -323,9 +323,9 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="cooking-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon" style="width: 40px; height: 40px;">
+      <section id="cooking-story">
+        <div>
+          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon">
           <h2 class="story-title">Cooking Fever — "Comfort in Chaos"</h2>
         </div>
         <div>
@@ -389,15 +389,15 @@ export const blogPosts: Blog[] = [
       <hr />
 
       <h4>Closing Thoughts</h4>
-      <p>If you&#39re reading this, you&#39;re already halfway there. Passion, persistence, and storytelling are your biggest assets. Don&#39;t hide your side projects—they might be the reason someone hires you.</p>
+      <p>If you&#39;re reading this, you&#39;re already halfway there. Passion, persistence, and storytelling are your biggest assets. Don&#39;t hide your side projects—they might be the reason someone hires you.</p>
 
       <blockquote>“Design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs</blockquote>
 
       <div>
         <h5>Ready to explore my design work?</h5>
         <p>Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school&#39;s esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank">ACCESs - Tanauan City College</a>.</p>
-         <a href="/posters" style="text-decoration: none;" class="inline-flex items-center">
-          Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+         <a href="/posters" class="no-underline">
+          Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
     `,
@@ -507,41 +507,111 @@ export type AffiliateProduct = {
 
 export const affiliateProducts: AffiliateProduct[] = [
   {
-    id: 'aff-keyboard',
-    name: 'Mechanical Keyboard',
-    description: 'A tactile and responsive keyboard that improves typing speed and gaming performance. A must-have for any seriou.',
-    marketplace: 'Amazon Associates',
-    url: '#',
-    image: getImage('affiliate-keyboard'),
+    id: 'aff-mouse-1',
+    name: 'Logitech B170 Wireless Mouse',
+    description: 'A reliable and affordable wireless mouse for everyday productivity and light gaming.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.cdc1HS',
+    image: getImage('aff-logitech-mouse'),
     tags: ['gaming'],
   },
   {
-    id: 'aff-mouse',
-    name: 'High-Precision Gaming Mouse',
-    description: 'An ergonomic mouse with customizable buttons and high DPI for pixel-perfect accuracy in creative work and competitive gaming.',
-    marketplace: 'Lazada Affiliates',
-    url: '#',
-image: getImage('affiliate-mouse'),
+    id: 'aff-keyboard-1',
+    name: 'Zeus K-198 Series Gaming Keyboard',
+    description: 'An entry-level gaming keyboard with durable keys and a comfortable layout for long gaming sessions.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.cdc1UN',
+    image: getImage('aff-zeus-keyboard'),
+    tags: ['gaming', 'streaming'],
+  },
+    {
+    id: 'aff-headset-1',
+    name: 'Inplay S500 RGB Wired Stereo Gaming Headset',
+    description: 'Immersive stereo sound with RGB lighting to enhance your gaming setup.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.cdcccQ',
+    image: getImage('aff-inplay-headset'),
     tags: ['gaming', 'streaming'],
   },
   {
-    id: 'aff-monitor',
-    name: '4K IPS Monitor',
-    description: 'Experience stunning color accuracy and clarity with a 4K IPS panel. Perfect for design, video editing, and immersive gaming.',
-    marketplace: 'Shopee Affiliate Program',
-    url: '#',
-    image: getImage('affiliate-monitor'),
+    id: 'aff-keyboard-2',
+    name: 'FIREWOLF Rainbow LED Gaming Keyboard',
+    description: 'A vibrant keyboard with rainbow backlighting and responsive keys for a better gaming feel.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.cdccWB',
+    image: getImage('aff-firewolf-keyboard'),
+    tags: ['gaming'],
+  },
+  {
+    id: 'aff-monitor-1',
+    name: "ARZOPA A1 15.6' 60Hz Portable Gaming Monitor",
+    description: 'A portable monitor with a built-in kickstand, perfect for gaming on the go or as a second screen.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.cdccrX',
+    image: getImage('aff-arzopa-a1-monitor'),
     tags: ['gaming', 'streaming'],
   },
   {
-    id: 'aff-mic',
-    name: 'USB Studio Microphone',
-    description: 'Capture crystal-clear audio for streaming, podcasting, or voice-overs. This plug-and-play mic is a game-changer for content creators.',
-    marketplace: 'Amazon Associates',
-    url: '#',
-    image: getImage('affiliate-mic'),
+    id: 'aff-monitor-2',
+    name: 'Nvision 24 Inch 100Hz Frameless Gaming Monitor',
+    description: 'A smooth 100Hz refresh rate and frameless design make this a great choice for immersive FHD gaming.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.cdccH6',
+    image: getImage('aff-nvision-monitor'),
+    tags: ['gaming'],
+  },
+    {
+    id: 'aff-monitor-3',
+    name: 'ARZOPA 14" A1S Portable Laptop Monitor',
+    description: 'A compact and lightweight FHD portable monitor with dual speakers, ideal for productivity and travel.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.c7mbm2',
+    image: getImage('aff-arzopa-a1s-monitor'),
     tags: ['streaming'],
   },
+  {
+    id: 'aff-monitor-4',
+    name: 'EXPOSE ZEUSLAP P15A Portable Touch Screen Monitor',
+    description: 'A 15.6-inch 4K portable monitor with touch screen capabilities for an interactive experience.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.c7mbNh',
+    image: getImage('aff-expose-monitor'),
+    tags: ['gaming'],
+  },
+  {
+    id: 'aff-monitor-5',
+    name: 'KAMPEON Gaming Monitor 24" Curve',
+    description: 'A 24-inch curved 4K monitor that provides an immersive viewing experience for gaming and media.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.c7mbMa',
+    image: getImage('aff-kampeon-monitor'),
+    tags: ['gaming'],
+  },
+    {
+    id: 'aff-headset-2',
+    name: 'Allan Gaming Headset with Microphone',
+    description: 'A budget-friendly gaming headset with noise cancellation for clear communication.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.c7mbLo',
+    image: getImage('aff-allan-headset'),
+    tags: ['gaming'],
+  },
+  {
+    id: 'aff-headset-3',
+    name: 'INPLAY H20 Dynamic Driver RGB Gaming Headset',
+    description: 'Features dynamic drivers and noise cancellation for high-quality audio and clear chat.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.c7mbsF',
+    image: getImage('aff-inplay-h20-headset'),
+    tags: ['gaming'],
+  },
+  {
+    id: 'aff-headset-4',
+    name: 'Awei GM-6 HIFI Super Bass Wired Headphone',
+    description: 'Delivers super bass and high-fidelity sound with anti-noise features for an immersive audio experience.',
+    marketplace: 'Lazada',
+    url: 'https://c.lazada.com.ph/t/c.c7mbx2',
+    image: getImage('aff-awei-headset'),
+    tags: ['gaming'],
+  },
 ];
-
-

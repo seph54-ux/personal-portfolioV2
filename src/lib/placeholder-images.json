@@ -105,38 +105,86 @@
     {
       "id": "hero-image",
       "description": "Hero background image",
-      "imageUrl": "https://images.unsplash.com/photo-1600327222811-3a13fc41dd8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMGRlc2lnbnxlbnwwfHx8fDE3NjIxMzc1NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600327222811-3a13fc41dd8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMGRlc2lnbnxlbnwwfHx8fDE3NjIxMzc1NTl8&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract design"
     },
     {
       "id": "about-me",
       "description": "Picture of the designer",
-      "imageUrl": "https://images.unsplash.com/photo-1633883650321-64ed4d02fb98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjIxOTA3NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633883650321-64ed4d02fb98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjIxOTA3NTh8&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "portrait person"
     },
     {
-      "id": "affiliate-keyboard",
-      "description": "A mechanical keyboard on a desk",
-      "imageUrl": "https://images.unsplash.com/photo-1618384887924-2c84b162c69c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWNoYW5pY2FsJTIwa2V5Ym9hcmR8ZW58MHx8fHwxNzYyMzkzMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mechanical keyboard"
+      "id": "aff-logitech-mouse",
+      "description": "Logitech B170 Wireless Mouse",
+      "imageUrl": "/asset/images/affiliate/logitech-mouse.png",
+      "imageHint": "wireless mouse"
     },
     {
-      "id": "affiliate-mouse",
-      "description": "A sleek gaming mouse",
-      "imageUrl": "https://images.unsplash.com/photo-1615663249852-a56d993d0774?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBtb3VzZXxlbnwwfHx8fDE3NjIzOTMyNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gaming mouse"
+      "id": "aff-zeus-keyboard",
+      "description": "Zeus K-198 Series Gaming Keyboard",
+      "imageUrl": "/asset/images/affiliate/zeus-keyboard.jpg",
+      "imageHint": "gaming keyboard"
     },
     {
-      "id": "affiliate-monitor",
-      "description": "A high-resolution computer monitor",
-      "imageUrl": "https://images.unsplash.com/photo-1587376025385-3746c879339e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMG1vbml0b3J8ZW58MHx8fHwxNzYyMzkzMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "computer monitor"
+      "id": "aff-inplay-headset",
+      "description": "Inplay S500 RGB Wired Stereo Gaming Headset",
+      "imageUrl": "/asset/images/affiliate/inplay-gaming-headset.jpg",
+      "imageHint": "gaming headset"
     },
     {
-      "id": "affiliate-mic",
-      "description": "A professional streaming microphone",
-      "imageUrl": "https://images.unsplash.com/photo-1590602848950-2f26c713390d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHJlYW1pbmclMjBtaWNyb3Bob25lfGVufDB8fHx8MTc2MjM5MzI2MHww&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "streaming microphone"
+      "id": "aff-firewolf-keyboard",
+      "description": "FIREWOLF Rainbow LED Gaming Keyboard",
+      "imageUrl": "/asset/images/affiliate/firewolf-keyboard.jpg",
+      "imageHint": "led keyboard"
+    },
+    {
+      "id": "aff-arzopa-a1-monitor",
+      "description": "ARZOPA A1 15.6' 60Hz Kickstand Portable Gaming Monitor",
+      "imageUrl": "/asset/images/affiliate/ARZ0PA-A1-portable-monitor.jpg",
+      "imageHint": "portable monitor"
+    },
+    {
+      "id": "aff-nvision-monitor",
+      "description": "Nvision 24 Inch Monitor 100Hz Framless Flat FHD Gaming Monitor",
+      "imageUrl": "/asset/images/affiliate/Nvision-monitor.jpg",
+      "imageHint": "gaming monitor"
+    },
+    {
+      "id": "aff-arzopa-a1s-monitor",
+      "description": "ARZOPA 14' A1S Portable Laptop Monitor",
+      "imageUrl": "/asset/images/affiliate/ARZOPA-A1S-portable-monitor.jpg",
+      "imageHint": "portable monitor"
+    },
+    {
+      "id": "aff-expose-monitor",
+      "description": "EXPOSE Portable Monitor Touch Screen for laptop",
+      "imageUrl": "/asset/images/affiliate/EXPOSE-ZEUSLAP-P15A-portable-monitor.jpg",
+      "imageHint": "touchscreen monitor"
+    },
+    {
+      "id": "aff-kampeon-monitor",
+      "description": "KAMPEON Gaming Monitor for PC 24' Curve Computer Monitor",
+      "imageUrl": "/asset/images/affiliate/KAMPEON-monitor.jpg",
+      "imageHint": "curved monitor"
+    },
+    {
+      "id": "aff-allan-headset",
+      "description": "Allan Gaming Headset with Microphone, Noise Cancellation",
+      "imageUrl": "/asset/images/affiliate/allan-gaming-headset.jpg",
+      "imageHint": "gaming headset"
+    },
+    {
+      "id": "aff-inplay-h20-headset",
+      "description": "INPLAY H20 Dynamic Driver RGB Gaming Headset",
+      "imageUrl": "/asset/images/affiliate/INPLAY-H20-gaming-headset.png",
+      "imageHint": "rgb headset"
+    },
+    {
+      "id": "aff-awei-headset",
+      "description": "Awei GM-6 HIFI Anti-Noise Super Bass Wired Headphone",
+      "imageUrl": "/asset/images/affiliate/AWEI-GM-6-gaming-headset.jpg",
+      "imageHint": "bass headphone"
     }
   ]
 }
