@@ -8,20 +8,20 @@ export function Logo() {
         {/* Light Mode Logo */}
         <div className="dark:hidden">
             <Image 
-                src="/asset/images/personal-logo/logo-light.png" 
+                src="/asset/images/personal-logo/Seph-logo-light.webp" 
                 alt="Philjoseph Orlina Logo" 
-                width={180} 
-                height={40} 
+                width={120} 
+                height={30} 
                 priority
             />
         </div>
         {/* Dark Mode Logo */}
         <div className="hidden dark:block">
             <Image 
-                src="/asset/images/personal-logo/logo-dark.png" 
+                src="/asset/images/personal-logo/Seph-logo-dark.webp" 
                 alt="Philjoseph Orlina Logo" 
-                width={180} 
-                height={40}
+                width={120} 
+                height={30}
                 priority
             />
         </div>
