@@ -1,3 +1,4 @@
+
 import { PageHeader } from "@/components/PageHeader";
 import { affiliateProducts } from "@/lib/data";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,9 +21,9 @@ export default function AffiliatesPage() {
               <Image
                 src={product.image.imageUrl}
                 alt={product.name}
-                width={200}
-                height={200}
-                className="w-auto h-auto max-w-[200px] max-h-[200px] object-contain transition-transform duration-500 group-hover:scale-105"
+                width={250}
+                height={250}
+                className="w-auto h-auto max-w-[250px] max-h-[250px] object-contain transition-transform duration-500 group-hover:scale-105"
                 data-ai-hint={product.image.imageHint}
               />
             </div>
