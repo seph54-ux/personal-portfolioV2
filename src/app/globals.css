@@ -130,7 +130,7 @@
       hsla(0, 0%, 100%, 0.4) 60%,
       hsla(0, 0%, 100%, 0)
     );
-    width: 30%;
+    width: 40%;
     height: 100%;
     transform: translateX(-150%) skewX(-20deg);
     transition: transform 0.6s;
