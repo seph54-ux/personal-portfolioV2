@@ -117,73 +117,73 @@
     {
       "id": "aff-logitech-mouse",
       "description": "Logitech B170 Wireless Mouse",
-      "imageUrl": "/asset/images/affiliate/logitech-mouse.png",
+      "imageUrl": "/asset/images/affiliate/logitech-mouse.webp",
       "imageHint": "wireless mouse"
     },
     {
       "id": "aff-zeus-keyboard",
       "description": "Zeus K-198 Series Gaming Keyboard",
-      "imageUrl": "/asset/images/affiliate/zeus-keyboard.jpg",
+      "imageUrl": "/asset/images/affiliate/zeus-keyboard.webp",
       "imageHint": "gaming keyboard"
     },
     {
       "id": "aff-inplay-headset",
       "description": "Inplay S500 RGB Wired Stereo Gaming Headset",
-      "imageUrl": "/asset/images/affiliate/inplay-gaming-headset.jpg",
+      "imageUrl": "/asset/images/affiliate/inplay-gaming headset.webp",
       "imageHint": "gaming headset"
     },
     {
       "id": "aff-firewolf-keyboard",
       "description": "FIREWOLF Rainbow LED Gaming Keyboard",
-      "imageUrl": "/asset/images/affiliate/firewolf-keyboard.jpg",
+      "imageUrl": "/asset/images/affiliate/firewolf-keyboard.webp",
       "imageHint": "led keyboard"
     },
     {
       "id": "aff-arzopa-a1-monitor",
       "description": "ARZOPA A1 15.6' 60Hz Kickstand Portable Gaming Monitor",
-      "imageUrl": "/asset/images/affiliate/ARZ0PA-A1-portable-monitor.jpg",
+      "imageUrl": "/asset/images/affiliate/ARZ0PA A1 portable monitor.webp",
       "imageHint": "portable monitor"
     },
     {
       "id": "aff-nvision-monitor",
       "description": "Nvision 24 Inch Monitor 100Hz Framless Flat FHD Gaming Monitor",
-      "imageUrl": "/asset/images/affiliate/Nvision-monitor.jpg",
+      "imageUrl": "/asset/images/affiliate/Nvision-monitor.webp",
       "imageHint": "gaming monitor"
     },
     {
       "id": "aff-arzopa-a1s-monitor",
       "description": "ARZOPA 14' A1S Portable Laptop Monitor",
-      "imageUrl": "/asset/images/affiliate/ARZOPA-A1S-portable-monitor.jpg",
+      "imageUrl": "/asset/images/affiliate/ARZOPA A1S portable monitor.webp",
       "imageHint": "portable monitor"
     },
     {
       "id": "aff-expose-monitor",
       "description": "EXPOSE Portable Monitor Touch Screen for laptop",
-      "imageUrl": "/asset/images/affiliate/EXPOSE-ZEUSLAP-P15A-portable-monitor.jpg",
+      "imageUrl": "/asset/images/affiliate/EXPOSE ZEUSLAP P15A portable monitor.webp",
       "imageHint": "touchscreen monitor"
     },
     {
       "id": "aff-kampeon-monitor",
       "description": "KAMPEON Gaming Monitor for PC 24' Curve Computer Monitor",
-      "imageUrl": "/asset/images/affiliate/KAMPEON-monitor.jpg",
+      "imageUrl": "/asset/images/affiliate/KAMPEON monitor.webp",
       "imageHint": "curved monitor"
     },
     {
       "id": "aff-allan-headset",
       "description": "Allan Gaming Headset with Microphone, Noise Cancellation",
-      "imageUrl": "/asset/images/affiliate/allan-gaming-headset.jpg",
+      "imageUrl": "/asset/images/affiliate/allan gaming headset.webp",
       "imageHint": "gaming headset"
     },
     {
       "id": "aff-inplay-h20-headset",
       "description": "INPLAY H20 Dynamic Driver RGB Gaming Headset",
-      "imageUrl": "/asset/images/affiliate/INPLAY-H20-gaming-headset.png",
+      "imageUrl": "/asset/images/affiliate/INPLAY H20 gaming headset.webp",
       "imageHint": "rgb headset"
     },
     {
       "id": "aff-awei-headset",
       "description": "Awei GM-6 HIFI Anti-Noise Super Bass Wired Headphone",
-      "imageUrl": "/asset/images/affiliate/AWEI-GM-6-gaming-headset.jpg",
+      "imageUrl": "/asset/images/affiliate/AWEI GM-6 gaming headset.webp",
       "imageHint": "bass headphone"
     }
   ]

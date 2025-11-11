@@ -16,13 +16,13 @@ export default function AffiliatesPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {affiliateProducts.map((product, index) => (
           <Card key={product.id} className="glassmorphic overflow-hidden group flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 100}ms`}}>
-            <div className="aspect-video overflow-hidden bg-muted/50 flex items-center justify-center p-4">
+            <div className="aspect-square overflow-hidden bg-muted/50 flex items-center justify-center p-4">
               <Image
                 src={product.image.imageUrl}
                 alt={product.name}
                 width={200}
-                height={150}
-                className="w-auto h-auto max-w-[200px] max-h-[150px] object-contain transition-transform duration-500 group-hover:scale-105"
+                height={200}
+                className="w-auto h-auto max-w-[200px] max-h-[200px] object-contain transition-transform duration-500 group-hover:scale-105"
                 data-ai-hint={product.image.imageHint}
               />
             </div>
