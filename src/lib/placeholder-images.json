@@ -63,7 +63,7 @@
     {
       "id": "obs-2-in-action",
       "description": "Minimalist OBS overlay in action",
-      "imageUrl": "https://images.unsplash.com/photo-1761182036764-e057bff033da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGVhbiUyMHN0cmVhbXxlbnwwfHx8fDE3NjIyMjM4MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1761182036764-e057bff033da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGVhbiUyMHN0cmVhbXxlbnwwfHx8fDE3NjIyMjM4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "clean stream"
     },
     {
@@ -83,6 +83,12 @@
       "description": "Image showing a design process or journey",
       "imageUrl": "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBqb3VybmV5fGVufDB8fHx8MTc2MzQzOTM4NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "design journey"
+    },
+    {
+      "id": "blog-joystick-stories",
+      "description": "Image for blog about gaming memories",
+      "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXRybyUyMGdhbWluZ3xlbnwwfHx8fDE3NjM4NDMyODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "retro gaming"
     },
     {
       "id": "blog-2",
@@ -123,7 +129,7 @@
     {
       "id": "affiliate-monitor",
       "description": "A high-resolution computer monitor",
-      "imageUrl": "https://images.unsplash.com/photo-1587376025385-3746c879339e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMG1vbml0b3J8ZW58MHx8fHwxNzYyMzkzMjYwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1587376025385-3746c879339e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMG1vbml0b3J8ZW58MHx8fHwxNzYyMzkzMjYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "computer monitor"
     },
     {
