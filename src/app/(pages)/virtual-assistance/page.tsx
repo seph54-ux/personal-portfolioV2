@@ -1,4 +1,5 @@
 
+
 'use client';
 import { PageHeader } from '@/components/PageHeader';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -9,6 +10,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight, Bot, Brush, Briefcase, Code, Mail, Globe, Clock, FileCog, CheckCircle, BarChart, Settings, Cloud, Zap, Cpu, Calendar, Star } from 'lucide-react';
+import { AnimatedStat } from '@/components/AnimatedStat';
 
 const painPoints = [
     {
@@ -186,7 +188,7 @@ export default function VirtualAssistancePage() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                 {stats.map(stat => (
                     <div key={stat.label} className="p-4">
-                        <h3 className="text-4xl md:text-5xl font-bold text-primary">{stat.value}</h3>
+                        <AnimatedStat value={stat.value} />
                         <p className="text-muted-foreground mt-2">{stat.label}</p>
                     </div>
                 ))}
