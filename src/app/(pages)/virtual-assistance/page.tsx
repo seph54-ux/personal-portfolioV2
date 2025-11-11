@@ -218,6 +218,26 @@ export default function VirtualAssistancePage() {
             </div>
         </div>
     </section>
+
+    {/* Final CTA Section */}
+    <section className="py-16">
+        <div className="container mx-auto px-4">
+            <div className="glassmorphic rounded-lg p-8 md:p-12 text-center">
+                <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Ready to Elevate Your Business?</h2>
+                <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+                    Stop drowning in busywork. Let's automate your processes, enhance your web presence, and free up your time to focus on what truly matters—growth.
+                </p>
+                <div className="mt-8">
+                    <Button asChild size="lg">
+                        <Link href="/contact">Book a Free Consultation</Link>
+                    </Button>
+                </div>
+                 <p className="mt-4 text-sm text-muted-foreground">
+                    No obligations, just a friendly chat about your goals.
+                </p>
+            </div>
+        </div>
+    </section>
     </>
   );
 }
