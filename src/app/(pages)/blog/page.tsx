@@ -10,8 +10,8 @@ export default function BlogListPage() {
   return (
     <>
       <PageHeader
-        title="Design & Code Insights"
-        subtitle="Thoughts, tutorials, and case studies on the world of design, development, and creativity."
+        title="Creative Chronicles"
+        subtitle="A collection of stories on design, gaming, and the creative journey."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {blogPosts.map((post, index) => (

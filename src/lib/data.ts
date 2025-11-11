@@ -194,7 +194,10 @@ export const blogPosts: Blog[] = [
     author: 'Philjoseph Orlina',
     date: '2025-06-12',
     excerpt: 'More Than Just Pixels – Personal journeys through gaming memories, exploring how games shape our lives and connections.',
-    image: getImage('blog-joystick-stories'),
+    image: {
+      imageUrl: '/asset/images/blog/gaming-journey/gaming-journey.webp',
+      imageHint: 'A boy playing a video game',
+    },
     content: `
       <p>Games—they&#39;re not just apps on my phone or a way to pass the time. They&#39;re experiences. They&#39;re stories. They&#39;re the <strong>memories</strong> that come with every victory, every defeat, and every late-night laugh shared with friends.</p>
       <p>I play not just to win, but to bond—to relive moments, to escape reality, and sometimes, to heal. Below are the games that shaped different chapters of my life. Each has its own story—and if you&#39;re curious, feel free to dive into each one.</p>
@@ -205,37 +208,37 @@ export const blogPosts: Blog[] = [
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; text-align: center;">
         <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games_logo/codm_icon.png" alt="Call of Duty Mobile Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+          <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
           <h3>Call of Duty: Mobile</h3>
           <a href="#codm-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
         </div>
         <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games_logo/mlbb_icon.png" alt="Mobile Legends Bang Bang Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
           <h3>Mobile Legends: Bang Bang</h3>
           <a href="#mlbb-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
         </div>
         <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games_logo/bloodstrike_icon.png" alt="Bloodstrike Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
           <h3>Bloodstrike</h3>
           <a href="#bloodstrike-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
         </div>
         <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games_logo/hok_icon.png" alt="Honor of Kings Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+          <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
           <h3>Honor of Kings</h3>
           <a href="#hok-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
         </div>
         <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games_logo/minecraft_icon.png" alt="Minecraft Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
           <h3>Minecraft</h3>
           <a href="#minecraft-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
         </div>
         <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games_logo/rusted-warfare_icon.png" alt="Rusted Warfare Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
           <h3>Rusted Warfare</h3>
           <a href="#rusted-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
         </div>
         <div style="padding: 1rem; border-radius: 0.5rem; background: hsl(var(--card));">
-          <img src="/asset/images/games_logo/cooking-fever_icon.png" alt="Cooking Fever Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
+          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width: 60px; height: 60px; margin: 0 auto 1rem;">
           <h3>Cooking Fever</h3>
           <a href="#cooking-story" style="text-decoration: underline; color: hsl(var(--primary));">Read My Story</a>
         </div>
@@ -243,12 +246,12 @@ export const blogPosts: Blog[] = [
 
       <section id="codm-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games_logo/codm_icon.png" alt="codm_icon" style="width: 40px; height: 40px;">
+          <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon" style="width: 40px; height: 40px;">
           <h2 class="story-title">Call of Duty: Mobile — "Where It All Began"</h2>
         </div>
         <div>
           <p>It all started during the pandemic. <strong>November 13, 2020</strong>, to be exact.</p>
-          <p>While everyone else was adjusting to online classes, I was just trying to keep up—without even owning a smartphone. Every day, my friend would invite me to play <em>CODM</em>, and every day, I&#39;d decline. I only had a laptop for school, so gaming seemed out of the question.</p>
+          <p>While everyone else was adjusting to online classes, I was just trying to keep up—without even owning a smartphone. Every day, my friend would invite me to play <em>CODM</em>, and every day, I&#39;d decline. I only had a laptop for school, so mobile gaming seemed out of the question.</p>
           <p>But curiosity won.</p>
           <p>I discovered <strong>Gameloop</strong>, an emulator that allowed me to play CODM on my laptop. That one download sparked something incredible. Every task done early meant more playtime. We bonded over matches, laughed over clutches, and slowly, CODM became our daily ritual.</p>
           <p>Another big reason I jumped into the game? <strong>My brother.</strong> He was always bragging about his plays, and I didn&#39;t want to be left behind. Eventually, it became our bonding activity—we&#39;d talk strats, share highlights, and team up. CODM didn&#39;t just connect me with friends; it brought me closer to my own blood.</p>
@@ -258,7 +261,7 @@ export const blogPosts: Blog[] = [
 
       <section id="mlbb-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games_logo/mlbb_icon.png" alt="mlbb_icon" style="width: 40px; height: 40px;">
+          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon" style="width: 40px; height: 40px;">
           <h2 class="story-title">Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
         </div>
         <div>
@@ -270,7 +273,7 @@ export const blogPosts: Blog[] = [
 
       <section id="bloodstrike-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games_logo/bloodstrike_icon.png" alt="bloodstrike_icon" style="width: 40px; height: 40px;">
+          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon" style="width: 40px; height: 40px;">
           <h2 class="story-title">Bloodstrike — "The FPS Flame Rekindled"</h2>
         </div>
         <div>
@@ -282,7 +285,7 @@ export const blogPosts: Blog[] = [
 
       <section id="hok-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games_logo/hok_icon.png" alt="hok_icon" style="width: 40px; height: 40px;">
+          <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon" style="width: 40px; height: 40px;">
           <h2 class="story-title">Honor of Kings — "The Persistent Invitation"</h2>
         </div>
         <div>
@@ -295,20 +298,22 @@ export const blogPosts: Blog[] = [
 
       <section id="minecraft-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games_logo/minecraft_icon.png" alt="minecraft_icon" style="width: 40px; height: 40px;">
+          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon" style="width: 40px; height: 40px;">
           <h2 class="story-title">Minecraft — "Creativity and Connection"</h2>
         </div>
         <div>
           <p>Ah, <em>Minecraft</em>—the iconic block game.<br>I first played it back in Grade 7 with my classmates and brother.<br>No ender dragon, no serious survival. Just pure creativity.</p>
           <p>Then I stopped for years.</p>
           <p>But recently, my <strong>partner</strong> reintroduced me to it. Now, we play it together when we&#39;re apart. We build, explore, and laugh—because in a world made of blocks, we find something real: <strong>peace, therapy, and time together</strong>.</p>
-          <p>Except creepers. Creepers ruin everything.</p>
+          <p>Except creepers. Creepers ruin everything.💀</p>
         </div>
       </section>
 
+      <blockquote><p>The time you spend playing with someone might be the memory they cherish most tomorrow.</p></blockquote>
+
       <section id="rusted-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games_logo/rusted-warfare_icon.png" alt="rusted-warfare_icon" style="width: 40px; height: 40px;">
+          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon" style="width: 40px; height: 40px;">
           <h2 class="story-title">Rusted Warfare — "Nostalgia in Pixels"</h2>
         </div>
         <div>
@@ -320,7 +325,7 @@ export const blogPosts: Blog[] = [
 
       <section id="cooking-story" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid hsl(var(--border));">
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games_logo/cooking-fever_icon.png" alt="cooking-fever_icon" style="width: 40px; height: 40px;">
+          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon" style="width: 40px; height: 40px;">
           <h2 class="story-title">Cooking Fever — "Comfort in Chaos"</h2>
         </div>
         <div>
@@ -332,8 +337,6 @@ export const blogPosts: Blog[] = [
       </section>
       
       <hr />
-      
-      <blockquote><p>The time you spend playing with someone might be the memory they cherish most tomorrow.</p></blockquote>
 
       <h2>🎮 Final Thoughts: Games as Memories, Not Just Entertainment</h2>
       <p>Every game I&#39;ve played tells a story.<br>Some of them brought me closer to family.<br>Others were the reason I stayed sane during hard times.<br>Some helped me bond with friends in ways that conversations alone couldn&#39;t.</p>
@@ -351,7 +354,7 @@ export const blogPosts: Blog[] = [
     slug: 'passion-projects-to-professional-portfolio',
     title: 'From Passion Projects to Professional Portfolio',
     author: 'Philjoseph Orlina',
-    date: '2024-07-29',
+    date: '2025-06-10',
     excerpt: 'How I Turned My Free-Time Designs Into Career Assets.',
     image: {
       imageUrl: '/asset/images/blog/design-journey/esports.webp',
@@ -407,7 +410,7 @@ export const blogPosts: Blog[] = [
     slug: 'esports-journey-from-photo-editor-to-visionary',
     title: 'From a Simple Photo Editor to an Esports Visionary',
     author: 'Philjoseph Orlina',
-    date: '2024-07-20',
+    date: '2025-06-05',
     excerpt: 'How a simple college request to edit photos sparked a lifelong passion for esports production, design, and community building.',
     image: {
       imageUrl: '/asset/images/blog/esports-journey/esports1.webp',
@@ -490,32 +493,7 @@ export const blogPosts: Blog[] = [
         keywords: "esports journey, graphic design, event production, student passion, OBS, livestream, career development, gaming community"
     }
   },
-  {
-    slug: 'the-ultimate-guide-to-freelancing-for-designers',
-    title: 'The Ultimate Guide to Freelancing for Designers',
-    author: 'Philjoseph Orlina',
-    date: '2024-04-22',
-    excerpt: 'Thinking of going solo? This guide covers everything from finding clients to managing your finances as a freelance designer.',
-    image: getImage('blog-2'),
-    content: `<p>Freelancing can be a rewarding career path, offering flexibility and control over your work. However, it also comes with its own set of challenges...</p><h3>Finding Your First Client</h3><p>Leverage your network. Let friends, family, and former colleagues know you&#39;re available for freelance work. Online platforms like Upwork and Fiverr can also be a good starting point, but be prepared for stiff competition.</p>`,
-    seo: {
-        metaDescription: "A comprehensive guide for designers looking to start a freelance career. Covers finding clients, pricing, and managing finances.",
-        keywords: "freelancing, design, freelance guide, finding clients, graphic design business"
-    }
-  },
-  {
-    slug: 'case-study-rebranding-a-local-cafe',
-    title: 'Case Study: Rebranding a Local Cafe',
-    author: 'Philjoseph Orlina',
-    date: '2024-03-10',
-    excerpt: 'A deep dive into the process of rebranding "The Daily Grind," a beloved local coffee shop, for a modern audience.',
-    image: getImage('blog-3'),
-    content: `<p>The Daily Grind had been a local favorite for 15 years, but its branding felt dated. The goal was to refresh the visual identity without alienating its loyal customer base.</p><h3>The Process</h3><p>We started with a deep dive into the cafe&#39;s history and its customers. We conducted surveys and interviews to understand what people loved about The Daily Grind. The key takeaway was the sense of community and comfort...</p>`,
-    seo: {
-        metaDescription: "A case study on the rebranding process for a local coffee shop, from research and strategy to final visual identity.",
-        keywords: "rebranding, case study, brand identity, logo design, local business, cafe branding"
-    }
-  },
+
 ];
 export type AffiliateProduct = {
   id: string;
