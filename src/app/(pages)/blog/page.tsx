@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { blogPosts } from '@/lib/data';
@@ -10,8 +11,8 @@ export default function BlogListPage() {
   return (
     <>
       <PageHeader
-        title="Creative Chronicles"
-        subtitle="A collection of stories on design, gaming, and the creative journey."
+        title="Behind the Pixels"
+        subtitle="Stories & insights from my journey in design, gaming, and creative tech."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {blogPosts.map((post, index) => (
