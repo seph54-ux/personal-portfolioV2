@@ -4,12 +4,14 @@ import { ProjectCard } from '@/components/ProjectCard';
 import { useState } from 'react';
 import { ImageModal } from '@/components/ImageModal';
 import { StaticImageData } from 'next/image';
-import { posterProjects } from '@/lib/data';
+import { projects } from '@/lib/data';
 
 
 export default function PostersPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: StaticImageData | string, alt: string} | null>(null);
+
+  const posterProjects = projects.filter(p => p.category === 'Posters');
 
   const openModal = (src: StaticImageData | string, alt: string) => {
     setSelectedImage({ src, alt });
