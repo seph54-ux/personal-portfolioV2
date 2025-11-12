@@ -207,47 +207,48 @@ export const blogPosts: Blog[] = [
       <h2>🕹️ Games I Play and Why They Matter to Me</h2>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center;">
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-          <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
-          <h3>Call of Duty: Mobile</h3>
-          <a href="#codm-story">Read My Story</a>
+        <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+            <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1rem; font-weight: 600;">Call of Duty: Mobile</h3>
+            <a href="#codm-story">Read My Story</a>
         </div>
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
-          <h3>Mobile Legends: Bang Bang</h3>
-          <a href="#mlbb-story">Read My Story</a>
+        <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+            <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1rem; font-weight: 600;">Mobile Legends: Bang Bang</h3>
+            <a href="#mlbb-story">Read My Story</a>
         </div>
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
-          <h3>Bloodstrike</h3>
-          <a href="#bloodstrike-story">Read My Story</a>
+        <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+            <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1rem; font-weight: 600;">Bloodstrike</h3>
+            <a href="#bloodstrike-story">Read My Story</a>
         </div>
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-          <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
-          <h3>Honor of Kings</h3>
-          <a href="#hok-story">Read My Story</a>
+        <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+            <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1rem; font-weight: 600;">Honor of Kings</h3>
+            <a href="#hok-story">Read My Story</a>
         </div>
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
-          <h3>Minecraft</h3>
-          <a href="#minecraft-story">Read My Story</a>
+        <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+            <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1rem; font-weight: 600;">Minecraft</h3>
+            <a href="#minecraft-story">Read My Story</a>
         </div>
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
-          <h3>Rusted Warfare</h3>
-          <a href="#rusted-story">Read My Story</a>
+        <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+            <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1rem; font-weight: 600;">Rusted Warfare</h3>
+            <a href="#rusted-story">Read My Story</a>
         </div>
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
-          <h3>Cooking Fever</h3>
-          <a href="#cooking-story">Read My Story</a>
+        <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+            <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1rem; font-weight: 600;">Cooking Fever</h3>
+            <a href="#cooking-story">Read My Story</a>
         </div>
       </div>
-
-      <section id="codm-story">
-        <div>
-          <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon" style="width:80px; height:80px;">
-          <h2>Call of Duty: Mobile — "Where It All Began"</h2>
+      
+      <div class="not-prose space-y-8 mt-12">
+      <section id="codm-story" class="glassmorphic p-6 rounded-lg">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon" style="width:64px; height:64px;">
+          <h2 class="font-headline text-2xl m-0">Call of Duty: Mobile — "Where It All Began"</h2>
         </div>
         <div>
           <p>It all started during the pandemic. <strong>November 13, 2020</strong>, to be exact.</p>
@@ -259,10 +260,10 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="mlbb-story">
-        <div>
-          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon" style="width:80px; height:80px;">
-          <h2>Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
+      <section id="mlbb-story" class="glassmorphic p-6 rounded-lg">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon" style="width:64px; height:64px;">
+          <h2 class="font-headline text-2xl m-0">Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
         </div>
         <div>
           <p>Before the pandemic, <em>MLBB</em> was already huge. I'd casually play on my friends' phones, but I never got into it. That changed around <strong>May 2021</strong>, when I finally got my own smartphone.</p>
@@ -271,10 +272,10 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="bloodstrike-story">
-        <div>
-          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon" style="width:80px; height:80px;">
-          <h2>Bloodstrike — "The FPS Flame Rekindled"</h2>
+      <section id="bloodstrike-story" class="glassmorphic p-6 rounded-lg">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon" style="width:64px; height:64px;">
+          <h2 class="font-headline text-2xl m-0">Bloodstrike — "The FPS Flame Rekindled"</h2>
         </div>
         <div>
           <p>By <strong>January 2022</strong>, I had stopped playing CODM due to personal reasons. MLBB kept me going—but something was missing.</p>
@@ -283,10 +284,10 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="hok-story">
-        <div>
-          <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon" style="width:80px; height:80px;">
-          <h2>Honor of Kings — "The Persistent Invitation"</h2>
+      <section id="hok-story" class="glassmorphic p-6 rounded-lg">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon" style="width:64px; height:64px;">
+          <h2 class="font-headline text-2xl m-0">Honor of Kings — "The Persistent Invitation"</h2>
         </div>
         <div>
           <p>My friend tried for months to get me into <em>Honor of Kings</em>.<br>But I kept saying, "Maybe later."<br>My phone couldn't handle it, and I wasn't ready for another MOBA.</p>
@@ -296,10 +297,10 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="minecraft-story">
-        <div>
-          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon" style="width:80px; height:80px;">
-          <h2>Minecraft — "Creativity and Connection"</h2>
+      <section id="minecraft-story" class="glassmorphic p-6 rounded-lg">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon" style="width:64px; height:64px;">
+          <h2 class="font-headline text-2xl m-0">Minecraft — "Creativity and Connection"</h2>
         </div>
         <div>
           <p>Ah, <em>Minecraft</em>—the iconic block game.<br>I first played it back in Grade 7 with my classmates and brother.<br>No ender dragon, no serious survival. Just pure creativity.</p>
@@ -308,13 +309,15 @@ export const blogPosts: Blog[] = [
           <p>Except creepers. Creepers ruin everything.💀</p>
         </div>
       </section>
+      </div>
 
-      <blockquote><p>The time you spend playing with someone might be the memory they cherish most tomorrow.</p></blockquote>
+      <blockquote style="margin-top: 2rem; margin-bottom: 2rem;"><p>The time you spend playing with someone might be the memory they cherish most tomorrow.</p></blockquote>
 
-      <section id="rusted-story">
-        <div>
-          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon" style="width:80px; height:80px;">
-          <h2>Rusted Warfare — "Nostalgia in Pixels"</h2>
+      <div class="not-prose space-y-8">
+      <section id="rusted-story" class="glassmorphic p-6 rounded-lg">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon" style="width:64px; height:64px;">
+          <h2 class="font-headline text-2xl m-0">Rusted Warfare — "Nostalgia in Pixels"</h2>
         </div>
         <div>
           <p>I overheard my friends one day talking about this game with helicopters, explosions, and units moving everywhere.</p>
@@ -323,10 +326,10 @@ export const blogPosts: Blog[] = [
         </div>
       </section>
 
-      <section id="cooking-story">
-        <div>
-          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon" style="width:80px; height:80px;">
-          <h2>Cooking Fever — "Comfort in Chaos"</h2>
+      <section id="cooking-story" class="glassmorphic p-6 rounded-lg">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon" style="width:64px; height:64px;">
+          <h2 class="font-headline text-2xl m-0">Cooking Fever — "Comfort in Chaos"</h2>
         </div>
         <div>
           <p><strong>April 2025</strong> was rough.<br>I had chickenpox, a bad flu, and I was quarantined at home—stuck, tired, and missing out on my internship.</p>
@@ -335,6 +338,7 @@ export const blogPosts: Blog[] = [
           <p>It wasn't just a game. It was my escape during one of my most physically draining moments.</p>
         </div>
       </section>
+      </div>
       
       <hr />
 
@@ -616,3 +620,6 @@ export const affiliateProducts: AffiliateProduct[] = [
   },
 ];
 
+
+
+    
