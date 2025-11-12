@@ -444,7 +444,7 @@ export const blogPosts: Blog[] = [
 
       <img src="/asset/images/blog/esports-journey/LED-truck.webp" alt="Setting up an LED truck for an event" />
 
-      [[CAROUSEल]]
+      [[CAROUSEL]]
 
       <hr />
 
