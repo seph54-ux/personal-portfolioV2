@@ -11,21 +11,21 @@ const videoProjects = [
     title: 'ML Logo Unveil',
     description: 'An exciting logo reveal for a Mobile Legends tournament.',
     thumbnail: '/asset/videos/VideoThumbnail1.webp',
-    videoSrc: '/asset/videos/ML Logo unveil.mp4',
+    videoSrc: '/videos/ML Logo unveil.mp4',
   },
   {
     id: 'video-2',
     title: 'Post-Match Results & MVP',
     description: 'A dynamic post-match sequence showcasing the results and the Most Valuable Player.',
     thumbnail: '/asset/videos/VideoThumbnail2.webp',
-    videoSrc: '/asset/videos/PostMatch Results Final MVP.mp4',
+    videoSrc: '/videos/PostMatch Results Final MVP.mp4',
   },
   {
     id: 'video-3',
     title: 'Teaser Edays 2k23',
     description: 'A teaser video for the Edays 2023 event.',
     thumbnail: '/asset/videos/VideoThumbnail3.webp',
-    videoSrc: '/asset/videos/Teaser Edays2k23.mp4',
+    videoSrc: '/videos/Teaser Edays2k23.mp4',
   },
 ];
 

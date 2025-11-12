@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { websiteProjects, webUiProjects, posterProjects } from './websites-data';
@@ -86,22 +87,6 @@ export type Project = {
 };
 
 const placeholderProjects: Project[] = [
-  {
-    id: 'proj-poster-1',
-    title: 'Music Fest 2024',
-    category: 'Posters',
-    description: 'A vibrant and energetic poster designed for a summer music festival.',
-    images: [getImage('poster-1')],
-    tech: ['photoshop', ],
-  },
-  {
-    id: 'proj-poster-2',
-    title: 'Retro Cinema Night',
-    category: 'Posters',
-    description: 'A poster with a vintage aesthetic for a classic movie screening event.',
-    images: [getImage('poster-2')],
-    tech: [],
-  },
   {
     id: 'proj-logo-1',
     title: "Innovate Inc.",
@@ -248,7 +233,7 @@ export const blogPosts: Blog[] = [
             <p>But curiosity won.</p>
             <p>I discovered <strong>Gameloop</strong>, an emulator that allowed me to play CODM on my laptop. That one download sparked something incredible. Every task done early meant more playtime. We bonded over matches, laughed over clutches, and slowly, CODM became our daily ritual.</p>
             <p>Another big reason I jumped into the game? <strong>My brother.</strong> He was always bragging about his plays, and I didn't want to be left behind. Eventually, it became our bonding activity—we'd talk strats, share highlights, and team up. CODM didn't just connect me with friends; it brought me closer to my own blood.</p>
-            <p>Want to connect with the community? <a href="https://www.facebook.com/groups/garenacodmph/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary));">Join CODM PH Community →</a></p>
+            <p>Want to connect with the community? <a href="https://www.facebook.com/groups/garenacodmph/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary)); text-decoration: underline;">Join CODM PH Community →</a></p>
           </div>
         </section>
         <section id="mlbb-story" class="glassmorphic p-6 rounded-lg">
@@ -282,7 +267,7 @@ export const blogPosts: Blog[] = [
             <p>My friend tried for months to get me into <em>Honor of Kings</em>.<br>But I kept saying, "Maybe later."<br>My phone couldn't handle it, and I wasn't ready for another MOBA.</p>
             <p>But eventually, I upgraded. I downloaded. I played.<br>And guess what? I loved it.</p>
             <p><em>HoK</em> has its own mechanics, heroes, and systems—different from MLBB. I'm still learning, still exploring. But I can already see the passion behind its community, especially with <strong>HoKPH</strong> hosting tournaments and celebrating its players. It's a game I'm still getting to know—but it's one worth learning.</p>
-            <p>Connect with the community: <a href="https://www.facebook.com/groups/hokphofficial/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary));">Join HoKPH Community →</a></p>
+            <p>Connect with the community: <a href="https://www.facebook.com/groups/hokphofficial/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary)); text-decoration: underline;">Join HoKPH Community →</a></p>
           </div>
         </section>
         <section id="minecraft-story" class="glassmorphic p-6 rounded-lg">
@@ -379,10 +364,10 @@ export const blogPosts: Blog[] = [
 
       <blockquote>“Design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs</blockquote>
 
-      <div>
-        <h5>Ready to explore my design work?</h5>
-        <p>Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school&#39;s esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank">ACCESs - Tanauan City College</a>.</p>
-         <a href="/posters" class="no-underline">
+      <div class="mt-8">
+        <h5 class="font-headline text-lg font-semibold">Ready to explore my design work?</h5>
+        <p class="text-muted-foreground">Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school&#39;s esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank" class="text-primary hover:underline">ACCESs - Tanauan City College</a>.</p>
+         <a href="/posters" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
           Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
@@ -466,10 +451,10 @@ export const blogPosts: Blog[] = [
       <p>Because of him and Mr. Bermodez, I now hold a burning passion not just for playing games—but for <strong>building the very stages where they're played.</strong></p>
       <p>This is more than just a story about esports. It's the story of how I found my path—one deadline, one design, one livestream at a time.</p>
 
-      <div>
-        <h5>Ready to see my esports work in action?</h5>
-        <p>Explore my portfolio to see how these college experiences shaped my design philosophy and technical skills in the gaming industry.</p>
-        <a href="/obs-overlays" class="no-underline">
+      <div class="mt-8">
+        <h5 class="font-headline text-lg font-semibold">Ready to see my esports work in action?</h5>
+        <p class="text-muted-foreground">Explore my portfolio to see how these college experiences shaped my design philosophy and technical skills in the gaming industry.</p>
+        <a href="/obs-overlays" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
           View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>

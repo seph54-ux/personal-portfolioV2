@@ -3,73 +3,73 @@
     {
       "id": "poster-1",
       "description": "Abstract Music Festival Poster",
-      "imageUrl": "https://images.unsplash.com/photo-1706209541901-e458f71fef6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHBvc3RlcnxlbnwwfHx8fDE3NjIyMjM4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-poster/CODM-Logo_Poster.webp",
       "imageHint": "abstract poster"
     },
     {
       "id": "poster-2",
       "description": "Vintage Movie Poster",
-      "imageUrl": "https://images.unsplash.com/photo-1579762714453-51d9913984e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx2aW50YWdlJTIwcG9zdGVyfGVufDB8fHx8MTc2MjIyMzgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-poster/CODM-Main_Poster.webp",
       "imageHint": "vintage poster"
     },
     {
       "id": "logo-1-main",
       "description": "Main logo for 'Innovate' brand",
-      "imageUrl": "https://images.unsplash.com/photo-1761044590997-6d3860410cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBsb2dvfGVufDB8fHx8MTc2MjExMDU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-logo/ml main logo.webp",
       "imageHint": "modern logo"
     },
     {
       "id": "logo-1-variant-1",
       "description": "Monochrome variant for 'Innovate'",
-      "imageUrl": "https://images.unsplash.com/photo-1759929767411-5c49ba6404bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb25vY2hyb21lJTIwbG9nb3xlbnwwfHx8fDE3NjIyMjM4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-logo/ml main logo black text.webp",
       "imageHint": "monochrome logo"
     },
     {
       "id": "logo-1-variant-2",
       "description": "Icon variant for 'Innovate'",
-      "imageUrl": "https://images.unsplash.com/photo-1649734924961-858e997c55de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2dvJTIwaWNvbnxlbnwwfHx8fDE3NjIyMjM4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-logo/ml 3d logo.webp",
       "imageHint": "logo icon"
     },
     {
       "id": "logo-2-main",
       "description": "Main logo for 'Nature's Brew' coffee",
-      "imageUrl": "https://images.unsplash.com/photo-1662057168153-c0d62a4025f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxuYXR1cmUlMjBsb2dvfGVufDB8fHx8MTc2MjE1MDAwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-logo/RP-main-logo-badge.webp",
       "imageHint": "nature logo"
     },
     {
       "id": "logo-2-variant-1",
       "description": "Stamp variant for 'Nature's Brew'",
-      "imageUrl": "https://images.unsplash.com/photo-1594566853037-3df4e2eea03a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGFtcCUyMGxvZ298ZW58MHx8fHwxNzYyMjIzODA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-logo/RP-sublogo.webp",
       "imageHint": "stamp logo"
     },
     {
       "id": "obs-1-asset",
       "description": "Cyberpunk OBS overlay asset pack",
-      "imageUrl": "https://images.unsplash.com/photo-1644585587551-85377778d375?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjeWJlcnB1bmslMjBvdmVybGF5fGVufDB8fHx8MTc2MjIyMzgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-obs-overlay/drafting.webp",
       "imageHint": "cyberpunk overlay"
     },
     {
       "id": "obs-1-in-action",
       "description": "Cyberpunk OBS overlay in action",
-      "imageUrl": "https://images.unsplash.com/photo-1705290640944-16e5ee669c2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z2FtaW5nJTIwc3RyZWFtfGVufDB8fHx8MTc2MjE4NjMxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-obs-action/ingame match.webp",
       "imageHint": "gaming stream"
     },
     {
       "id": "obs-2-asset",
       "description": "Minimalist clean OBS overlay assets",
-      "imageUrl": "https://images.unsplash.com/photo-1577154879758-6892cd7e8e87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWluaW1hbGlzdCUyMG92ZXJsYXl8ZW58MHx8fHwxNzYyMjIzODA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-obs-overlay/pre-game stream1.webp",
       "imageHint": "minimalist overlay"
     },
     {
       "id": "obs-2-in-action",
       "description": "Minimalist OBS overlay in action",
-      "imageUrl": "https://images.unsplash.com/photo-1761182036764-e057bff033da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGVhbiUyMHN0cmVhbXxlbnwwfHx8fDE3NjIyMjM4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/images/works-obs-action/ingame match2.webp",
       "imageHint": "clean stream"
     },
     {
       "id": "video-1",
       "description": "Promotional video for a tech startup",
-      "imageUrl": "https://images.unsplash.com/photo-1696041760912-a06e1f747850?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9tbyUyMHZpZGVvfGVufDB8fHx8MTc2MjIyMzgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/asset/videos/VideoThumbnail1.webp",
       "imageHint": "promo video"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "blog-3",
       "description": "Case study of a branding project",
-      "imageUrl": "https://images.unsplash.com/photo-1758521540165-b7e99f9a98ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicmFuZGluZyUyMHByb2plY3R8ZW58MHx8fHwxNzYyMjIzODA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758521540165-b7e99f9a98ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicmFuZGluZyUyMHByb2plY3R8ZW58MHx8fHwxNzYyMjIzODA5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "branding project"
     },
     {
