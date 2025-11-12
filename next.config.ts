@@ -24,18 +24,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  webpack: (config) => {
-    // Add rule for video files
-    config.module.rules.push({
-      test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)$/,
-      type: 'asset/resource',
-      generator: {
-        filename: 'static/media/[name].[hash][ext]',
-      },
-    });
-    
-    return config;
-  },
 };
 
 export default nextConfig;

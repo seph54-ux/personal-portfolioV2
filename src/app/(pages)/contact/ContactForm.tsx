@@ -71,9 +71,18 @@ export function ContactForm() {
     },
   });
 
-  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!;
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    if (!siteKey) {
+      toast({
+        variant: "destructive",
+        title: "Configuration Error",
+        description: "reCAPTCHA is not configured. Please contact the site administrator.",
+      });
+      return;
+    }
+
     if (!isCaptchaReady) {
       toast({
         variant: "destructive",
@@ -195,7 +204,7 @@ export function ContactForm() {
 
   return (
     <>
-      <Script
+     {siteKey && <Script
         src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`}
         onLoad={() => {
           if (window.grecaptcha) {
@@ -206,7 +215,7 @@ export function ContactForm() {
           }
         }}
         strategy="afterInteractive"
-      />
+      />}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -321,11 +330,13 @@ export function ContactForm() {
           />
 
           <div className="flex flex-col items-center">
-            <Button type="submit" className="w-full md:w-auto px-12" disabled={isSubmitting || !isCaptchaReady}>
+            <Button type="submit" className="w-full md:w-auto px-12" disabled={isSubmitting || !isCaptchaReady || !siteKey}>
               {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
-            {!isCaptchaReady && <p className="text-sm text-muted-foreground mt-2 text-center">Loading security check...</p>}
+            {(!isCaptchaReady || !siteKey) && <p className="text-sm text-muted-foreground mt-2 text-center">
+              {!siteKey ? "reCAPTCHA not configured." : "Loading security check..."}
+            </p>}
             <p className="text-xs text-muted-foreground mt-4 text-center">
               This site is protected by reCAPTCHA and the Google{" "}
               <a

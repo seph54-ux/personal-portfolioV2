@@ -1,15 +1,12 @@
 import { Project } from './data';
 
-
-
-
 export const posterProjects: Project[] = [
   {
     id: 'poster-1',
     title: 'CODM Logo Poster',
     category: 'Posters',
     description: 'A poster featuring the Call of Duty: Mobile logo, designed with a modern and edgy style.',
-    images: [{ imageUrl: '/asset/images/works-poster/CODM Logo_Poster.webp', imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/CODM-Logo_Poster.webp', imageHint: 'poster' }],
     tech: ['pixellab','canva'],
   },
   {
@@ -17,7 +14,7 @@ export const posterProjects: Project[] = [
     title: 'CODM Main Poster',
     category: 'Posters',
     description: 'The main promotional poster for a Call of Duty: Mobile tournament.',
-    images: [{ imageUrl: '/asset/images/works-poster/CODM Main_Poster.webp', imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/CODM-Main_Poster.webp', imageHint: 'poster' }],
     tech: ['pixellab','canva'],
   },
   {
@@ -33,7 +30,7 @@ export const posterProjects: Project[] = [
     title: 'ML Main Poster',
     category: 'Posters',
     description: 'The main promotional poster for a Mobile Legends: Bang Bang tournament.',
-    images: [{ imageUrl: '/asset/images/works-poster/ML main poster1.webp', imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/ML-main-poster1.webp', imageHint: 'poster' }],
     tech: ['inkscape'],
   },
   {
@@ -49,7 +46,7 @@ export const posterProjects: Project[] = [
     title: 'MVP Template',
     category: 'Posters',
     description: 'A template for showcasing the Most Valuable Player of a match.',
-    images: [{ imageUrl: '/asset/images/works-poster/MVP TEMPLATE.webp', imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/MVP-TEMPLATE.webp', imageHint: 'poster' }],
     tech: ['canva'],
   },
   {
@@ -57,7 +54,7 @@ export const posterProjects: Project[] = [
     title: 'Postmatch Results',
     category: 'Posters',
     description: 'A template for displaying post-match results.',
-    images: [{ imageUrl: '/asset/images/works-poster/Postmatch results.webp', imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/Postmatch-results.webp', imageHint: 'poster' }],
     tech: ['canva'],
   },
   {
@@ -65,7 +62,7 @@ export const posterProjects: Project[] = [
     title: 'RP Banner',
     category: 'Posters',
     description: 'A banner for the Rising Pro team.',
-    images: [{ imageUrl: '/asset/images/works-poster/RP banner.webp', imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/RP-banner.webp', imageHint: 'poster' }],
     tech: ['inkscape'],
   },
   {
@@ -73,7 +70,7 @@ export const posterProjects: Project[] = [
     title: 'XmasXtreme Poster',
     category: 'Posters',
     description: 'A Christmas-themed tournament poster.',
-    images: [{ imageUrl: '/asset/images/works-poster/XmasXtreme POSTER.webp', imageHint: 'poster' }],
+    images: [{ imageUrl: '/asset/images/works-poster/XmasXtreme-POSTER.webp', imageHint: 'poster' }],
     tech: ['inkscape'],
   },
 ];

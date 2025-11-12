@@ -1,9 +1,6 @@
-
-
-
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { websiteProjects, webUiProjects, posterProjects as allPosterProjects } from './websites-data';
+import { websiteProjects, webUiProjects, posterProjects } from './websites-data';
 
 export const getImage = (id: string): ImagePlaceholder => {
   const img = PlaceHolderImages.find((img) => img.id === id);
@@ -162,10 +159,8 @@ export const projects: Project[] = [
   ...placeholderProjects,
   ...websiteProjects,
   ...webUiProjects,
-  ...allPosterProjects
+  ...posterProjects
 ];
-
-export const posterProjects: Project[] = allPosterProjects;
 
 export type Blog = {
   slug: string;
@@ -202,152 +197,138 @@ export const blogPosts: Blog[] = [
     content: `
       <p>Games—they're not just apps on my phone or a way to pass the time. They're experiences. They're stories. They're the <strong>memories</strong> that come with every victory, every defeat, and every late-night laugh shared with friends.</p>
       <p>I play not just to win, but to bond—to relive moments, to escape reality, and sometimes, to heal. Below are the games that shaped different chapters of my life. Each has its own story—and if you're curious, feel free to dive into each one.</p>
-
       <hr />
-
       <h2>🕹️ Games I Play and Why They Matter to Me</h2>
-
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center;">
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Call of Duty: Mobile</h3>
-            <a href="#codm-story">Read My Story</a>
+            <a href="#codm-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Mobile Legends: Bang Bang</h3>
-            <a href="#mlbb-story">Read My Story</a>
+            <a href="#mlbb-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Bloodstrike</h3>
-            <a href="#bloodstrike-story">Read My Story</a>
+            <a href="#bloodstrike-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Honor of Kings</h3>
-            <a href="#hok-story">Read My Story</a>
+            <a href="#hok-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Minecraft</h3>
-            <a href="#minecraft-story">Read My Story</a>
+            <a href="#minecraft-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Rusted Warfare</h3>
-            <a href="#rusted-story">Read My Story</a>
+            <a href="#rusted-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Cooking Fever</h3>
-            <a href="#cooking-story">Read My Story</a>
+            <a href="#cooking-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
         </div>
       </div>
-      
       <div class="not-prose space-y-8 mt-12">
-      <section id="codm-story" class="glassmorphic p-6 rounded-lg">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon" style="width:64px; height:64px;">
-          <h2 class="font-headline text-2xl m-0">Call of Duty: Mobile — "Where It All Began"</h2>
-        </div>
-        <div>
-          <p>It all started during the pandemic. <strong>November 13, 2020</strong>, to be exact.</p>
-          <p>While everyone else was adjusting to online classes, I was just trying to keep up—without even owning a smartphone. Every day, my friend would invite me to play <em>CODM</em>, and every day, I'd decline. I only had a laptop for school, so mobile gaming seemed out of the question.</p>
-          <p>But curiosity won.</p>
-          <p>I discovered <strong>Gameloop</strong>, an emulator that allowed me to play CODM on my laptop. That one download sparked something incredible. Every task done early meant more playtime. We bonded over matches, laughed over clutches, and slowly, CODM became our daily ritual.</p>
-          <p>Another big reason I jumped into the game? <strong>My brother.</strong> He was always bragging about his plays, and I didn't want to be left behind. Eventually, it became our bonding activity—we'd talk strats, share highlights, and team up. CODM didn't just connect me with friends; it brought me closer to my own blood.</p>
-          <p>Want to connect with the community? <a href="https://www.facebook.com/groups/garenacodmph/?ref=share&mibextid=WaXdOe/" target="_blank">Join CODM PH Community →</a></p>
-        </div>
-      </section>
-
-      <section id="mlbb-story" class="glassmorphic p-6 rounded-lg">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon" style="width:64px; height:64px;">
-          <h2 class="font-headline text-2xl m-0">Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
-        </div>
-        <div>
-          <p>Before the pandemic, <em>MLBB</em> was already huge. I'd casually play on my friends' phones, but I never got into it. That changed around <strong>May 2021</strong>, when I finally got my own smartphone.</p>
-          <p>With no internet at home, I took online classes at a friend's house. That place became our unofficial HQ. There were four of us, and <em>MLBB</em> was our go-to game.</p>
-          <p>We played, we studied heroes, and we climbed the ranks together.<br>We lost a lot—but we laughed harder.<br>That game didn't just fill time—it filled our days with stories, jokes, and shared goals.</p>
-        </div>
-      </section>
-
-      <section id="bloodstrike-story" class="glassmorphic p-6 rounded-lg">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon" style="width:64px; height:64px;">
-          <h2 class="font-headline text-2xl m-0">Bloodstrike — "The FPS Flame Rekindled"</h2>
-        </div>
-        <div>
-          <p>By <strong>January 2022</strong>, I had stopped playing CODM due to personal reasons. MLBB kept me going—but something was missing.</p>
-          <p>Then came <strong>Bloodstrike</strong>, launched globally in 2024. The moment I saw the teaser, I felt that old flame return. It looked like Warzone, felt like CODM, and played like a fast-paced thrill ride.</p>
-          <p>It didn't take long before my friends joined in. We called shots, planned positions, and lived for that rush. Bloodstrike didn't just fill a gaming void—it revived a part of me that I thought I'd left in the past.</p>
-        </div>
-      </section>
-
-      <section id="hok-story" class="glassmorphic p-6 rounded-lg">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon" style="width:64px; height:64px;">
-          <h2 class="font-headline text-2xl m-0">Honor of Kings — "The Persistent Invitation"</h2>
-        </div>
-        <div>
-          <p>My friend tried for months to get me into <em>Honor of Kings</em>.<br>But I kept saying, "Maybe later."<br>My phone couldn't handle it, and I wasn't ready for another MOBA.</p>
-          <p>But eventually, I upgraded. I downloaded. I played.<br>And guess what? I loved it.</p>
-          <p><em>HoK</em> has its own mechanics, heroes, and systems—different from MLBB. I'm still learning, still exploring. But I can already see the passion behind its community, especially with <strong>HoKPH</strong> hosting tournaments and celebrating its players. It's a game I'm still getting to know—but it's one worth learning.</p>
-          <p>Connect with the community: <a href="https://www.facebook.com/groups/hokphofficial/?ref=share&mibextid=WaXdOe/" target="_blank">Join HoKPH Community →</a></p>
-        </div>
-      </section>
-
-      <section id="minecraft-story" class="glassmorphic p-6 rounded-lg">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon" style="width:64px; height:64px;">
-          <h2 class="font-headline text-2xl m-0">Minecraft — "Creativity and Connection"</h2>
-        </div>
-        <div>
-          <p>Ah, <em>Minecraft</em>—the iconic block game.<br>I first played it back in Grade 7 with my classmates and brother.<br>No ender dragon, no serious survival. Just pure creativity.</p>
-          <p>Then I stopped for years.</p>
-          <p>But recently, my <strong>partner</strong> reintroduced me to it. Now, we play it together when we're apart. We build, explore, and laugh—because in a world made of blocks, we find something real: <strong>peace, therapy, and time together</strong>.</p>
-          <p>Except creepers. Creepers ruin everything.💀</p>
-        </div>
-      </section>
+        <section id="codm-story" class="glassmorphic p-6 rounded-lg">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon" style="width:64px; height:64px;">
+            <h2 class="font-headline text-2xl m-0">Call of Duty: Mobile — "Where It All Began"</h2>
+          </div>
+          <div>
+            <p>It all started during the pandemic. <strong>November 13, 2020</strong>, to be exact.</p>
+            <p>While everyone else was adjusting to online classes, I was just trying to keep up—without even owning a smartphone. Every day, my friend would invite me to play <em>CODM</em>, and every day, I'd decline. I only had a laptop for school, so mobile gaming seemed out of the question.</p>
+            <p>But curiosity won.</p>
+            <p>I discovered <strong>Gameloop</strong>, an emulator that allowed me to play CODM on my laptop. That one download sparked something incredible. Every task done early meant more playtime. We bonded over matches, laughed over clutches, and slowly, CODM became our daily ritual.</p>
+            <p>Another big reason I jumped into the game? <strong>My brother.</strong> He was always bragging about his plays, and I didn't want to be left behind. Eventually, it became our bonding activity—we'd talk strats, share highlights, and team up. CODM didn't just connect me with friends; it brought me closer to my own blood.</p>
+            <p>Want to connect with the community? <a href="https://www.facebook.com/groups/garenacodmph/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary));">Join CODM PH Community →</a></p>
+          </div>
+        </section>
+        <section id="mlbb-story" class="glassmorphic p-6 rounded-lg">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon" style="width:64px; height:64px;">
+            <h2 class="font-headline text-2xl m-0">Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
+          </div>
+          <div>
+            <p>Before the pandemic, <em>MLBB</em> was already huge. I'd casually play on my friends' phones, but I never got into it. That changed around <strong>May 2021</strong>, when I finally got my own smartphone.</p>
+            <p>With no internet at home, I took online classes at a friend's house. That place became our unofficial HQ. There were four of us, and <em>MLBB</em> was our go-to game.</p>
+            <p>We played, we studied heroes, and we climbed the ranks together.<br>We lost a lot—but we laughed harder.<br>That game didn't just fill time—it filled our days with stories, jokes, and shared goals.</p>
+          </div>
+        </section>
+        <section id="bloodstrike-story" class="glassmorphic p-6 rounded-lg">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon" style="width:64px; height:64px;">
+            <h2 class="font-headline text-2xl m-0">Bloodstrike — "The FPS Flame Rekindled"</h2>
+          </div>
+          <div>
+            <p>By <strong>January 2022</strong>, I had stopped playing CODM due to personal reasons. MLBB kept me going—but something was missing.</p>
+            <p>Then came <strong>Bloodstrike</strong>, launched globally in 2024. The moment I saw the teaser, I felt that old flame return. It looked like Warzone, felt like CODM, and played like a fast-paced thrill ride.</p>
+            <p>It didn't take long before my friends joined in. We called shots, planned positions, and lived for that rush. Bloodstrike didn't just fill a gaming void—it revived a part of me that I thought I'd left in the past.</p>
+          </div>
+        </section>
+        <section id="hok-story" class="glassmorphic p-6 rounded-lg">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon" style="width:64px; height:64px;">
+            <h2 class="font-headline text-2xl m-0">Honor of Kings — "The Persistent Invitation"</h2>
+          </div>
+          <div>
+            <p>My friend tried for months to get me into <em>Honor of Kings</em>.<br>But I kept saying, "Maybe later."<br>My phone couldn't handle it, and I wasn't ready for another MOBA.</p>
+            <p>But eventually, I upgraded. I downloaded. I played.<br>And guess what? I loved it.</p>
+            <p><em>HoK</em> has its own mechanics, heroes, and systems—different from MLBB. I'm still learning, still exploring. But I can already see the passion behind its community, especially with <strong>HoKPH</strong> hosting tournaments and celebrating its players. It's a game I'm still getting to know—but it's one worth learning.</p>
+            <p>Connect with the community: <a href="https://www.facebook.com/groups/hokphofficial/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary));">Join HoKPH Community →</a></p>
+          </div>
+        </section>
+        <section id="minecraft-story" class="glassmorphic p-6 rounded-lg">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon" style="width:64px; height:64px;">
+            <h2 class="font-headline text-2xl m-0">Minecraft — "Creativity and Connection"</h2>
+          </div>
+          <div>
+            <p>Ah, <em>Minecraft</em>—the iconic block game.<br>I first played it back in Grade 7 with my classmates and brother.<br>No ender dragon, no serious survival. Just pure creativity.</p>
+            <p>Then I stopped for years.</p>
+            <p>But recently, my <strong>partner</strong> reintroduced me to it. Now, we play it together when we're apart. We build, explore, and laugh—because in a world made of blocks, we find something real: <strong>peace, therapy, and time together</strong>.</p>
+            <p>Except creepers. Creepers ruin everything.💀</p>
+          </div>
+        </section>
       </div>
-
       <blockquote style="margin-top: 2rem; margin-bottom: 2rem;"><p>The time you spend playing with someone might be the memory they cherish most tomorrow.</p></blockquote>
-
       <div class="not-prose space-y-8">
-      <section id="rusted-story" class="glassmorphic p-6 rounded-lg">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon" style="width:64px; height:64px;">
-          <h2 class="font-headline text-2xl m-0">Rusted Warfare — "Nostalgia in Pixels"</h2>
-        </div>
-        <div>
-          <p>I overheard my friends one day talking about this game with helicopters, explosions, and units moving everywhere.</p>
-          <p>It was <strong>Rusted Warfare</strong>.<br>At first, I thought, "This looks childish."<br>But once I understood the mechanics, I was hooked.</p>
-          <p>It reminded me so much of <strong>Red Alert 2 and Yuri&#39;s Revenge</strong>, games I used to play with my dad. That top-down strategy vibe, the sound of war machines, the modding community—it brought back childhood joy with a new layer of competitive fun.</p>
-        </div>
-      </section>
-
-      <section id="cooking-story" class="glassmorphic p-6 rounded-lg">
-        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon" style="width:64px; height:64px;">
-          <h2 class="font-headline text-2xl m-0">Cooking Fever — "Comfort in Chaos"</h2>
-        </div>
-        <div>
-          <p><strong>April 2025</strong> was rough.<br>I had chickenpox, a bad flu, and I was quarantined at home—stuck, tired, and missing out on my internship.</p>
-          <p>None of the usual games felt right.</p>
-          <p>Then I found <em>Cooking Fever</em> on Play Store. It looked like a kid's game, but something about it clicked. The rush of managing orders, upgrading kitchens, and beating levels—it gave me joy at a time when I needed it most.</p>
-          <p>It wasn't just a game. It was my escape during one of my most physically draining moments.</p>
-        </div>
-      </section>
+        <section id="rusted-story" class="glassmorphic p-6 rounded-lg">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon" style="width:64px; height:64px;">
+            <h2 class="font-headline text-2xl m-0">Rusted Warfare — "Nostalgia in Pixels"</h2>
+          </div>
+          <div>
+            <p>I overheard my friends one day talking about this game with helicopters, explosions, and units moving everywhere.</p>
+            <p>It was <strong>Rusted Warfare</strong>.<br>At first, I thought, "This looks childish."<br>But once I understood the mechanics, I was hooked.</p>
+            <p>It reminded me so much of <strong>Red Alert 2 and Yuri&#39;s Revenge</strong>, games I used to play with my dad. That top-down strategy vibe, the sound of war machines, the modding community—it brought back childhood joy with a new layer of competitive fun.</p>
+          </div>
+        </section>
+        <section id="cooking-story" class="glassmorphic p-6 rounded-lg">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon" style="width:64px; height:64px;">
+            <h2 class="font-headline text-2xl m-0">Cooking Fever — "Comfort in Chaos"</h2>
+          </div>
+          <div>
+            <p><strong>April 2025</strong> was rough.<br>I had chickenpox, a bad flu, and I was quarantined at home—stuck, tired, and missing out on my internship.</p>
+            <p>None of the usual games felt right.</p>
+            <p>Then I found <em>Cooking Fever</em> on Play Store. It looked like a kid's game, but something about it clicked. The rush of managing orders, upgrading kitchens, and beating levels—it gave me joy at a time when I needed it most.</p>
+            <p>It wasn't just a game. It was my escape during one of my most physically draining moments.</p>
+          </div>
+        </section>
       </div>
-      
       <hr />
-
       <h2>🎮 Final Thoughts: Games as Memories, Not Just Entertainment</h2>
       <p>Every game I've played tells a story.<br>Some of them brought me closer to family.<br>Others were the reason I stayed sane during hard times.<br>Some helped me bond with friends in ways that conversations alone couldn't.</p>
       <p>Whether I'm building in Minecraft, sniping in Bloodstrike, or running a digital kitchen in Cooking Fever—<strong>I play to connect</strong>.</p>
       <p>And maybe that's the greatest gift gaming has given me.</p>
-      
       <blockquote><p>You never really know when it will be the last match, the last round, the last laugh. So always play with heart, play with love, and most of all—play together.</p></blockquote>
     `,
     seo: {
@@ -463,7 +444,7 @@ export const blogPosts: Blog[] = [
 
       <img src="/asset/images/blog/esports-journey/LED-truck.webp" alt="Setting up an LED truck for an event" />
 
-      [[CAROUSEL]]
+      [[CAROUSEल]]
 
       <hr />
 
@@ -620,7 +601,3 @@ export const affiliateProducts: AffiliateProduct[] = [
     tags: ['gaming'],
   },
 ];
-
-
-
-    

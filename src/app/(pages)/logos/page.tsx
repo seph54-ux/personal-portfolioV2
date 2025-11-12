@@ -52,9 +52,9 @@ const techStack = {
 
 export default function LogosPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{src: string | StaticImageData, alt: string} | null>(null);
 
-  const openModal = (src: string, alt: string) => {
+  const openModal = (src: string | StaticImageData, alt: string) => {
     setSelectedImage({ src, alt });
     setIsModalOpen(true);
   };
@@ -129,5 +129,3 @@ export default function LogosPage() {
     </>
   );
 }
-
-    

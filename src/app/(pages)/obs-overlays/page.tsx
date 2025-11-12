@@ -1,13 +1,10 @@
 'use client';
 import { PageHeader } from '@/components/PageHeader';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import Image, { StaticImageData } from 'next/image';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
 import { useState } from 'react';
 import { ImageModal } from '@/components/ImageModal';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-
-
 
 const overlayAssets = [
   { name: 'Drafting Overlay', image: '/asset/images/works-obs-overlay/drafting.webp' },

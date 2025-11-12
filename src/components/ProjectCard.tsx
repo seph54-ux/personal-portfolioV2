@@ -15,7 +15,7 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project, className, style }: ProjectCardProps) {
-  const image = project.images[0] || project.variants?.[0]?.images[0];
+  const image = project.images?.[0] || project.variants?.[0]?.images?.[0];
 
   return (
     <Card 
