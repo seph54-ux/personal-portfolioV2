@@ -1,4 +1,5 @@
 
+
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { websiteProjects, webUiProjects, posterProjects } from './websites-data';
@@ -188,37 +189,37 @@ export const blogPosts: Blog[] = [
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Call of Duty: Mobile</h3>
-            <a href="#codm-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
+            <a href="#codm-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600; margin-top: auto; padding-top: 0.5rem;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Mobile Legends: Bang Bang</h3>
-            <a href="#mlbb-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
+            <a href="#mlbb-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600; margin-top: auto; padding-top: 0.5rem;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Bloodstrike</h3>
-            <a href="#bloodstrike-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
+            <a href="#bloodstrike-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600; margin-top: auto; padding-top: 0.5rem;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Honor of Kings</h3>
-            <a href="#hok-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
+            <a href="#hok-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600; margin-top: auto; padding-top: 0.5rem;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Minecraft</h3>
-            <a href="#minecraft-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
+            <a href="#minecraft-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600; margin-top: auto; padding-top: 0.5rem;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Rusted Warfare</h3>
-            <a href="#rusted-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
+            <a href="#rusted-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600; margin-top: auto; padding-top: 0.5rem;">Read My Story</a>
         </div>
         <div class="glassmorphic" style="padding: 1rem; border-radius: 0.8rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
             <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
             <h3 style="font-size: 1rem; font-weight: 600;">Cooking Fever</h3>
-            <a href="#cooking-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600;">Read My Story</a>
+            <a href="#cooking-story" style="color: hsl(var(--primary)); text-decoration: none; font-weight: 600; margin-top: auto; padding-top: 0.5rem;">Read My Story</a>
         </div>
       </div>
       <div class="not-prose space-y-8 mt-12">
@@ -233,7 +234,7 @@ export const blogPosts: Blog[] = [
             <p>But curiosity won.</p>
             <p>I discovered <strong>Gameloop</strong>, an emulator that allowed me to play CODM on my laptop. That one download sparked something incredible. Every task done early meant more playtime. We bonded over matches, laughed over clutches, and slowly, CODM became our daily ritual.</p>
             <p>Another big reason I jumped into the game? <strong>My brother.</strong> He was always bragging about his plays, and I didn't want to be left behind. Eventually, it became our bonding activity—we'd talk strats, share highlights, and team up. CODM didn't just connect me with friends; it brought me closer to my own blood.</p>
-            <p>Want to connect with the community? <a href="https://www.facebook.com/groups/garenacodmph/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary)); text-decoration: underline;">Join CODM PH Community →</a></p>
+            <p>Want to connect with the community? <a href="https://www.facebook.com/groups/garenacodmph/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary)); text-decoration: underline; display: inline-flex; align-items: center; gap: 0.25rem;">Join CODM PH Community <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
           </div>
         </section>
         <section id="mlbb-story" class="glassmorphic p-6 rounded-lg">
@@ -267,7 +268,7 @@ export const blogPosts: Blog[] = [
             <p>My friend tried for months to get me into <em>Honor of Kings</em>.<br>But I kept saying, "Maybe later."<br>My phone couldn't handle it, and I wasn't ready for another MOBA.</p>
             <p>But eventually, I upgraded. I downloaded. I played.<br>And guess what? I loved it.</p>
             <p><em>HoK</em> has its own mechanics, heroes, and systems—different from MLBB. I'm still learning, still exploring. But I can already see the passion behind its community, especially with <strong>HoKPH</strong> hosting tournaments and celebrating its players. It's a game I'm still getting to know—but it's one worth learning.</p>
-            <p>Connect with the community: <a href="https://www.facebook.com/groups/hokphofficial/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary)); text-decoration: underline;">Join HoKPH Community →</a></p>
+            <p>Connect with the community: <a href="https://www.facebook.com/groups/hokphofficial/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary)); text-decoration: underline; display: inline-flex; align-items: center; gap: 0.25rem;">Join HoKPH Community <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
           </div>
         </section>
         <section id="minecraft-story" class="glassmorphic p-6 rounded-lg">
@@ -368,7 +369,7 @@ export const blogPosts: Blog[] = [
         <h5 class="font-headline text-lg font-semibold">Ready to explore my design work?</h5>
         <p class="text-muted-foreground">Check out my portfolio to see these passion projects in action and discover how they evolved into professional assets. Or you can check our school&#39;s esports page <a href="https://www.facebook.com/share/1QqMtitQzF/" target="_blank" class="text-primary hover:underline">ACCESs - Tanauan City College</a>.</p>
          <a href="/posters" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
-          Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          Explore My Portfolio <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4 shrink-0"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
     `,
@@ -455,7 +456,7 @@ export const blogPosts: Blog[] = [
         <h5 class="font-headline text-lg font-semibold">Ready to see my esports work in action?</h5>
         <p class="text-muted-foreground">Explore my portfolio to see how these college experiences shaped my design philosophy and technical skills in the gaming industry.</p>
         <a href="/obs-overlays" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
-          View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          View My Gaming Projects <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4 shrink-0"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
     `,
