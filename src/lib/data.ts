@@ -206,39 +206,39 @@ export const blogPosts: Blog[] = [
 
       <h2>🕹️ Games I Play and Why They Matter to Me</h2>
 
-      <div>
-        <div>
-          <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width:64px; height:64px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
           <h3>Call of Duty: Mobile</h3>
           <a href="#codm-story">Read My Story</a>
         </div>
-        <div>
-          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width:64px; height:64px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
           <h3>Mobile Legends: Bang Bang</h3>
           <a href="#mlbb-story">Read My Story</a>
         </div>
-        <div>
-          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width:64px; height:64px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
           <h3>Bloodstrike</h3>
           <a href="#bloodstrike-story">Read My Story</a>
         </div>
-        <div>
-          <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width:64px; height:64px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
           <h3>Honor of Kings</h3>
           <a href="#hok-story">Read My Story</a>
         </div>
-        <div>
-          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width:64px; height:64px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
           <h3>Minecraft</h3>
           <a href="#minecraft-story">Read My Story</a>
         </div>
-        <div>
-          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width:64px; height:64px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
           <h3>Rusted Warfare</h3>
           <a href="#rusted-story">Read My Story</a>
         </div>
-        <div>
-          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width:64px; height:64px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width:64px; height:64px; margin-bottom: 0.5rem;">
           <h3>Cooking Fever</h3>
           <a href="#cooking-story">Read My Story</a>
         </div>
@@ -251,10 +251,10 @@ export const blogPosts: Blog[] = [
         </div>
         <div>
           <p>It all started during the pandemic. <strong>November 13, 2020</strong>, to be exact.</p>
-          <p>While everyone else was adjusting to online classes, I was just trying to keep up—without even owning a smartphone. Every day, my friend would invite me to play <em>CODM</em>, and every day, I&#39;d decline. I only had a laptop for school, so mobile gaming seemed out of the question.</p>
+          <p>While everyone else was adjusting to online classes, I was just trying to keep up—without even owning a smartphone. Every day, my friend would invite me to play <em>CODM</em>, and every day, I'd decline. I only had a laptop for school, so mobile gaming seemed out of the question.</p>
           <p>But curiosity won.</p>
           <p>I discovered <strong>Gameloop</strong>, an emulator that allowed me to play CODM on my laptop. That one download sparked something incredible. Every task done early meant more playtime. We bonded over matches, laughed over clutches, and slowly, CODM became our daily ritual.</p>
-          <p>Another big reason I jumped into the game? <strong>My brother.</strong> He was always bragging about his plays, and I didn&#39;t want to be left behind. Eventually, it became our bonding activity—we&#39;d talk strats, share highlights, and team up. CODM didn&#39;t just connect me with friends; it brought me closer to my own blood.</p>
+          <p>Another big reason I jumped into the game? <strong>My brother.</strong> He was always bragging about his plays, and I didn't want to be left behind. Eventually, it became our bonding activity—we'd talk strats, share highlights, and team up. CODM didn't just connect me with friends; it brought me closer to my own blood.</p>
           <p>Want to connect with the community? <a href="https://www.facebook.com/groups/garenacodmph/?ref=share&mibextid=WaXdOe/" target="_blank">Join CODM PH Community →</a></p>
         </div>
       </section>
@@ -265,9 +265,9 @@ export const blogPosts: Blog[] = [
           <h2>Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
         </div>
         <div>
-          <p>Before the pandemic, <em>MLBB</em> was already huge. I&#39;d casually play on my friends&#39; phones, but I never got into it. That changed around <strong>May 2021</strong>, when I finally got my own smartphone.</p>
-          <p>With no internet at home, I took online classes at a friend&#39;s house. That place became our unofficial HQ. There were four of us, and <em>MLBB</em> was our go-to game.</p>
-          <p>We played, we studied heroes, and we climbed the ranks together.<br>We lost a lot—but we laughed harder.<br>That game didn&#39;t just fill time—it filled our days with stories, jokes, and shared goals.</p>
+          <p>Before the pandemic, <em>MLBB</em> was already huge. I'd casually play on my friends' phones, but I never got into it. That changed around <strong>May 2021</strong>, when I finally got my own smartphone.</p>
+          <p>With no internet at home, I took online classes at a friend's house. That place became our unofficial HQ. There were four of us, and <em>MLBB</em> was our go-to game.</p>
+          <p>We played, we studied heroes, and we climbed the ranks together.<br>We lost a lot—but we laughed harder.<br>That game didn't just fill time—it filled our days with stories, jokes, and shared goals.</p>
         </div>
       </section>
 
@@ -279,7 +279,7 @@ export const blogPosts: Blog[] = [
         <div>
           <p>By <strong>January 2022</strong>, I had stopped playing CODM due to personal reasons. MLBB kept me going—but something was missing.</p>
           <p>Then came <strong>Bloodstrike</strong>, launched globally in 2024. The moment I saw the teaser, I felt that old flame return. It looked like Warzone, felt like CODM, and played like a fast-paced thrill ride.</p>
-          <p>It didn&#39;t take long before my friends joined in. We called shots, planned positions, and lived for that rush. Bloodstrike didn&#39;t just fill a gaming void—it revived a part of me that I thought I&#39;d left in the past.</p>
+          <p>It didn't take long before my friends joined in. We called shots, planned positions, and lived for that rush. Bloodstrike didn't just fill a gaming void—it revived a part of me that I thought I'd left in the past.</p>
         </div>
       </section>
 
@@ -289,9 +289,9 @@ export const blogPosts: Blog[] = [
           <h2>Honor of Kings — "The Persistent Invitation"</h2>
         </div>
         <div>
-          <p>My friend tried for months to get me into <em>Honor of Kings</em>.<br>But I kept saying, "Maybe later."<br>My phone couldn&#39;t handle it, and I wasn&#39;t ready for another MOBA.</p>
+          <p>My friend tried for months to get me into <em>Honor of Kings</em>.<br>But I kept saying, "Maybe later."<br>My phone couldn't handle it, and I wasn't ready for another MOBA.</p>
           <p>But eventually, I upgraded. I downloaded. I played.<br>And guess what? I loved it.</p>
-          <p><em>HoK</em> has its own mechanics, heroes, and systems—different from MLBB. I&#39;m still learning, still exploring. But I can already see the passion behind its community, especially with <strong>HoKPH</strong> hosting tournaments and celebrating its players. It&#39;s a game I&#39;m still getting to know—but it&#39;s one worth learning.</p>
+          <p><em>HoK</em> has its own mechanics, heroes, and systems—different from MLBB. I'm still learning, still exploring. But I can already see the passion behind its community, especially with <strong>HoKPH</strong> hosting tournaments and celebrating its players. It's a game I'm still getting to know—but it's one worth learning.</p>
           <p>Connect with the community: <a href="https://www.facebook.com/groups/hokphofficial/?ref=share&mibextid=WaXdOe/" target="_blank">Join HoKPH Community →</a></p>
         </div>
       </section>
@@ -304,7 +304,7 @@ export const blogPosts: Blog[] = [
         <div>
           <p>Ah, <em>Minecraft</em>—the iconic block game.<br>I first played it back in Grade 7 with my classmates and brother.<br>No ender dragon, no serious survival. Just pure creativity.</p>
           <p>Then I stopped for years.</p>
-          <p>But recently, my <strong>partner</strong> reintroduced me to it. Now, we play it together when we&#39;re apart. We build, explore, and laugh—because in a world made of blocks, we find something real: <strong>peace, therapy, and time together</strong>.</p>
+          <p>But recently, my <strong>partner</strong> reintroduced me to it. Now, we play it together when we're apart. We build, explore, and laugh—because in a world made of blocks, we find something real: <strong>peace, therapy, and time together</strong>.</p>
           <p>Except creepers. Creepers ruin everything.💀</p>
         </div>
       </section>
@@ -331,17 +331,17 @@ export const blogPosts: Blog[] = [
         <div>
           <p><strong>April 2025</strong> was rough.<br>I had chickenpox, a bad flu, and I was quarantined at home—stuck, tired, and missing out on my internship.</p>
           <p>None of the usual games felt right.</p>
-          <p>Then I found <em>Cooking Fever</em> on Play Store. It looked like a kid&#39;s game, but something about it clicked. The rush of managing orders, upgrading kitchens, and beating levels—it gave me joy at a time when I needed it most.</p>
-          <p>It wasn&#39;t just a game. It was my escape during one of my most physically draining moments.</p>
+          <p>Then I found <em>Cooking Fever</em> on Play Store. It looked like a kid's game, but something about it clicked. The rush of managing orders, upgrading kitchens, and beating levels—it gave me joy at a time when I needed it most.</p>
+          <p>It wasn't just a game. It was my escape during one of my most physically draining moments.</p>
         </div>
       </section>
       
       <hr />
 
       <h2>🎮 Final Thoughts: Games as Memories, Not Just Entertainment</h2>
-      <p>Every game I&#39;ve played tells a story.<br>Some of them brought me closer to family.<br>Others were the reason I stayed sane during hard times.<br>Some helped me bond with friends in ways that conversations alone couldn&#39;t.</p>
-      <p>Whether I&#39;m building in Minecraft, sniping in Bloodstrike, or running a digital kitchen in Cooking Fever—<strong>I play to connect</strong>.</p>
-      <p>And maybe that&#39;s the greatest gift gaming has given me.</p>
+      <p>Every game I've played tells a story.<br>Some of them brought me closer to family.<br>Others were the reason I stayed sane during hard times.<br>Some helped me bond with friends in ways that conversations alone couldn't.</p>
+      <p>Whether I'm building in Minecraft, sniping in Bloodstrike, or running a digital kitchen in Cooking Fever—<strong>I play to connect</strong>.</p>
+      <p>And maybe that's the greatest gift gaming has given me.</p>
       
       <blockquote><p>You never really know when it will be the last match, the last round, the last laugh. So always play with heart, play with love, and most of all—play together.</p></blockquote>
     `,
@@ -435,15 +435,15 @@ export const blogPosts: Blog[] = [
 
       <h4>Chapter 1: Pressures, Posters, and Professor Visaya</h4>
       <p>That simple editing request led me into the inner workings of our school&#39;s esports organization. Suddenly, I was part of something bigger—<strong>creating graphics</strong>, <strong>supporting tournaments</strong>, <strong>designing livestream overlays</strong>. I became one of the "go-to" graphics guys.</p>
-      <p>But it wasn&#39;t always fun and games.</p>
-      <p>Under the intense guidance of our esports adviser, <strong>Mr. Ralph Visaya</strong>, we were pushed hard—<strong>tight deadlines, last-minute edits, nonstop revisions</strong>. I remember how often I&#39;d feel frustrated, overwhelmed, even angry.</p>
+      <p>But it wasn't always fun and games.</p>
+      <p>Under the intense guidance of our esports adviser, <strong>Mr. Ralph Visaya</strong>, we were pushed hard—<strong>tight deadlines, last-minute edits, nonstop revisions</strong>. I remember how often I'd feel frustrated, overwhelmed, even angry.</p>
       
       <img src="/asset/images/blog/esports-journey/esports3.webp" alt="Designing an esports poster" />
 
       <blockquote>Growth begins where comfort ends.</blockquote>
       
-      <p>At the time, I didn&#39;t see the value of the pressure. I only saw the clock ticking and a demanding professor expecting me to deliver. But despite the frustration, I still found a way to <strong>get things done—on time, every time</strong>.</p>
-      <p>And looking back now, I realize: <strong>I wouldn&#39;t have it any other way</strong>.</p>
+      <p>At the time, I didn't see the value of the pressure. I only saw the clock ticking and a demanding professor expecting me to deliver. But despite the frustration, I still found a way to <strong>get things done—on time, every time</strong>.</p>
+      <p>And looking back now, I realize: <strong>I wouldn't have it any other way</strong>.</p>
 
       <hr />
       
@@ -454,7 +454,7 @@ export const blogPosts: Blog[] = [
         <li>Handling <strong>virtual event layouts</strong></li>
         <li>Laying down <strong>Cat6 fiber optic cables</strong> for our gym&#39;s esports events</li>
       </ul>
-      <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn&#39;t just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
+      <p>These were tasks I never imagined doing as a student. And yet, I found myself enjoying every bit of the chaos—every cable plugged, every livestream scene configured, every digital backdrop designed. It wasn't just about aesthetics anymore. It was about <strong>bringing esports to life</strong>.</p>
 
       <img src="/asset/images/blog/esports-journey/LED-truck.webp" alt="Setting up an LED truck for an event" />
 
@@ -463,7 +463,7 @@ export const blogPosts: Blog[] = [
       <hr />
 
       <h4>Chapter 3: The Flame Ignites</h4>
-      <p>The stress, the pressure, the unexpected responsibilities—they didn&#39;t break me. They built me. Somewhere in the middle of all that tension, I discovered something I never expected:</p>
+      <p>The stress, the pressure, the unexpected responsibilities—they didn't break me. They built me. Somewhere in the middle of all that tension, I discovered something I never expected:</p>
       
       <blockquote>Sometimes, the fire that burns you is the same fire that forges you.</blockquote>
       
@@ -475,10 +475,10 @@ export const blogPosts: Blog[] = [
 
       <h4>Gratitude in Hindsight</h4>
       <p>Yes, I once got mad at Mr. Visaya. Yes, I was stressed beyond belief. But if I met him again today, I would thank him.</p>
-      <p>Because <strong>he saw a spark in me that I didn&#39;t yet recognize myself.</strong></p>
+      <p>Because <strong>he saw a spark in me that I didn't yet recognize myself.</strong></p>
       <p>Because he pressured me, challenged me, and pushed me to grow.</p>
-      <p>Because of him and Mr. Bermodez, I now hold a burning passion not just for playing games—but for <strong>building the very stages where they&#39;re played.</strong></p>
-      <p>This is more than just a story about esports. It&#39;s the story of how I found my path—one deadline, one design, one livestream at a time.</p>
+      <p>Because of him and Mr. Bermodez, I now hold a burning passion not just for playing games—but for <strong>building the very stages where they're played.</strong></p>
+      <p>This is more than just a story about esports. It's the story of how I found my path—one deadline, one design, one livestream at a time.</p>
 
       <div>
         <h5>Ready to see my esports work in action?</h5>
@@ -615,3 +615,4 @@ export const affiliateProducts: AffiliateProduct[] = [
     tags: ['gaming'],
   },
 ];
+
