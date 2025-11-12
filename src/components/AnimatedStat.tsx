@@ -13,7 +13,7 @@ const isNumeric = (val: string) => !isNaN(parseFloat(val));
 
 export function AnimatedStat({ value, className }: AnimatedStatProps) {
   const ref = useRef<HTMLHeadingElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const isInView = useInView(ref, { once: true, rootMargin: "-50px" });
   
   const [displayValue, setDisplayValue] = useState("");
   const isNumber = isNumeric(value);

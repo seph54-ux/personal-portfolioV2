@@ -315,7 +315,6 @@ export function ContactForm() {
                         setAttachmentName(e.target.files?.[0]?.name ?? null);
                       }}
                       className="hidden"
-                      ref={fileInputRef}
                       {...fieldProps}
                     />
                   </FormControl>

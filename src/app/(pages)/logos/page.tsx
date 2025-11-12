@@ -46,7 +46,7 @@ const logoProjects = [
   },
 ];
 
-const techStack = {
+const techStack: { [key: string]: { name: string; category: string } } = {
   inkscape: { name: 'Inkscape', category: 'Design Tool'}
 };
 
