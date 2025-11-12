@@ -208,37 +208,37 @@ export const blogPosts: Blog[] = [
 
       <div>
         <div>
-          <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon">
+          <img src="/asset/images/games-logo/codm_icon.webp" alt="Call of Duty Mobile Icon" style="width:64px; height:64px; margin: 0 auto;">
           <h3>Call of Duty: Mobile</h3>
           <a href="#codm-story">Read My Story</a>
         </div>
         <div>
-          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon">
+          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="Mobile Legends Bang Bang Icon" style="width:64px; height:64px; margin: 0 auto;">
           <h3>Mobile Legends: Bang Bang</h3>
           <a href="#mlbb-story">Read My Story</a>
         </div>
         <div>
-          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon">
+          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="Bloodstrike Icon" style="width:64px; height:64px; margin: 0 auto;">
           <h3>Bloodstrike</h3>
           <a href="#bloodstrike-story">Read My Story</a>
         </div>
         <div>
-          <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon">
+          <img src="/asset/images/games-logo/hok_icon.webp" alt="Honor of Kings Icon" style="width:64px; height:64px; margin: 0 auto;">
           <h3>Honor of Kings</h3>
           <a href="#hok-story">Read My Story</a>
         </div>
         <div>
-          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon">
+          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="Minecraft Icon" style="width:64px; height:64px; margin: 0 auto;">
           <h3>Minecraft</h3>
           <a href="#minecraft-story">Read My Story</a>
         </div>
         <div>
-          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon">
+          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="Rusted Warfare Icon" style="width:64px; height:64px; margin: 0 auto;">
           <h3>Rusted Warfare</h3>
           <a href="#rusted-story">Read My Story</a>
         </div>
         <div>
-          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon">
+          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="Cooking Fever Icon" style="width:64px; height:64px; margin: 0 auto;">
           <h3>Cooking Fever</h3>
           <a href="#cooking-story">Read My Story</a>
         </div>
@@ -246,8 +246,8 @@ export const blogPosts: Blog[] = [
 
       <section id="codm-story">
         <div>
-          <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon">
-          <h2 class="story-title">Call of Duty: Mobile — "Where It All Began"</h2>
+          <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon" style="width:80px; height:80px;">
+          <h2>Call of Duty: Mobile — "Where It All Began"</h2>
         </div>
         <div>
           <p>It all started during the pandemic. <strong>November 13, 2020</strong>, to be exact.</p>
@@ -261,8 +261,8 @@ export const blogPosts: Blog[] = [
 
       <section id="mlbb-story">
         <div>
-          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon">
-          <h2 class="story-title">Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
+          <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon" style="width:80px; height:80px;">
+          <h2>Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
         </div>
         <div>
           <p>Before the pandemic, <em>MLBB</em> was already huge. I&#39;d casually play on my friends&#39; phones, but I never got into it. That changed around <strong>May 2021</strong>, when I finally got my own smartphone.</p>
@@ -273,8 +273,8 @@ export const blogPosts: Blog[] = [
 
       <section id="bloodstrike-story">
         <div>
-          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon">
-          <h2 class="story-title">Bloodstrike — "The FPS Flame Rekindled"</h2>
+          <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon" style="width:80px; height:80px;">
+          <h2>Bloodstrike — "The FPS Flame Rekindled"</h2>
         </div>
         <div>
           <p>By <strong>January 2022</strong>, I had stopped playing CODM due to personal reasons. MLBB kept me going—but something was missing.</p>
@@ -285,8 +285,8 @@ export const blogPosts: Blog[] = [
 
       <section id="hok-story">
         <div>
-          <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon">
-          <h2 class="story-title">Honor of Kings — "The Persistent Invitation"</h2>
+          <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon" style="width:80px; height:80px;">
+          <h2>Honor of Kings — "The Persistent Invitation"</h2>
         </div>
         <div>
           <p>My friend tried for months to get me into <em>Honor of Kings</em>.<br>But I kept saying, "Maybe later."<br>My phone couldn&#39;t handle it, and I wasn&#39;t ready for another MOBA.</p>
@@ -298,8 +298,8 @@ export const blogPosts: Blog[] = [
 
       <section id="minecraft-story">
         <div>
-          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon">
-          <h2 class="story-title">Minecraft — "Creativity and Connection"</h2>
+          <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon" style="width:80px; height:80px;">
+          <h2>Minecraft — "Creativity and Connection"</h2>
         </div>
         <div>
           <p>Ah, <em>Minecraft</em>—the iconic block game.<br>I first played it back in Grade 7 with my classmates and brother.<br>No ender dragon, no serious survival. Just pure creativity.</p>
@@ -313,8 +313,8 @@ export const blogPosts: Blog[] = [
 
       <section id="rusted-story">
         <div>
-          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon">
-          <h2 class="story-title">Rusted Warfare — "Nostalgia in Pixels"</h2>
+          <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon" style="width:80px; height:80px;">
+          <h2>Rusted Warfare — "Nostalgia in Pixels"</h2>
         </div>
         <div>
           <p>I overheard my friends one day talking about this game with helicopters, explosions, and units moving everywhere.</p>
@@ -325,8 +325,8 @@ export const blogPosts: Blog[] = [
 
       <section id="cooking-story">
         <div>
-          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon">
-          <h2 class="story-title">Cooking Fever — "Comfort in Chaos"</h2>
+          <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon" style="width:80px; height:80px;">
+          <h2>Cooking Fever — "Comfort in Chaos"</h2>
         </div>
         <div>
           <p><strong>April 2025</strong> was rough.<br>I had chickenpox, a bad flu, and I was quarantined at home—stuck, tired, and missing out on my internship.</p>

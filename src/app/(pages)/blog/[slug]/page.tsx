@@ -9,13 +9,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { BlogImageCarousel } from '@/components/BlogImageCarousel';
 
-type BlogPageProps = {
-  params: {
-    slug: string;
-  };
-};
-
-export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const post = blogPosts.find((p) => p.slug === params.slug);
 
   if (!post) {
@@ -37,7 +31,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogPage({ params }: BlogPageProps) {
+export default function BlogPage({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug);
 
   if (!post) {
