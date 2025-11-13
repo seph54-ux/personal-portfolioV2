@@ -17,14 +17,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import { cn } from "@/lib/utils";
-
-const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
-const ACCEPTED_FILE_TYPES = ["application/pdf"];
-
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -32,21 +27,11 @@ const formSchema = z.object({
   budget: z.string().optional(),
   subject: z.string().min(5, { message: "Subject must be at least 5 characters." }),
   message: z.string().min(10, { message: "Message must be at least 10 characters." }),
-  attachment: z
-    .any()
-    .refine((files) => !files || files.length === 0 || files?.[0]?.size <= MAX_FILE_SIZE, `Max file size is 10MB.`)
-    .refine(
-      (files) => !files || files.length === 0 || ACCEPTED_FILE_TYPES.includes(files?.[0]?.type),
-      "Only .pdf files are accepted."
-    )
-    .optional(),
 });
 
 export function ContactForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [attachmentName, setAttachmentName] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -56,7 +41,6 @@ export function ContactForm() {
       budget: "",
       subject: "",
       message: "",
-      attachment: undefined,
     },
   });
 
@@ -82,26 +66,6 @@ export function ContactForm() {
         message: values.message,
       };
 
-      // Send email with or without attachment
-      if (values.attachment && values.attachment.length > 0) {
-        const file = values.attachment[0];
-        const reader = new FileReader();
-
-        const base64Promise = new Promise<string>((resolve, reject) => {
-          reader.onload = () => {
-            const base64 = reader.result as string;
-            resolve(base64.split(",")[1]);
-          };
-          reader.onerror = reject;
-          reader.readAsDataURL(file);
-        });
-
-        const base64Content = await base64Promise;
-        templateParams.attachment = base64Content;
-        templateParams.attachment_name = file.name;
-        
-      }
-
       await emailjs.send(
         serviceID,
         templateID,
@@ -109,17 +73,12 @@ export function ContactForm() {
         publicKey
       );
 
-
       toast({
         title: "Message Sent!",
         description: "Thanks for reaching out. I'll get back to you soon.",
       });
 
       form.reset();
-      setAttachmentName(null);
-      if (fileInputRef.current) {
-        fileInputRef.current.value = "";
-      }
 
     } catch (error: any) {
       console.error("Submission error:", error);
@@ -205,45 +164,6 @@ export function ContactForm() {
                     {...field}
                   />
                 </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="attachment"
-            render={({ field: { onChange, value, ...fieldProps } }) => (
-              <FormItem>
-                <FormLabel>Got a project brief? (optional)</FormLabel>
-                <div className="flex items-center gap-4">
-                  <label 
-                    htmlFor="attachment-upload" 
-                    className={cn(
-                      "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
-                      "h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
-                      )}
-                  >
-                    Choose File
-                  </label>
-                  <FormControl>
-                    <Input
-                      type="file"
-                      id="attachment-upload"
-                      accept=".pdf"
-                      ref={fileInputRef}
-                      onChange={(e) => {
-                        onChange(e.target.files);
-                        setAttachmentName(e.target.files?.[0]?.name ?? null);
-                      }}
-                      className="hidden"
-                      {...fieldProps}
-                    />
-                  </FormControl>
-                  <span className="text-sm text-muted-foreground truncate max-w-xs">
-                    {attachmentName || "No file chosen"}
-                  </span>
-                </div>
-                <FormDescription>PDF files only, max 10MB.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
