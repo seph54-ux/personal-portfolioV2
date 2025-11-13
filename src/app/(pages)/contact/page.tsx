@@ -1,7 +1,6 @@
 "use client";
 import { PageHeader } from "@/components/PageHeader";
 import { ContactForm } from "./ContactForm";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 export default function ContactPage() {
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_V3_SITE_KEY;
@@ -14,9 +13,7 @@ export default function ContactPage() {
       />
       <div className="max-w-3xl mx-auto mt-12 p-8 glassmorphic rounded-lg animate-fade-in" style={{ animationDelay: '0.4s'}}>
         {siteKey ? (
-            <GoogleReCaptchaProvider reCaptchaKey={siteKey}>
-                <ContactForm />
-            </GoogleReCaptchaProvider>
+            <ContactForm />
         ) : (
             <div className="text-center text-destructive">
                 <p>reCAPTCHA is not configured. The contact form is disabled.</p>

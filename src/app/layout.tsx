@@ -5,6 +5,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 export const metadata: Metadata = {
   title: 'Philjoseph Orlina | Portfolio',
@@ -16,6 +17,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_V3_SITE_KEY;
+
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
@@ -30,10 +33,21 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-          <Toaster />
+          {recaptchaSiteKey ? (
+            <GoogleReCaptchaProvider reCaptchaKey={recaptchaSiteKey}>
+              <Header />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+              <Toaster />
+            </GoogleReCaptchaProvider>
+          ) : (
+            <>
+              <Header />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+              <Toaster />
+            </>
+          )}
         </ThemeProvider>
       </body>
     </html>
