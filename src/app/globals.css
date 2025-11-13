@@ -60,6 +60,11 @@
 }
 
 @layer base {
+  /* Custom selection styles */
+  ::selection {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
   * {
     @apply border-border;
   }
