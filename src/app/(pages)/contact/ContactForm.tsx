@@ -17,11 +17,10 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { useRef, useState, useCallback, useEffect } from "react";
+import { useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { cn } from "@/lib/utils";
-import { useReCaptcha } from "react-google-recaptcha-v3";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 const ACCEPTED_FILE_TYPES = ["application/pdf"];
@@ -48,7 +47,6 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [attachmentName, setAttachmentName] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const { executeRecaptcha } = useReCaptcha();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -61,43 +59,19 @@ export function ContactForm() {
       attachment: undefined,
     },
   });
-  
-  const handleReCaptchaVerify = useCallback(async () => {
-    if (!executeRecaptcha) {
-      console.log("Execute recaptcha not yet available");
-      toast({
-        variant: "destructive",
-        title: "Verification System Error",
-        description: "reCAPTCHA is not ready. Please wait a moment and try again.",
-      });
-      return null;
-    }
-
-    const token = await executeRecaptcha("contactFormSubmit");
-    return token;
-  }, [executeRecaptcha, toast]);
-
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     
-    const token = await handleReCaptchaVerify();
-    
-    if (!token) {
-        toast({
-            variant: "destructive",
-            title: "Verification Failed",
-            description: "Could not verify reCAPTCHA. Please try again.",
-        });
-        setIsSubmitting(false);
-        return;
-    }
-
     try {
       // EmailJS configuration
       const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
       const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+      if (!serviceID || !templateID || !publicKey) {
+        throw new Error("EmailJS environment variables are not set.");
+      }
 
       // Prepare template params
       const templateParams: Record<string, unknown> = {
@@ -106,7 +80,6 @@ export function ContactForm() {
         budget: values.budget || "Not specified",
         subject: values.subject,
         message: values.message,
-        'g-recaptcha-response': token, // Pass the token to EmailJS
       };
 
       // Send email with or without attachment
@@ -151,18 +124,10 @@ export function ContactForm() {
     } catch (error: any) {
       console.error("Submission error:", error);
       
-      let errorMessage = "There was a problem sending your message. Please try again.";
-      
-      if (typeof error?.text === 'string' && error.text.toLowerCase().includes("recaptcha")) {
-        errorMessage = "Security verification failed from server. Please try again.";
-      } else if (error?.status === 400) {
-        errorMessage = "Invalid form data. Please check all fields and try again.";
-      }
-      
       toast({
         variant: "destructive",
         title: "Uh oh! Something went wrong.",
-        description: errorMessage,
+        description: "There was a problem sending your message. Please try again.",
       });
     } finally {
       setIsSubmitting(false);
@@ -289,9 +254,6 @@ export function ContactForm() {
               {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
-            <p className="text-xs text-muted-foreground mt-2 text-center">
-              This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" className="underline">Privacy Policy</a> and <a href="https://policies.google.com/terms" className="underline">Terms of Service</a> apply.
-            </p>
           </div>
         </form>
       </Form>
