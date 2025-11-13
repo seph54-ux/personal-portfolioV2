@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PageHeader } from '@/components/PageHeader';
 import { techStack } from '@/lib/data';
@@ -5,8 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Brush, Code, Video } from 'lucide-react';
 
 export default function AboutPage() {
   const designTools = Object.values(techStack).filter(t => t.category === 'Design Tool');
@@ -15,9 +15,9 @@ export default function AboutPage() {
   const technologies = Object.values(techStack).filter(t => t.category === 'Technology');
 
   const skills = [
-    { title: 'Design & Prototyping', tools: designTools },
-    { title: 'Development', tools: [...frameworks, ...technologies] },
-    { title: 'Video & Motion', tools: vaTools },
+    { title: 'Design & Prototyping', tools: designTools, icon: Brush },
+    { title: 'Development', tools: [...frameworks, ...technologies], icon: Code },
+    { title: 'Video & Motion', tools: vaTools, icon: Video },
   ]
 
   return (
@@ -85,7 +85,10 @@ export default function AboutPage() {
             <div className="space-y-6">
                 {skills.map(skillCategory => (
                     <div key={skillCategory.title}>
-                        <h3 className="font-headline text-xl font-semibold mb-3">{skillCategory.title}</h3>
+                        <h3 className="font-headline text-xl font-semibold mb-3 flex items-center gap-2">
+                           <skillCategory.icon className="h-5 w-5 text-primary" />
+                           {skillCategory.title}
+                        </h3>
                          <div className="flex flex-wrap gap-2">
                             {skillCategory.tools.map(t => <Badge key={t.name} variant="secondary" className="text-sm">{t.name}</Badge>)}
                         </div>
