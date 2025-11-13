@@ -74,7 +74,7 @@ export default function Home() {
         
         <div className="container mx-auto px-4 relative z-10 glassmorphic bg-background/30 dark:bg-background/50 rounded-xl p-8">
           <h1 
-            className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70"
+            className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 dark:from-white dark:to-foreground"
             style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
           >
             Transforming Ideas into Digital Reality
