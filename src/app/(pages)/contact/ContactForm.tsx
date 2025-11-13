@@ -20,21 +20,12 @@ import { useToast } from "@/hooks/use-toast";
 import { useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import Script from "next/script";
+import ReCAPTCHA from "react-google-recaptcha";
 import { cn } from "@/lib/utils";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 const ACCEPTED_FILE_TYPES = ["application/pdf"];
 
-// Extend Window interface for TypeScript
-declare global {
-  interface Window {
-    grecaptcha: {
-      ready: (callback: () => void) => void;
-      execute: (siteKey: string, options: { action: string }) => Promise<string>;
-    };
-  }
-}
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -55,9 +46,10 @@ const formSchema = z.object({
 export function ContactForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isCaptchaReady, setIsCaptchaReady] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [attachmentName, setAttachmentName] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -83,50 +75,36 @@ export function ContactForm() {
       return;
     }
 
-    if (!isCaptchaReady) {
-      toast({
-        variant: "destructive",
-        title: "Please wait",
-        description: "reCAPTCHA is still loading. Please try again in a moment.",
-      });
-      return;
+    if (!captchaToken) {
+        toast({
+            variant: "destructive",
+            title: "Verification Required",
+            description: "Please complete the reCAPTCHA verification.",
+        });
+        return;
     }
 
     setIsSubmitting(true);
 
     try {
-      // Execute reCAPTCHA and get fresh token
-      const token = await window.grecaptcha.execute(siteKey, { action: "submit" });
-
-      if (!token) {
-        throw new Error("Failed to get reCAPTCHA token");
-      }
-
-      console.log("reCAPTCHA token generated:", token.substring(0, 20) + "...");
-
       // EmailJS configuration
       const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
       const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
-      // Initialize EmailJS with reCAPTCHA
+      // Initialize EmailJS
       emailjs.init({
         publicKey: publicKey,
-        blockHeadless: true,
-        blockList: {
-          // Block known bot user agents
-          list: ['bot', 'crawl', 'spider'],
-        },
       });
 
       // Prepare template params
-      const templateParams = {
+      const templateParams: Record<string, unknown> = {
         name: values.name,
         email: values.email,
         budget: values.budget || "Not specified",
         subject: values.subject,
         message: values.message,
-        'g-recaptcha-response': token, // EmailJS expects this exact key
+        'g-recaptcha-response': captchaToken, // Pass the token to EmailJS
       };
 
       // Send email with or without attachment
@@ -144,29 +122,17 @@ export function ContactForm() {
         });
 
         const base64Content = await base64Promise;
-
-        await emailjs.send(
-          serviceID,
-          templateID,
-          {
-            ...templateParams,
-            attachment: base64Content,
-            attachment_name: file.name,
-          },
-          {
-            publicKey: publicKey,
-          }
-        );
-      } else {
-        await emailjs.send(
-          serviceID,
-          templateID,
-          templateParams,
-          {
-            publicKey: publicKey,
-          }
-        );
+        templateParams.attachment = base64Content;
+        templateParams.attachment_name = file.name;
+        
       }
+
+      await emailjs.send(
+        serviceID,
+        templateID,
+        templateParams
+      );
+
 
       toast({
         title: "Message Sent!",
@@ -174,6 +140,8 @@ export function ContactForm() {
       });
 
       form.reset();
+      recaptchaRef.current?.reset();
+      setCaptchaToken(null);
       setAttachmentName(null);
       if (fileInputRef.current) {
         fileInputRef.current.value = "";
@@ -184,12 +152,12 @@ export function ContactForm() {
       
       let errorMessage = "There was a problem sending your message. Please try again.";
       
-      if (error?.text?.includes("reCAPTCHA")) {
-        errorMessage = "Security verification failed. Please refresh the page and try again.";
+      if (error?.text?.toLowerCase().includes("recaptcha")) {
+        errorMessage = "Security verification failed. Please try the reCAPTCHA again.";
+        recaptchaRef.current?.reset();
+        setCaptchaToken(null);
       } else if (error?.status === 400) {
         errorMessage = "Invalid form data. Please check all fields and try again.";
-      } else if (error?.status === 422) {
-        errorMessage = "Email service configuration error. Please contact the site administrator.";
       }
       
       toast({
@@ -204,18 +172,6 @@ export function ContactForm() {
 
   return (
     <>
-     {siteKey && <Script
-        src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`}
-        onLoad={() => {
-          if (window.grecaptcha) {
-            window.grecaptcha.ready(() => {
-              setIsCaptchaReady(true);
-              console.log("reCAPTCHA is ready");
-            });
-          }
-        }}
-        strategy="afterInteractive"
-      />}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -310,6 +266,7 @@ export function ContactForm() {
                       type="file"
                       id="attachment-upload"
                       accept=".pdf"
+                      ref={fileInputRef}
                       onChange={(e) => {
                         onChange(e.target.files);
                         setAttachmentName(e.target.files?.[0]?.name ?? null);
@@ -318,7 +275,7 @@ export function ContactForm() {
                       {...fieldProps}
                     />
                   </FormControl>
-                  <span className="text-sm text-muted-foreground">
+                  <span className="text-sm text-muted-foreground truncate max-w-xs">
                     {attachmentName || "No file chosen"}
                   </span>
                 </div>
@@ -327,36 +284,27 @@ export function ContactForm() {
               </FormItem>
             )}
           />
+          
+          {siteKey && (
+            <div className="flex justify-center">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={siteKey}
+                onChange={setCaptchaToken}
+                onExpired={() => setCaptchaToken(null)}
+              />
+            </div>
+          )}
+
 
           <div className="flex flex-col items-center">
-            <Button type="submit" className="w-full md:w-auto px-12" disabled={isSubmitting || !isCaptchaReady || !siteKey}>
+            <Button type="submit" className="w-full md:w-auto px-12" disabled={isSubmitting || !siteKey}>
               {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
-            {(!isCaptchaReady || !siteKey) && <p className="text-sm text-muted-foreground mt-2 text-center">
-              {!siteKey ? "reCAPTCHA not configured." : "Loading security check..."}
+            {!siteKey && <p className="text-sm text-muted-foreground mt-2 text-center">
+              reCAPTCHA not configured.
             </p>}
-            <p className="text-xs text-muted-foreground mt-4 text-center">
-              This site is protected by reCAPTCHA and the Google{" "}
-              <a
-                href="https://policies.google.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                Privacy Policy
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://policies.google.com/terms"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                Terms of Service
-              </a>{" "}
-              apply.
-            </p>
           </div>
         </form>
       </Form>
