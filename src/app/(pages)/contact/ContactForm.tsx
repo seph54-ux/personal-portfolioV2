@@ -17,11 +17,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { useRef, useState } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 import { Loader2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
 import { cn } from "@/lib/utils";
+import { useReCaptcha } from "react-google-recaptcha-v3";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 const ACCEPTED_FILE_TYPES = ["application/pdf"];
@@ -46,10 +46,9 @@ const formSchema = z.object({
 export function ContactForm() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [attachmentName, setAttachmentName] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const { executeRecaptcha } = useReCaptcha();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -62,40 +61,43 @@ export function ContactForm() {
       attachment: undefined,
     },
   });
-
-  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
-
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    if (!siteKey) {
+  
+  const handleReCaptchaVerify = useCallback(async () => {
+    if (!executeRecaptcha) {
+      console.log("Execute recaptcha not yet available");
       toast({
         variant: "destructive",
-        title: "Configuration Error",
-        description: "reCAPTCHA is not configured. Please contact the site administrator.",
+        title: "Verification System Error",
+        description: "reCAPTCHA is not ready. Please wait a moment and try again.",
       });
-      return;
+      return null;
     }
 
-    if (!captchaToken) {
+    const token = await executeRecaptcha("contactFormSubmit");
+    return token;
+  }, [executeRecaptcha, toast]);
+
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    
+    const token = await handleReCaptchaVerify();
+    
+    if (!token) {
         toast({
             variant: "destructive",
-            title: "Verification Required",
-            description: "Please complete the reCAPTCHA verification.",
+            title: "Verification Failed",
+            description: "Could not verify reCAPTCHA. Please try again.",
         });
+        setIsSubmitting(false);
         return;
     }
-
-    setIsSubmitting(true);
 
     try {
       // EmailJS configuration
       const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
       const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
-
-      // Initialize EmailJS
-      emailjs.init({
-        publicKey: publicKey,
-      });
 
       // Prepare template params
       const templateParams: Record<string, unknown> = {
@@ -104,7 +106,7 @@ export function ContactForm() {
         budget: values.budget || "Not specified",
         subject: values.subject,
         message: values.message,
-        'g-recaptcha-response': captchaToken, // Pass the token to EmailJS
+        'g-recaptcha-response': token, // Pass the token to EmailJS
       };
 
       // Send email with or without attachment
@@ -130,7 +132,8 @@ export function ContactForm() {
       await emailjs.send(
         serviceID,
         templateID,
-        templateParams
+        templateParams,
+        publicKey
       );
 
 
@@ -140,8 +143,6 @@ export function ContactForm() {
       });
 
       form.reset();
-      recaptchaRef.current?.reset();
-      setCaptchaToken(null);
       setAttachmentName(null);
       if (fileInputRef.current) {
         fileInputRef.current.value = "";
@@ -152,10 +153,8 @@ export function ContactForm() {
       
       let errorMessage = "There was a problem sending your message. Please try again.";
       
-      if (error?.text?.toLowerCase().includes("recaptcha")) {
-        errorMessage = "Security verification failed. Please try the reCAPTCHA again.";
-        recaptchaRef.current?.reset();
-        setCaptchaToken(null);
+      if (typeof error?.text === 'string' && error.text.toLowerCase().includes("recaptcha")) {
+        errorMessage = "Security verification failed from server. Please try again.";
       } else if (error?.status === 400) {
         errorMessage = "Invalid form data. Please check all fields and try again.";
       }
@@ -284,27 +283,15 @@ export function ContactForm() {
               </FormItem>
             )}
           />
-          
-          {siteKey && (
-            <div className="flex justify-center">
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey={siteKey}
-                onChange={setCaptchaToken}
-                onExpired={() => setCaptchaToken(null)}
-              />
-            </div>
-          )}
-
 
           <div className="flex flex-col items-center">
-            <Button type="submit" className="w-full md:w-auto px-12" disabled={isSubmitting || !siteKey}>
+            <Button type="submit" className="w-full md:w-auto px-12" disabled={isSubmitting}>
               {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
-            {!siteKey && <p className="text-sm text-muted-foreground mt-2 text-center">
-              reCAPTCHA not configured.
-            </p>}
+            <p className="text-xs text-muted-foreground mt-2 text-center">
+              This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" className="underline">Privacy Policy</a> and <a href="https://policies.google.com/terms" className="underline">Terms of Service</a> apply.
+            </p>
           </div>
         </form>
       </Form>
