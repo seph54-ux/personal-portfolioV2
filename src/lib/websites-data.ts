@@ -190,4 +190,13 @@ export const websiteProjects: Project[] = [
     liveDemoUrl: 'https://pydocgen.up.railway.app',
     githubUrl: 'https://github.com/seph54-ux/pydocgen',
   },
+  {
+    id: 'proj-website-10',
+    title: 'ChatGPT Wrapped',
+    category: 'Websites/Webapps',
+    description: 'ChatGPT Wrapped 2025 – ACE Edition is a playful, personalized “year-in-review” experience that summarizes a user’s entire year of conversations with ChatGPT. It is like Spotify Wrapped but with the AI I talked with for the whole year. The site presents analytics, highlights, funny moments, and themed “arcs” covering topics like programming, capstone projects, translations, hardware troubleshooting, and creative work. It blends data visualization, humor, and storytelling to create a customized recap of the user’s 2025 journey with ChatGPT — complete with superlatives, moodboards, and recommendations for the next year.',
+    images: [{ imageUrl: '/asset/images/works-web/chatgpt-wrapped.webp', imageHint: 'website' }],
+    tech: ['nextjs', 'typescript', 'tailwind'],
+    liveDemoUrl: 'https://chatgpt-wrapper-2025.vercel.app/',
+  },
 ];

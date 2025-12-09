@@ -40,9 +40,14 @@ export default function AboutPage() {
           <p className="text-center text-muted-foreground">
             Crafting digital experiences that are not only beautiful but also intuitive and effective.
           </p>
-          <Button asChild size="lg">
-              <Link href="/contact">Let's work together</Link>
-          </Button>
+          <div className="flex flex-col gap-4">
+            <Button asChild size="lg">
+                <Link href="/contact">Let's work together</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+                <Link href="/asset/document/Philjoseph_Orlina_General_CV.pdf" target="_blank" rel="noopener noreferrer">See my CV/Resume</Link>
+            </Button>
+          </div>
         </div>
         <div className="md:col-span-2 space-y-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="glassmorphic p-8 rounded-lg">
