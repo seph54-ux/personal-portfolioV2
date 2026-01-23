@@ -138,7 +138,7 @@ export const websiteProjects: Project[] = [
     category: 'Websites/Webapps',
     description: 'BudgetWise is a modern and intuitive web application designed to help you take control of your finances. Track your income and expenses, set budgets, manage savings goals, and get smart, AI-powered suggestions to optimize your spending.',
     images: [{ imageUrl: '/asset/images/works-web/budgetwise-web.webp', imageHint: 'website' }],
-    tech: ['nextjs', 'typescript', 'tailwind'],
+    tech: ['nextjs', 'typescript', 'tailwind', 'firebase'],
     liveDemoUrl: 'https://budgetwise-ph.vercel.app/',
     githubUrl: 'https://github.com/seph54-ux/budgetwise',
   },

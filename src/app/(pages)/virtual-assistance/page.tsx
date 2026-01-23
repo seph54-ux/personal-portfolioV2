@@ -107,7 +107,7 @@ export default function VirtualAssistancePage() {
   return (
     <>
     {/* Hero Section */}
-    <section className="text-center py-20 md:py-32 animate-fade-in">
+    <section className="text-center min-h-screen flex flex-col justify-center items-center animate-fade-in">
         <div className="container mx-auto px-4">
             <h1 className="font-headline text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
                 Transform Your Business with a Tech-Savvy Virtual Assistant
