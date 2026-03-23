@@ -105,6 +105,41 @@ export const webUiProjects: Project[] = [
 
 export const websiteProjects: Project[] = [
   {
+    id: 'proj-website-11',
+    title: 'Edugrow',
+    category: 'Websites/Webapps',
+    description: "Edugrow is Singapore's leading M&A advisory firm exclusively focused on the education sector. We specialize in helping owners of childcare centres, kindergartens, tuition centres, enrichment schools, and international schools successfully sell their businesses, and we also assist serious investors in acquiring profitable education assets. Think of us as your strategic partner for confidential and successful education business transactions.",
+    images: [{ imageUrl: '/asset/images/works-web/edugrow-web.webp', imageHint: 'website' }],
+    tech: ['nextjs', 'typescript', 'tailwind'],
+    liveDemoUrl: 'https://edugrow.sg/',
+  },
+  {
+    id: 'proj-website-12',
+    title: 'Edugrow Chatlogs',
+    category: 'Websites/Webapps',
+    description: 'This is a private chatlogs viewer for Edugrow AI chat assistant and clients. Made for Ben to view the stored data of chatlogs in easier way, featuring real-time data synchronization and an intuitive administrative interface.',
+    images: [{ imageUrl: '/asset/images/works-web/edugrow-chatlogs.webp', imageHint: 'dashboard' }],
+    tech: ['nextjs', 'firebase', 'tailwind'],
+  },
+  {
+    id: 'proj-website-13',
+    title: 'JM Igaya Portfolio',
+    category: 'Websites/Webapps',
+    description: 'A clean and modern personal portfolio for JM Igaya, highlighting professional experience and creative projects with a focus on user experience, accessibility, and sleek aesthetic presentation.',
+    images: [{ imageUrl: '/asset/images/works-web/Igaya-profile-web.webp', imageHint: 'portfolio' }],
+    tech: ['react', 'tailwind'],
+    liveDemoUrl: 'https://jmigaya.netlify.app/',
+  },
+  {
+    id: 'proj-website-14',
+    title: 'Jane Lopez Portfolio',
+    category: 'Websites/Webapps',
+    description: 'A professional portfolio website for Jane Lopez, designed to showcase a diverse range of creative talents and professional accomplishments in a sleek, interactive, and fully responsive format.',
+    images: [{ imageUrl: '/asset/images/works-web/Jane-profile-web.webp', imageHint: 'portfolio' }],
+    tech: ['react', 'tailwind'],
+    liveDemoUrl: 'https://janelopez.netlify.app/',
+  },
+  {
     id: 'proj-website-1',
     title: '4core',
     category: 'Websites/Webapps',
