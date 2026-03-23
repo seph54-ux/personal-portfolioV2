@@ -1,16 +1,16 @@
-
-
-'use client';
 import { PageHeader } from '@/components/PageHeader';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { VideoModal } from '@/components/VideoModal';
-import Image from 'next/image';
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowRight, Bot, Brush, Briefcase, Code, Mail, Globe, Clock, FileCog, CheckCircle, BarChart, Settings, Cloud, Zap, Cpu, Calendar, Star } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { ArrowRight, Bot, Brush, Briefcase, Code, Mail, Globe, Clock, FileCog, CheckCircle, BarChart, Zap, Cpu, Cloud } from 'lucide-react';
 import { AnimatedStat } from '@/components/AnimatedStat';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Virtual Assistance Services',
+  description: 'Scale your business with Philjoseph Orlina, a tech-savvy Virtual Assistant specializing in automation, web development, admin support, and AI integration.',
+};
 
 const painPoints = [
     {
@@ -102,12 +102,11 @@ const techStack = [
     { icon: Cloud, category: "Cloud Services", tools: "Google Workspace, Firebase, Supabase" }
 ];
 
-
 export default function VirtualAssistancePage() {
   return (
     <>
     {/* Hero Section */}
-    <section className="text-center min-h-screen flex flex-col justify-center items-center animate-fade-in">
+    <section className="text-center h-screen flex flex-col justify-center items-center animate-fade-in">
         <div className="container mx-auto px-4">
             <h1 className="font-headline text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
                 Transform Your Business with a Tech-Savvy Virtual Assistant

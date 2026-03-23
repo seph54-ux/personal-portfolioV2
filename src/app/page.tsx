@@ -1,9 +1,7 @@
-
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
-import { blogPosts, techStack } from "@/lib/data";
+import { blogPosts } from "@/lib/data";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
@@ -15,7 +13,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Philjoseph Orlina | Designer & Developer Portfolio',
+  description: 'Welcome to the official portfolio of Philjoseph Orlina. I specialize in turning creative ideas into functional digital experiences through design, development, and virtual assistance.',
+};
 
 export default function Home() {
   const featuredProjects = [
@@ -72,13 +75,14 @@ export default function Home() {
           ></iframe>
         </div>
         
-        <div className="container mx-auto px-4 relative z-10 glassmorphic bg-background/30 dark:bg-background/50 rounded-xl p-8">
+        <div className="container mx-auto px-4 relative z-10 glassmorphic bg-background/30 dark:bg-background/50 rounded-xl p-8 max-w-4xl">
           <h1 
             className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 dark:from-white dark:to-foreground"
             style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
           >
-            Transforming Ideas into Digital Reality
+            Philjoseph Orlina
           </h1>
+          <h2 className="text-2xl md:text-3xl font-bold mt-2 text-foreground/80">Designer & Developer</h2>
           <p 
             className="mt-6 max-w-3xl mx-auto text-muted-foreground text-lg md:text-xl"
             style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}

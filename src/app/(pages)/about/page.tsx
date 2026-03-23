@@ -1,12 +1,16 @@
-
 import Image from 'next/image';
 import { PageHeader } from '@/components/PageHeader';
 import { techStack } from '@/lib/data';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight, Brush, Code, Video } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Me',
+  description: 'Learn more about Philjoseph Orlina, a creative engineer based in the Philippines with a passion for web development, esports design, and life philosophy: Build. Learn. Evolve.',
+};
 
 export default function AboutPage() {
   const designTools = Object.values(techStack).filter(t => t.category === 'Design Tool');
