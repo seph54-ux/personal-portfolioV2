@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   keywords: ['Philjoseph Orlina', 'Seph Orlina', 'Philjoseph Orlina Portfolio', 'Designer Philippines', 'Web Developer Philippines', 'Esports Designer', 'Virtual Assistant', 'OBS Overlays', 'Next.js Developer'],
   authors: [{ name: 'Philjoseph Orlina' }],
   creator: 'Philjoseph Orlina',
+  icons: {
+    icon: '/asset/images/personal-logo/Seph-logo-light.webp',
+    shortcut: '/asset/images/personal-logo/Seph-logo-light.webp',
+    apple: '/asset/images/personal-logo/Seph-logo-light.webp',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
