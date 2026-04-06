@@ -15,13 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Metadata } from 'next';
 import { useTheme } from "next-themes";
-
-export const metadata: Metadata = {
-  title: 'Philjoseph Orlina | Designer & Developer Portfolio',
-  description: 'Welcome to the official portfolio of Philjoseph Orlina. I specialize in turning creative ideas into functional digital experiences through design, development, and virtual assistance.',
-};
 
 export default function Home() {
   const { theme } = useTheme();
