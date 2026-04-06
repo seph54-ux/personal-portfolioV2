@@ -83,20 +83,20 @@ export default function Home() {
           >
             Philjoseph Orlina
           </h1>
-          <h2 className="text-2xl md:text-3xl font-bold mt-2 text-foreground/80">Designer & Developer</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mt-2 text-foreground/90">Designer & Developer</h2>
           <p 
-            className="mt-6 max-w-3xl mx-auto text-muted-foreground text-lg md:text-xl"
-            style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}
+            className="mt-6 max-w-3xl mx-auto text-foreground text-lg md:text-xl font-medium"
+            style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.4)' }}
           >
             A multidisciplinary designer and developer crafting beautiful, functional, and user-centric digital experiences. From brand identity to full-stack web applications.
           </p>
           <div className="mt-8 flex justify-center gap-4">
-            <Button asChild size="lg">
-              <Link href="/contact">Start a Project <ArrowRight className="ml-2 h-5 w-5" /></Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
+            <button className="h-11 rounded-md px-8 bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors">
+              <Link href="/contact" className="inline-flex items-center">Start a Project <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            </button>
+            <button className="h-11 rounded-md px-8 border border-input bg-background hover:bg-accent hover:text-accent-foreground inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors">
               <Link href="/posters">View My Work</Link>
-            </Button>
+            </button>
           </div>
         </div>
       </section>
