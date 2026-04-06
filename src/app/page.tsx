@@ -183,7 +183,7 @@ export default function Home() {
             <h2 className="font-headline text-4xl font-bold tracking-tight">Frequently Asked Questions</h2>
             <p className="mt-2 text-muted-foreground">Quick answers to common questions about my services.</p>
           </div>
-          <div className="max-w-3xl auto">
+          <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>
