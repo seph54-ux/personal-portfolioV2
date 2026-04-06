@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
@@ -14,6 +16,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Metadata } from 'next';
+import { useTheme } from "next-themes";
 
 export const metadata: Metadata = {
   title: 'Philjoseph Orlina | Designer & Developer Portfolio',
@@ -21,6 +24,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const { theme } = useTheme();
   const featuredProjects = [
     webUiProjects.find(p => p.id === 'web-ui-1'),
     posterProjects.find(p => p.id === 'poster-3'),
@@ -61,19 +65,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative text-center min-h-screen flex flex-col justify-center items-center py-20 md:py-32 animate-fade-in">
         <div 
-          className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden pointer-events-none" 
+          className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden pointer-events-none"
           style={{marginTop: '-88px'}}
         >
-          <iframe
-              src="https://skybox.blockadelabs.com/e/2687689c95fa2fdee1eb5c40dedb544a"
-              width="100%"
-              height="100%"
-              title="3D Background Scene"
-              style={{
-                border: 0,
-              }}
-              allow="accelerometer; gyroscope; magnetometer; xr-spatial-tracking; fullscreen"
-          ></iframe>
+          <Image
+            src={theme === 'dark' ? '/asset/images/hero/disp-img-night.webp' : '/asset/images/hero/disp-img-day.webp'}
+            alt="Hero background"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
         </div>
         
         <div className="container mx-auto px-4 relative z-10 glassmorphic bg-background/30 dark:bg-background/50 rounded-xl p-8 max-w-4xl">
