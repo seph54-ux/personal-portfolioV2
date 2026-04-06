@@ -7,6 +7,7 @@
   packages = [
     pkgs.nodejs
     pkgs.zulu
+    pkgs.openssh
   ];
   # Sets environment variables in the workspace
   env = {};
