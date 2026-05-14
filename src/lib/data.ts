@@ -1,5 +1,3 @@
-
-
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { websiteProjects, webUiProjects, posterProjects } from './websites-data';
@@ -223,7 +221,7 @@ export const blogPosts: Blog[] = [
         </div>
       </div>
       <div class="not-prose space-y-8 mt-12">
-        <section id="codm-story" class="glassmorphic p-6 rounded-lg">
+        <section id="codm-story" class="glassmorphic p-6 rounded-lg scroll-mt-24">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
             <img src="/asset/images/games-logo/codm_icon.webp" alt="codm_icon" style="width:64px; height:64px;">
             <h2 class="font-headline text-2xl m-0">Call of Duty: Mobile — "Where It All Began"</h2>
@@ -237,7 +235,7 @@ export const blogPosts: Blog[] = [
             <p>Want to connect with the community? <a href="https://www.facebook.com/groups/garenacodmph/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary)); text-decoration: underline; display: inline-flex; align-items: center; gap: 0.25rem;">Join CODM PH Community <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
           </div>
         </section>
-        <section id="mlbb-story" class="glassmorphic p-6 rounded-lg">
+        <section id="mlbb-story" class="glassmorphic p-6 rounded-lg scroll-mt-24">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
             <img src="/asset/images/games-logo/mlbb_icon.webp" alt="mlbb_icon" style="width:64px; height:64px;">
             <h2 class="font-headline text-2xl m-0">Mobile Legends: Bang Bang — "The House That Held Our Friendship"</h2>
@@ -248,7 +246,7 @@ export const blogPosts: Blog[] = [
             <p>We played, we studied heroes, and we climbed the ranks together.<br>We lost a lot—but we laughed harder.<br>That game didn't just fill time—it filled our days with stories, jokes, and shared goals.</p>
           </div>
         </section>
-        <section id="bloodstrike-story" class="glassmorphic p-6 rounded-lg">
+        <section id="bloodstrike-story" class="glassmorphic p-6 rounded-lg scroll-mt-24">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
             <img src="/asset/images/games-logo/bloodstrike_icon.webp" alt="bloodstrike_icon" style="width:64px; height:64px;">
             <h2 class="font-headline text-2xl m-0">Bloodstrike — "The FPS Flame Rekindled"</h2>
@@ -259,7 +257,7 @@ export const blogPosts: Blog[] = [
             <p>It didn't take long before my friends joined in. We called shots, planned positions, and lived for that rush. Bloodstrike didn't just fill a gaming void—it revived a part of me that I thought I'd left in the past.</p>
           </div>
         </section>
-        <section id="hok-story" class="glassmorphic p-6 rounded-lg">
+        <section id="hok-story" class="glassmorphic p-6 rounded-lg scroll-mt-24">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
             <img src="/asset/images/games-logo/hok_icon.webp" alt="hok_icon" style="width:64px; height:64px;">
             <h2 class="font-headline text-2xl m-0">Honor of Kings — "The Persistent Invitation"</h2>
@@ -271,7 +269,7 @@ export const blogPosts: Blog[] = [
             <p>Connect with the community: <a href="https://www.facebook.com/groups/hokphofficial/?ref=share&mibextid=WaXdOe/" target="_blank" style="color: hsl(var(--primary)); text-decoration: underline; display: inline-flex; align-items: center; gap: 0.25rem;">Join HoKPH Community <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
           </div>
         </section>
-        <section id="minecraft-story" class="glassmorphic p-6 rounded-lg">
+        <section id="minecraft-story" class="glassmorphic p-6 rounded-lg scroll-mt-24">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
             <img src="/asset/images/games-logo/minecraft_icon.webp" alt="minecraft_icon" style="width:64px; height:64px;">
             <h2 class="font-headline text-2xl m-0">Minecraft — "Creativity and Connection"</h2>
@@ -286,7 +284,7 @@ export const blogPosts: Blog[] = [
       </div>
       <blockquote style="margin-top: 2rem; margin-bottom: 2rem;"><p>The time you spend playing with someone might be the memory they cherish most tomorrow.</p></blockquote>
       <div class="not-prose space-y-8">
-        <section id="rusted-story" class="glassmorphic p-6 rounded-lg">
+        <section id="rusted-story" class="glassmorphic p-6 rounded-lg scroll-mt-24">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
             <img src="/asset/images/games-logo/rusted-warfare_icon.webp" alt="rusted-warfare_icon" style="width:64px; height:64px;">
             <h2 class="font-headline text-2xl m-0">Rusted Warfare — "Nostalgia in Pixels"</h2>
@@ -297,7 +295,7 @@ export const blogPosts: Blog[] = [
             <p>It reminded me so much of <strong>Red Alert 2 and Yuri&#39;s Revenge</strong>, games I used to play with my dad. That top-down strategy vibe, the sound of war machines, the modding community—it brought back childhood joy with a new layer of competitive fun.</p>
           </div>
         </section>
-        <section id="cooking-story" class="glassmorphic p-6 rounded-lg">
+        <section id="cooking-story" class="glassmorphic p-6 rounded-lg scroll-mt-24">
           <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
             <img src="/asset/images/games-logo/cooking-fever_icon.webp" alt="cooking-fever_icon" style="width:64px; height:64px;">
             <h2 class="font-headline text-2xl m-0">Cooking Fever — "Comfort in Chaos"</h2>
