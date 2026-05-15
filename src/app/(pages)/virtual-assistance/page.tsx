@@ -132,20 +132,15 @@ export default function VirtualAssistancePage() {
         </div>
         
         <div className="container mx-auto px-4 text-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-8 animate-fade-in">
-                <Rocket className="w-3 h-3" />
-                Virtual Assistance Redefined
-            </div>
-            
-            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60 leading-none mb-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60 leading-none mb-6 animate-fade-in">
                 Automate. Scale.<br/><span className="text-primary">Evolve.</span>
             </h1>
             
-            <p className="mt-6 max-w-2xl mx-auto text-muted-foreground text-lg md:text-xl font-medium animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="mt-6 max-w-2xl mx-auto text-muted-foreground text-lg md:text-xl font-medium animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 Precision-engineered virtual assistance for visionary entrepreneurs. I build the systems, you lead the growth.
             </p>
             
-            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
                  <Button asChild size="lg" className="h-14 px-10 text-lg shadow-xl shadow-primary/20">
                     <Link href="/contact" className="flex items-center">Optimize My Workflow <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
@@ -154,7 +149,7 @@ export default function VirtualAssistancePage() {
                 </Button>
             </div>
             
-            <div className="mt-16 flex flex-wrap justify-center gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="mt-16 flex flex-wrap justify-center gap-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
                 <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
                     <CheckCircle className="w-4 h-4 text-primary" /> Global Reach
                 </div>
