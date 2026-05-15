@@ -7,15 +7,32 @@ import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://philjoseph-orlina.web.app'), // Replace with your actual domain once deployed
+  metadataBase: new URL('https://philjoseph-orlina.web.app'),
   title: {
     default: 'Philjoseph Orlina | Designer & Developer Portfolio',
     template: '%s | Philjoseph Orlina',
   },
-  description: 'Official portfolio of Philjoseph Orlina, a multidisciplinary designer and developer specializing in Web UI, OBS Overlays, and Virtual Assistance.',
-  keywords: ['Philjoseph Orlina', 'Seph Orlina', 'Philjoseph Orlina Portfolio', 'Designer Philippines', 'Web Developer Philippines', 'Esports Designer', 'Virtual Assistant', 'OBS Overlays', 'Next.js Developer'],
+  description: 'Official portfolio of Philjoseph Orlina, a multidisciplinary designer and developer based in the Philippines specializing in Web UI, OBS Overlays, and Virtual Assistance.',
+  keywords: [
+    'Philjoseph Orlina', 
+    'Philjoseph Orlina Designer', 
+    'Philjoseph Orlina Developer', 
+    'philjoseph orlina', 
+    'PHILJOSEPH ORLINA',
+    'Seph Orlina', 
+    'Philjoseph Orlina Portfolio', 
+    'Designer Philippines', 
+    'Web Developer Philippines', 
+    'Esports Designer', 
+    'Virtual Assistant', 
+    'OBS Overlays', 
+    'Next.js Developer'
+  ],
   authors: [{ name: 'Philjoseph Orlina' }],
   creator: 'Philjoseph Orlina',
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: '/asset/images/personal-logo/Seph-logo-light.webp',
     shortcut: '/asset/images/personal-logo/Seph-logo-light.webp',
@@ -46,6 +63,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -68,15 +92,20 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Philjoseph Orlina",
-              "alternateName": "Seph Orlina",
+              "alternateName": ["Seph Orlina", "philjoseph orlina", "PHILJOSEPH ORLINA"],
               "url": "https://philjoseph-orlina.web.app",
+              "image": "https://philjoseph-orlina.web.app/asset/images/profile-image.png",
               "jobTitle": "Designer and Developer",
-              "description": "Multidiscplinary designer and developer based in the Philippines specializing in Web UI, OBS Overlays, and Virtual Assistance.",
+              "description": "Multidisciplinary designer and developer based in the Philippines specializing in Web UI, OBS Overlays, and Virtual Assistance.",
               "sameAs": [
                 "https://github.com/seph54-ux",
                 "https://www.facebook.com/share/19ZF9GsX6R/",
                 "https://www.instagram.com/seph.547?igsh=YWJiNWhyem1vdzM2"
-              ]
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Philippines"
+              }
             })
           }}
         />

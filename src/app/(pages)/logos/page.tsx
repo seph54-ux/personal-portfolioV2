@@ -93,7 +93,7 @@ export default function LogosPage() {
     <>
       <PageHeader
         title="Logo Design"
-        subtitle="Crafting unique and memorable identities for brands. Each logo is designed to be versatile and timeless."
+        subtitle="Crafting unique and memorable identities by Philjoseph Orlina. Each logo is designed to be versatile and timeless."
       />
       <div className="space-y-16 mt-12">
         {logoProjects.map((project, index) => (

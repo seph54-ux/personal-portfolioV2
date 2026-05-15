@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { ImageModal } from '@/components/ImageModal';
 import Image, { StaticImageData } from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import type { Project } from '@/lib/data';
 import { webUiProjects } from '@/lib/websites-data';
 
 export default function WebUiPage() {
@@ -25,11 +24,11 @@ export default function WebUiPage() {
     <>
       <PageHeader
         title="Web UI Design"
-        subtitle="Crafting intuitive, beautiful, and user-centric interfaces for web and mobile applications."
+        subtitle="Intuitive, beautiful, and user-centric interfaces crafted by Philjoseph Orlina for web and mobile applications."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {webUiProjects.map((project, index) => (
-          <div key={project.id} onClick={() => openModal(project.images[0].imageUrl, project.title)}>
+          <div key={project.id} onClick={() => openModal(project.images[0].imageUrl, project.title)} className="cursor-pointer">
             <Card className="overflow-hidden group glassmorphic transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
               <div className="overflow-hidden aspect-video">
                 <Image

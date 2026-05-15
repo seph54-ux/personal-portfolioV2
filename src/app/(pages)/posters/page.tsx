@@ -6,7 +6,6 @@ import { ImageModal } from '@/components/ImageModal';
 import { StaticImageData } from 'next/image';
 import { projects } from '@/lib/data';
 
-
 export default function PostersPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<{src: StaticImageData | string, alt: string} | null>(null);
@@ -27,11 +26,11 @@ export default function PostersPage() {
     <>
       <PageHeader
         title="Poster Design"
-        subtitle="A collection of posters created for various events, promotions, and artistic expressions."
+        subtitle="A collection of posters created for various events, promotions, and artistic expressions by Philjoseph Orlina."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {posterProjects.map((project, index) => (
-          <div key={project.id} onClick={() => openModal(project.images[0].imageUrl, project.title)}>
+          <div key={project.id} onClick={() => openModal(project.images[0].imageUrl, project.title)} className="cursor-pointer">
             <ProjectCard 
               project={project} 
               className="animate-fade-in"

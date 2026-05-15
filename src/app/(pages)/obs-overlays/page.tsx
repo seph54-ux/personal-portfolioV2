@@ -50,12 +50,12 @@ export default function ObsOverlaysPage() {
     <>
       <PageHeader
         title="OBS Overlays"
-        subtitle="These dynamic and static overlay assets were designed especially for E-Days 2k23 Facebook live broadcast, optimized for clarity, energy, and viewer engagement."
+        subtitle="Dynamic and static stream assets by Philjoseph Orlina, optimized for live broadcasting and viewer engagement."
       />
       <div className="space-y-16 mt-12">
         <div>
           <h2 className="font-headline text-3xl font-bold mb-2 text-center">Overlay Assets</h2>
-          <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">Individual components of the stream pack.</p>
+          <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">Individual components of the stream pack designed for high performance.</p>
           <Carousel className="w-full max-w-6xl mx-auto">
             <CarouselContent>
               {overlayAssets.map((asset, index) => (
@@ -88,7 +88,7 @@ export default function ObsOverlaysPage() {
 
         <div>
           <h2 className="font-headline text-3xl font-bold mb-2 text-center">Overlays in Action</h2>
-          <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">See how the overlays look in a real stream environment.</p>
+          <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">See Philjoseph Orlina's overlay designs in a real stream environment.</p>
           <Carousel className="w-full max-w-6xl mx-auto">
             <CarouselContent>
               {overlaysInAction.map((action, index) => (
