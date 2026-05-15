@@ -266,17 +266,11 @@ export default function VirtualAssistancePage() {
     <section className="py-32 relative">
         <div className="container mx-auto px-4">
             <div className="relative p-[2px] rounded-[3.1rem] overflow-hidden group max-w-5xl mx-auto shadow-2xl">
-                {/* The Crawling Light Layer */}
-                <div className="absolute inset-[-1000%] z-0 animate-[spin_6s_linear_infinite] opacity-40 group-hover:opacity-100 transition-opacity duration-500 bg-[conic-gradient(from_0deg,transparent_0_120deg,hsl(var(--primary))_180deg,transparent_180deg_300deg,hsl(var(--primary))_360deg)]"></div>
-                
-                {/* The Glow Layer */}
-                <div className="absolute inset-[-1000%] z-0 animate-[spin_6s_linear_infinite] blur-3xl opacity-20 bg-[conic-gradient(from_0deg,transparent_0_120deg,hsl(var(--primary))_180deg,transparent_180deg_300deg,hsl(var(--primary))_360deg)]"></div>
+                {/* The Crawling Light Layer - Two points, slow, precisely on border */}
+                <div className="absolute inset-[-1000%] z-0 animate-[spin_12s_linear_infinite] opacity-100 bg-[conic-gradient(from_0deg,transparent_0_170deg,hsl(var(--primary))_180deg,transparent_190deg_350deg,hsl(var(--primary))_360deg)]"></div>
                 
                 {/* The Content Card */}
                 <div className="relative z-10 glassmorphic rounded-[3rem] p-12 md:p-20 text-center overflow-hidden border-none bg-card/90">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
-                    
                     <div className="relative z-20">
                         <h2 className="font-headline text-4xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-tight">
                             Engineered for Your Success.
