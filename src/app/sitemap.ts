@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://philjoseph-orlina.web.app'
+  const baseUrl = 'https://philjosephorlina.vercel.app'
 
   // Standard static pages
   const routes = [

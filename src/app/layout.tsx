@@ -7,17 +7,19 @@ import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://philjoseph-orlina.web.app'),
+  metadataBase: new URL('https://philjosephorlina.vercel.app'),
   title: {
     default: 'Philjoseph Orlina | Designer & Developer Portfolio',
     template: '%s | Philjoseph Orlina',
   },
-  description: 'Official portfolio of Philjoseph Orlina, a multidisciplinary designer and developer based in the Philippines specializing in Web UI, OBS Overlays, and Virtual Assistance.',
+  description: 'Official portfolio of Philjoseph Orlina, a multidisciplinary designer and developer based in the Philippines specializing in Front-End Development, Graphic Designing, and Virtual Assistance.',
   keywords: [
     'Philjoseph Orlina', 
     'Philjoseph Orlina Designer', 
     'Philjoseph Orlina Developer', 
     'philjoseph orlina', 
+    'philjosephorlina',
+    'phil orlina',
     'PHILJOSEPH ORLINA',
     'Seph Orlina', 
     'Philjoseph Orlina Portfolio', 
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://philjoseph-orlina.web.app',
+    url: 'https://philjosephorlina.vercel.app',
     siteName: 'Philjoseph Orlina Portfolio',
     title: 'Philjoseph Orlina | Designer & Developer',
     description: 'Transforming ideas into digital reality. Explore the creative work and technical services of Philjoseph Orlina.',
@@ -57,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Philjoseph Orlina | Designer & Developer',
-    description: 'Multidisciplinary designer and developer based in the Philippines.',
+    description: 'Graphic Designer and Front-End Developer based in the Philippines.',
     images: ['/asset/images/profile-image.png'],
   },
   robots: {
@@ -93,10 +95,10 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Philjoseph Orlina",
               "alternateName": ["Seph Orlina", "philjoseph orlina", "PHILJOSEPH ORLINA"],
-              "url": "https://philjoseph-orlina.web.app",
-              "image": "https://philjoseph-orlina.web.app/asset/images/profile-image.png",
+              "url": "https://philjosephorlina.vercel.app",
+              "image": "https://philjosephorlina.vercel.app/asset/images/profile-image.png",
               "jobTitle": "Designer and Developer",
-              "description": "Multidisciplinary designer and developer based in the Philippines specializing in Web UI, OBS Overlays, and Virtual Assistance.",
+              "description": "Graphic Designer and Front-End Developer based in the Philippines specializing in Front-End Development, Graphic Designs, and Virtual Assistance.",
               "sameAs": [
                 "https://github.com/seph54-ux",
                 "https://www.facebook.com/share/19ZF9GsX6R/",

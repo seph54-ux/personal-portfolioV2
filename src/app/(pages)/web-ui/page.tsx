@@ -24,7 +24,7 @@ export default function WebUiPage() {
     <>
       <PageHeader
         title="Web UI Design"
-        subtitle="Intuitive, beautiful, and user-centric interfaces crafted by Philjoseph Orlina for web and mobile applications."
+        subtitle="Intuitive, beautiful, and user-centric interfaces crafted by Philjoseph Orlina for web applications."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {webUiProjects.map((project, index) => (

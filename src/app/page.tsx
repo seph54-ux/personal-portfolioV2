@@ -83,7 +83,8 @@ export default function Home() {
             className="mt-6 max-w-3xl mx-auto text-foreground text-lg md:text-xl font-medium"
             style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.4)' }}
           >
-            A multidisciplinary designer and developer crafting beautiful, functional, and user-centric digital experiences. From brand identity to full-stack web applications.
+            Creating visuals that capture attention and systems that make an impact.
+            From esports branding to intelligent tech solutions, I bring ideas to life through design and development.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <button className="h-11 rounded-md px-8 bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors">

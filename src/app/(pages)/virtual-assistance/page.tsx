@@ -1,9 +1,28 @@
 import { PageHeader } from '@/components/PageHeader';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import Link from 'next/link';
+import Link from 'link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Bot, Brush, Briefcase, Code, Mail, Globe, Clock, FileCog, CheckCircle, BarChart, Zap, Cpu, Cloud } from 'lucide-react';
+import { 
+  ArrowRight, 
+  Bot, 
+  Brush, 
+  Briefcase, 
+  Code, 
+  Mail, 
+  Globe, 
+  Clock, 
+  FileCog, 
+  CheckCircle, 
+  BarChart, 
+  Zap, 
+  Cpu, 
+  Cloud,
+  Rocket,
+  ShieldCheck,
+  Headphones,
+  TrendingUp
+} from 'lucide-react';
 import { AnimatedStat } from '@/components/AnimatedStat';
 import { Metadata } from 'next';
 
@@ -38,110 +57,137 @@ const painPoints = [
 const services = [
     {
         icon: Briefcase,
-        title: "Admin & Virtual Assistance",
+        title: "Admin & Executive Support",
         items: [
-            "Email & calendar management",
-            "File organization (Drive, Dropbox)",
-            "Data entry & reporting",
-            "Customer support via chat/email",
-            "Document preparation & templates",
-            "Project tracking (Monday, Notion)",
+            "Precision email & calendar management",
+            "Advanced file organization (Cloud/Local)",
+            "Comprehensive data entry & reporting",
+            "Strategic document preparation",
+            "Project tracking & management",
+            "CRM & Lead management",
         ]
     },
     {
         icon: Code,
-        title: "Web Development",
+        title: "Full-Stack Web Solutions",
         items: [
-            "Responsive websites & landing pages",
-            "UI/UX design & prototyping",
-            "React Native web apps",
-            "Firebase integration & hosting",
-            "Website deployment (Vercel, GitHub)",
-            "Real-time dashboards",
+            "Next.js & React premium websites",
+            "Conversion-optimized landing pages",
+            "Intuitive UI/UX design & prototyping",
+            "Firebase/Backend infrastructure",
+            "Performance & SEO optimization",
+            "Real-time data dashboards",
         ]
     },
     {
         icon: Bot,
-        title: "AI & Automation",
+        title: "Intelligent Automation",
         items: [
-            "Workflow automation (n8n, Zapier, Make)",
-            "AI integration (ChatGPT, Claude, Gemini)",
-            "CRM automation setup",
-            "Email automation workflows",
-            "Data processing scripts",
-            "Smart business solutions",
+            "Custom workflow automation (n8n/Make)",
+            "LLM integration (Gemini/ChatGPT/Claude)",
+            "Automated lead nurturing sequences",
+            "Custom API & webhook integrations",
+            "Smart notification systems",
+            "Automated content pipelines",
         ]
     },
      {
         icon: Brush,
-        title: "Graphic Design",
+        title: "Digital Branding & Design",
         items: [
-            "Logo & branding design",
-            "Social media graphics",
-            "Presentation templates",
-            "OBS overlays & stream templates",
-            "Marketing materials",
-            "UI component design",
+            "Modern logo & brand identity",
+            "Premium social media assets",
+            "Professional deck & deck design",
+            "High-end OBS stream overlays",
+            "Marketing & sales collateral",
+            "Dynamic motion graphics",
         ]
     },
 ]
 
 const stats = [
-    { value: "50+", label: "Tools & Technologies Mastered" },
-    { value: "100%", label: "Remote Work Ready" },
-    { value: "Always On", label: "Responsive Communication" },
-    { value: "Fresh", label: "Computer Engineering Graduate 2025" }
+    { value: "50+", label: "Industry Tools Mastered", icon: Rocket },
+    { value: "100%", label: "Remote Operational Efficiency", icon: ShieldCheck },
+    { value: "24/7", label: "Automated Systems Support", icon: Headphones },
+    { value: "Top Tier", label: "Computer Engineering Excellence", icon: TrendingUp }
 ]
 
 const techStack = [
-    { icon: BarChart, category: "Project Management", tools: "Monday, Notion, Slack, Trello, GoHighLevel" },
-    { icon: Code, category: "Development", tools: "React, Next.js, Firebase, Node.js" },
-    { icon: Brush, category: "Design", tools: "Figma, Canva, Inkscape, Photoshop" },
-    { icon: Cpu, category: "AI Tools", tools: "ChatGPT, Claude, Gemini, Perplexity" },
-    { icon: Zap, category: "Automation", tools: "n8n, Zapier, Make.com, GoHighLevel" },
-    { icon: Cloud, category: "Cloud Services", tools: "Google Workspace, Firebase, Supabase" }
+    { icon: BarChart, category: "Operations", tools: "Monday, Notion, Slack, Trello, GHL" },
+    { icon: Code, category: "Core Dev", tools: "React, Next.js, Firebase, Node.js" },
+    { icon: Brush, category: "Creative", tools: "Figma, Canva, Inkscape, PS" },
+    { icon: Cpu, category: "Cognitive AI", tools: "Genkit, Gemini, Claude, OpenAI" },
+    { icon: Zap, category: "Efficiency", tools: "n8n, Zapier, Make, Python Scripts" },
+    { icon: Cloud, category: "Infrastructure", tools: "Google Cloud, Vercel, Firebase" }
 ];
 
 export default function VirtualAssistancePage() {
   return (
-    <>
-    {/* Hero Section */}
-    <section className="text-center h-screen flex flex-col justify-center items-center animate-fade-in">
-        <div className="container mx-auto px-4">
-            <h1 className="font-headline text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70">
-                Transform Your Business with a Tech-Savvy Virtual Assistant
+    <div className="space-y-0">
+    {/* Hero Section - Full Height */}
+    <section className="relative h-[calc(100vh-80px)] flex flex-col justify-center items-center overflow-hidden">
+        <div className="absolute inset-0 z-[-1] opacity-20 dark:opacity-10">
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary rounded-full blur-[120px] animate-pulse"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent rounded-full blur-[120px] animate-pulse delay-700"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-8 animate-fade-in">
+                <Rocket className="w-3 h-3" />
+                Virtual Assistance Redefined
+            </div>
+            
+            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60 leading-none mb-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+                Automate. Scale.<br/><span className="text-primary">Evolve.</span>
             </h1>
-            <p className="mt-6 max-w-3xl mx-auto text-muted-foreground text-lg md:text-xl">
-                I automate your workflows, build your web presence, and handle your admin tasks—so you can focus on growing your business.
+            
+            <p className="mt-6 max-w-2xl mx-auto text-muted-foreground text-lg md:text-xl font-medium animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                Precision-engineered virtual assistance for visionary entrepreneurs. I build the systems, you lead the growth.
             </p>
-            <div className="mt-8 flex justify-center">
-                 <Button asChild size="lg">
-                    <Link href="/contact">Get Started Today <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            
+            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                 <Button asChild size="lg" className="h-14 px-10 text-lg shadow-xl shadow-primary/20">
+                    <Link href="/contact" className="flex items-center">Optimize My Workflow <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                </Button>
+                <Button variant="outline" size="lg" className="h-14 px-10 text-lg backdrop-blur-sm">
+                    <Link href="#services">Explore Services</Link>
                 </Button>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-                <Badge variant="secondary" className="text-sm">🌏 Remote Ready</Badge>
-                <Badge variant="secondary" className="text-sm">⚡ Fast Turnaround</Badge>
-                <Badge variant="secondary" className="text-sm">🤖 AI-Powered Solutions</Badge>
+            
+            <div className="mt-16 flex flex-wrap justify-center gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                    <CheckCircle className="w-4 h-4 text-primary" /> Global Reach
+                </div>
+                <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                    <CheckCircle className="w-4 h-4 text-primary" /> AI Integrated
+                </div>
+                <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
+                    <CheckCircle className="w-4 h-4 text-primary" /> Full-Stack Capable
+                </div>
             </div>
+        </div>
+        
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <div className="w-1 h-12 rounded-full bg-gradient-to-b from-primary to-transparent"></div>
         </div>
     </section>
 
     {/* Problem Section */}
-    <section className="py-16 bg-card/20">
+    <section className="py-24 bg-card/10 border-y border-border/50">
         <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-                <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Are You Struggling With...</h2>
-                <p className="mt-2 text-muted-foreground text-lg">These common business challenges that drain your time and energy?</p>
+            <div className="text-center mb-20">
+                <Badge variant="outline" className="mb-4">Operational Challenges</Badge>
+                <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">The Bottlenecks of Scale</h2>
+                <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">Is your business growth being held back by manual processes and digital clutter?</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {painPoints.map((point, index) => (
-                    <Card key={index} className="glassmorphic text-center p-6 animate-fade-in shimmer-effect transition-all duration-300 hover:shadow-2xl hover:-translate-y-1" style={{ animationDelay: `${index * 100}ms`}}>
-                        <div className="mx-auto bg-primary/10 text-primary w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                            <point.icon className="w-6 h-6" />
+                    <Card key={index} className="glassmorphic border-none p-8 animate-fade-in shimmer-effect transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 group" style={{ animationDelay: `${index * 150}ms`}}>
+                        <div className="bg-primary/5 text-primary w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
+                            <point.icon className="w-7 h-7" />
                         </div>
-                        <h3 className="font-headline text-xl font-semibold mb-2">{point.title}</h3>
-                        <p className="text-muted-foreground text-sm">{point.description}</p>
+                        <h3 className="font-headline text-xl font-bold mb-4">{point.title}</h3>
+                        <p className="text-muted-foreground leading-relaxed">{point.description}</p>
                     </Card>
                 ))}
             </div>
@@ -149,26 +195,27 @@ export default function VirtualAssistancePage() {
     </section>
 
     {/* Services Section */}
-    <section className="py-16">
+    <section id="services" className="py-24 relative overflow-hidden">
          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-                <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">How I Can Help Your Business Thrive</h2>
-                <p className="mt-2 text-muted-foreground text-lg">Comprehensive virtual assistance with a technical edge.</p>
+            <div className="text-center mb-20">
+                <Badge variant="outline" className="mb-4">Solutions & Expertise</Badge>
+                <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Technical Virtual Assistance</h2>
+                <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">Bridging the gap between administrative support and engineering excellence.</p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {services.map((service, index) => (
-                    <Card key={service.title} className="glassmorphic flex flex-col p-6 animate-fade-in shimmer-effect transition-all duration-300 hover:shadow-2xl hover:-translate-y-1" style={{ animationDelay: `${index * 100}ms`}}>
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="bg-primary/10 text-primary p-3 rounded-full">
+                    <Card key={service.title} className="glassmorphic flex flex-col p-8 animate-fade-in border-white/5 transition-all duration-500 hover:bg-card/80 group" style={{ animationDelay: `${index * 150}ms`}}>
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="bg-gradient-to-br from-primary/20 to-primary/5 text-primary p-4 rounded-xl shadow-inner group-hover:shadow-primary/20 transition-all">
                                <service.icon className="w-6 h-6" />
                             </div>
-                            <h3 className="font-headline text-xl font-semibold">{service.title}</h3>
+                            <h3 className="font-headline text-lg font-bold leading-tight">{service.title}</h3>
                         </div>
-                        <ul className="space-y-2 text-sm text-muted-foreground flex-grow">
+                        <ul className="space-y-4 text-sm text-muted-foreground flex-grow">
                             {service.items.map(item => (
-                                <li key={item} className="flex items-start">
-                                    <CheckCircle className="w-4 h-4 mr-2 mt-1 text-primary shrink-0"/>
-                                    <span>{item}</span>
+                                <li key={item} className="flex items-start gap-3 group/item">
+                                    <div className="mt-1 w-1.5 h-1.5 rounded-full bg-primary/40 group-hover/item:bg-primary transition-colors"></div>
+                                    <span className="group-hover/item:text-foreground transition-colors">{item}</span>
                                 </li>
                             ))}
                         </ul>
@@ -179,16 +226,16 @@ export default function VirtualAssistancePage() {
     </section>
     
     {/* Stats Section */}
-    <section className="py-16 bg-card/20">
+    <section className="py-24 bg-card/30 relative">
         <div className="container mx-auto px-4">
-             <div className="text-center mb-12">
-                <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Why Choose Me?</h2>
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                {stats.map(stat => (
-                    <div key={stat.label} className="p-4">
-                        <AnimatedStat value={stat.value} />
-                        <p className="text-muted-foreground mt-2">{stat.label}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                {stats.map((stat, index) => (
+                    <div key={stat.label} className="flex flex-col items-center text-center animate-fade-in group" style={{ animationDelay: `${index * 150}ms` }}>
+                        <div className="mb-6 p-4 rounded-full bg-background/50 border border-border group-hover:border-primary/50 group-hover:text-primary transition-all duration-500">
+                            <stat.icon className="w-8 h-8" />
+                        </div>
+                        <AnimatedStat value={stat.value} className="text-5xl lg:text-6xl tracking-tighter" />
+                        <p className="text-muted-foreground font-bold mt-3 text-sm uppercase tracking-widest">{stat.label}</p>
                     </div>
                 ))}
             </div>
@@ -196,47 +243,56 @@ export default function VirtualAssistancePage() {
     </section>
 
     {/* Tech Stack Section */}
-    <section className="py-16">
+    <section className="py-24">
          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-                <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Powered By Modern Technology</h2>
-                <p className="mt-2 text-muted-foreground text-lg">I use industry-standard tools to deliver professional results.</p>
-            </div>
-            <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8">
-                {techStack.map(tech => (
-                    <div key={tech.category} className="flex items-center gap-4">
-                        <div className="bg-primary/10 text-primary w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-                           <tech.icon className="w-6 h-6" />
+            <div className="max-w-4xl mx-auto glassmorphic p-12 rounded-[2.5rem] border-white/5 shadow-2xl">
+                <div className="text-center mb-16">
+                    <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">The Modern VA Toolkit</h2>
+                    <p className="mt-4 text-muted-foreground">Expertise in the industry-leading technologies that power modern business.</p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                    {techStack.map((tech, index) => (
+                        <div key={tech.category} className="flex flex-col gap-4 animate-fade-in group" style={{ animationDelay: `${index * 100}ms` }}>
+                            <div className="flex items-center gap-3">
+                                <div className="bg-primary/10 text-primary w-10 h-10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500">
+                                <tech.icon className="w-5 h-5" />
+                                </div>
+                                <h4 className="font-bold tracking-tight">{tech.category}</h4>
+                            </div>
+                            <p className="text-sm text-muted-foreground leading-relaxed pl-1">{tech.tools}</p>
                         </div>
-                        <div>
-                            <h4 className="font-semibold">{tech.category}</h4>
-                            <p className="text-sm text-muted-foreground">{tech.tools}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     </section>
 
     {/* Final CTA Section */}
-    <section className="py-16">
+    <section className="py-32 relative">
         <div className="container mx-auto px-4">
-            <div className="glassmorphic rounded-lg p-8 md:p-12 text-center">
-                <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">Ready to Elevate Your Business?</h2>
-                <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-                    Stop drowning in busywork. Let's automate your processes, enhance your web presence, and free up your time to focus on what truly matters—growth.
-                </p>
-                <div className="mt-8">
-                    <Button asChild size="lg">
-                        <Link href="/contact">Book a Free Consultation</Link>
-                    </Button>
+            <div className="relative glassmorphic rounded-[3rem] p-12 md:p-20 text-center overflow-hidden border-none">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
+                
+                <div className="relative z-10">
+                    <h2 className="font-headline text-4xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-tight">
+                        Engineered for Your Success.
+                    </h2>
+                    <p className="mt-4 max-w-2xl mx-auto text-muted-foreground text-lg mb-12">
+                        Stop managing and start leading. I provide the technical backbone and administrative precision required to elevate your operations.
+                    </p>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <Button asChild size="lg" className="h-16 px-12 text-lg font-bold rounded-2xl">
+                            <Link href="/contact">Book Strategic Consultation</Link>
+                        </Button>
+                    </div>
+                    <p className="mt-8 text-sm font-semibold text-muted-foreground flex items-center justify-center gap-2">
+                        <ShieldCheck className="w-4 h-4 text-primary" /> Confidentiality Guaranteed • Professional Execution
+                    </p>
                 </div>
-                 <p className="mt-4 text-sm text-muted-foreground">
-                    No obligations, just a friendly chat about your goals.
-                </p>
             </div>
         </div>
     </section>
-    </>
+    </div>
   );
 }

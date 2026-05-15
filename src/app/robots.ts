@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://philjoseph-orlina.web.app/sitemap.xml',
+    sitemap: 'https://philjosephorlina.vercel.app/sitemap.xml',
   }
 }
