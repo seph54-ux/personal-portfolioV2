@@ -125,7 +125,7 @@ export default function VirtualAssistancePage() {
   return (
     <div className="space-y-0">
     {/* Hero Section - Full Height */}
-    <section className="relative h-[calc(100vh-80px)] flex flex-col justify-center items-center overflow-hidden">
+    <section className="relative h-screen flex flex-col justify-center items-center overflow-hidden">
         <div className="absolute inset-0 z-[-1] opacity-20 dark:opacity-10">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary rounded-full blur-[120px] animate-pulse"></div>
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent rounded-full blur-[120px] animate-pulse delay-700"></div>
@@ -265,25 +265,34 @@ export default function VirtualAssistancePage() {
     {/* Final CTA Section */}
     <section className="py-32 relative">
         <div className="container mx-auto px-4">
-            <div className="relative glassmorphic rounded-[3rem] p-12 md:p-20 text-center overflow-hidden border-none">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
+            <div className="relative p-[2px] rounded-[3.1rem] overflow-hidden group max-w-5xl mx-auto shadow-2xl">
+                {/* The Crawling Light Layer */}
+                <div className="absolute inset-[-1000%] z-0 animate-[spin_6s_linear_infinite] opacity-40 group-hover:opacity-100 transition-opacity duration-500 bg-[conic-gradient(from_0deg,transparent_0_120deg,hsl(var(--primary))_180deg,transparent_180deg_300deg,hsl(var(--primary))_360deg)]"></div>
                 
-                <div className="relative z-10">
-                    <h2 className="font-headline text-4xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-tight">
-                        Engineered for Your Success.
-                    </h2>
-                    <p className="mt-4 max-w-2xl mx-auto text-muted-foreground text-lg mb-12">
-                        Stop managing and start leading. I provide the technical backbone and administrative precision required to elevate your operations.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Button asChild size="lg" className="h-16 px-12 text-lg font-bold rounded-2xl">
-                            <Link href="/contact">Book Strategic Consultation</Link>
-                        </Button>
+                {/* The Glow Layer */}
+                <div className="absolute inset-[-1000%] z-0 animate-[spin_6s_linear_infinite] blur-3xl opacity-20 bg-[conic-gradient(from_0deg,transparent_0_120deg,hsl(var(--primary))_180deg,transparent_180deg_300deg,hsl(var(--primary))_360deg)]"></div>
+                
+                {/* The Content Card */}
+                <div className="relative z-10 glassmorphic rounded-[3rem] p-12 md:p-20 text-center overflow-hidden border-none bg-card/90">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
+                    
+                    <div className="relative z-20">
+                        <h2 className="font-headline text-4xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-tight">
+                            Engineered for Your Success.
+                        </h2>
+                        <p className="mt-4 max-w-2xl mx-auto text-muted-foreground text-lg mb-12">
+                            Stop managing and start leading. I provide the technical backbone and administrative precision required to elevate your operations.
+                        </p>
+                        <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <Button asChild size="lg" className="h-16 px-12 text-lg font-bold rounded-2xl">
+                                <Link href="/contact">Book Strategic Consultation</Link>
+                            </Button>
+                        </div>
+                        <p className="mt-8 text-sm font-semibold text-muted-foreground flex items-center justify-center gap-2">
+                            <ShieldCheck className="w-4 h-4 text-primary" /> Confidentiality Guaranteed • Professional Execution
+                        </p>
                     </div>
-                    <p className="mt-8 text-sm font-semibold text-muted-foreground flex items-center justify-center gap-2">
-                        <ShieldCheck className="w-4 h-4 text-primary" /> Confidentiality Guaranteed • Professional Execution
-                    </p>
                 </div>
             </div>
         </div>
