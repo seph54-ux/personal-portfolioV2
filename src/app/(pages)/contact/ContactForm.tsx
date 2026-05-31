@@ -159,7 +159,7 @@ export function ContactForm() {
                 <FormLabel>Tell me all about your project</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="What's your idea? What problems are we trying to solve? e.g., I need a website for my coffee shop business..."
+                    placeholder="What problems are we trying to solve? e.g., 'I need a website for my coffee shop business' or 'I need a VA for my business' etc."
                     className="min-h-[150px]"
                     {...field}
                   />
